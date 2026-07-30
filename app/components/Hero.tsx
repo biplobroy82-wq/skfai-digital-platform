@@ -8,16 +8,21 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-black">
 
-      {/* Background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/hero-bg.jpg')",
-        }}
-      />
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 h-full w-full object-cover object-center"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/hero-bg.jpg"
+      >
+        <source src="/skfai-showreel.mp4" type="video/mp4" />
+      </video>
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/80" />
+      {/* Premium Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/85" />
 
       {/* Gold Glow */}
       <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-yellow-500/10 blur-[120px]" />
@@ -30,15 +35,15 @@ export default function Hero() {
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-2xl"
+          className="max-w-3xl"
         >
 
           {/* Logo */}
           <Image
             src="/logo.png"
             alt="Sri Krishna Films"
-            width={220}
-            height={80}
+            width={260}
+            height={90}
             priority
             className="mb-8"
           />
@@ -47,51 +52,66 @@ export default function Hero() {
             Premium Film Production House
           </span>
 
-          <h1 className="mt-8 text-5xl font-black leading-tight text-white md:text-7xl">
-            We Create
+          <h1 className="mt-8 text-6xl font-black leading-tight text-white md:text-8xl">
+            Transform Your Brand With
             <span className="block text-yellow-400">
               Cinematic
             </span>
-            Advertisements
+            Video Advertising
           </h1>
 
-          <p className="mt-8 text-lg leading-8 text-gray-300">
-            TV Commercials • Corporate Films • AI Videos •
-            Product Shoots • Celebrity Promotions •
-            Digital Marketing • Lead Generation
+          <p className="mt-8 max-w-2xl text-lg leading-8 text-gray-300">
+            TV Commercials • Corporate Films • AI Video Ads • Product Shoots •
+            Celebrity Promotions • Digital Marketing • Lead Generation
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          {/* Buttons */}
+          <div className="mt-10 flex flex-wrap gap-5">
 
             <Link
               href="#contact"
-              className="rounded-xl bg-yellow-400 px-8 py-4 font-bold text-black transition hover:scale-105 hover:bg-yellow-300"
+              className="rounded-xl bg-yellow-400 px-8 py-4 font-bold text-black transition duration-300 hover:scale-105 hover:bg-yellow-300"
             >
-              Get Free Consultation
+              Start Your Project
             </Link>
 
             <Link
               href="/gallery"
-              className="rounded-xl border border-yellow-500 px-8 py-4 font-bold text-white transition hover:bg-yellow-500 hover:text-black"
+              className="rounded-xl border border-yellow-500 px-8 py-4 font-bold text-white transition duration-300 hover:bg-yellow-500 hover:text-black"
             >
-              View Portfolio
+              Watch Showreel
             </Link>
 
           </div>
 
-          {/* Trust Line */}
-          <div className="mt-10 flex flex-wrap items-center gap-6 text-gray-300">
+          {/* Stats */}
+          <div className="mt-14 flex flex-wrap gap-10">
 
             <div>
-              ⭐⭐⭐⭐⭐
+              <h3 className="text-4xl font-bold text-yellow-400">
+                5000+
+              </h3>
+              <p className="mt-2 text-gray-300">
+                Video Ads Created
+              </p>
             </div>
 
             <div>
-              500+ Happy Clients
+              <h3 className="text-4xl font-bold text-yellow-400">
+                8+
+              </h3>
+              <p className="mt-2 text-gray-300">
+                Years Experience
+              </p>
             </div>
 
             <div>
-              5000+ Ads Delivered
+              <h3 className="text-4xl font-bold text-yellow-400">
+                Pan India
+              </h3>
+              <p className="mt-2 text-gray-300">
+                Services
+              </p>
             </div>
 
           </div>
@@ -100,8 +120,8 @@ export default function Hero() {
 
       </div>
 
-      {/* Bottom Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent" />
+      {/* Bottom Gradient */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black via-black/80 to-transparent" />
 
     </section>
   );
