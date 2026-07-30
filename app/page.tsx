@@ -17,29 +17,17 @@ export default function Home() {
   return (
     <>
       <Hero />
-
       <Clients />
-
       <Services />
-
       <About />
-
       <WhyChoose />
-
       <Recognition />
-
       <Portfolio />
-
       <ProductionFacilities />
-
       <BrandAmbassador />
-
       <Testimonials />
-
       <CTA />
-
       <Contact />
-
       <Footer />
 export default function Home() {
   return (
