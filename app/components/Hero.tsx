@@ -18,7 +18,7 @@ export default function Hero() {
         preload="metadata"
         poster="/hero-bg.jpg"
       >
-        <source src="/skfai-showreel.mp4" type="video/mp4" />
+        <source src="/skfai-showreel.mp4.mp4" type="video/mp4" />
       </video>
 
       {/* Premium Overlay */}
