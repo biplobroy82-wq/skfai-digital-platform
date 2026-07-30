@@ -1,127 +1,156 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black">
+    <section className="relative h-screen overflow-hidden">
 
       {/* Background Video */}
       <video
-        className="absolute inset-0 h-full w-full object-cover object-center"
         autoPlay
         muted
         loop
         playsInline
-        preload="metadata"
-        poster="/hero-bg.jpg"
+        className="absolute inset-0 h-full w-full object-cover"
       >
         <source src="/skfai-showreel.mp4.mp4" type="video/mp4" />
       </video>
 
-      {/* Premium Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/85" />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/70"></div>
 
-      {/* Gold Glow */}
-      <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-yellow-500/10 blur-[120px]" />
-      <div className="absolute right-0 bottom-0 h-[500px] w-[500px] rounded-full bg-yellow-500/10 blur-[180px]" />
+      {/* Gold Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent"></div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6">
+      <div className="relative z-10 flex h-full items-center">
 
-        <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl"
-        >
+        <div className="max-w-3xl px-8 lg:px-20">
 
           {/* Logo */}
-          <Image
-            src="/logo.png"
-            alt="Sri Krishna Films"
-            width={260}
-            height={90}
-            priority
-            className="mb-8"
-          />
+          <div className="flex items-center gap-4 mb-8">
 
-          <span className="inline-block rounded-full border border-yellow-500 px-5 py-2 text-sm uppercase tracking-[4px] text-yellow-400">
-            Premium Film Production House
-          </span>
+            <Image
+              src="/logo.png"
+              alt="SKFAI"
+              width={80}
+              height={80}
+              className="rounded-full"
+            />
 
-          <h1 className="mt-8 text-6xl font-black leading-tight text-white md:text-8xl">
-            Transform Your Brand With
-            <span className="block text-yellow-400">
-              Cinematic
+            <div>
+              <h2 className="text-white text-3xl font-bold">
+                Sri Krishna Films
+              </h2>
+
+              <p className="text-yellow-400 tracking-[4px] uppercase text-sm">
+                Advertisement Industry
+              </p>
+            </div>
+
+          </div>
+
+          {/* Since */}
+          <div className="inline-block border border-yellow-500 rounded-full px-4 py-2 mb-5">
+
+            <span className="text-yellow-400 font-semibold">
+              SINCE 1999 • 27+ YEARS EXPERIENCE
             </span>
-            Video Advertising
+
+          </div>
+
+          {/* Heading */}
+
+          <h1 className="text-white text-5xl lg:text-7xl font-black leading-tight">
+
+            We Don't Just
+            <br />
+
+            Create Ads.
+
+            <br />
+
+            <span className="text-yellow-400">
+              We Create
+              <br />
+              Cinematic Experiences.
+            </span>
+
           </h1>
 
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-gray-300">
-            TV Commercials • Corporate Films • AI Video Ads • Product Shoots •
-            Celebrity Promotions • Digital Marketing • Lead Generation
+          {/* Description */}
+
+          <p className="mt-6 text-gray-300 text-lg max-w-xl leading-8">
+
+            TV Commercials • Corporate Films • AI Video Ads •
+            Digital Marketing • Product Shoots • Brand Promotion
+
           </p>
 
           {/* Buttons */}
-          <div className="mt-10 flex flex-wrap gap-5">
 
-            <Link
-              href="#contact"
-              className="rounded-xl bg-yellow-400 px-8 py-4 font-bold text-black transition duration-300 hover:scale-105 hover:bg-yellow-300"
-            >
+          <div className="mt-10 flex gap-5 flex-wrap">
+
+            <button className="bg-yellow-500 hover:bg-yellow-400 transition px-8 py-4 rounded-full text-black font-bold">
+
+              ▶ Watch Showreel
+
+            </button>
+
+            <button className="border border-white hover:bg-white hover:text-black transition px-8 py-4 rounded-full text-white font-bold">
+
               Start Your Project
-            </Link>
 
-            <Link
-              href="/gallery"
-              className="rounded-xl border border-yellow-500 px-8 py-4 font-bold text-white transition duration-300 hover:bg-yellow-500 hover:text-black"
-            >
-              Watch Showreel
-            </Link>
+            </button>
 
           </div>
 
           {/* Stats */}
-          <div className="mt-14 flex flex-wrap gap-10">
+
+          <div className="flex gap-10 mt-14 flex-wrap">
 
             <div>
-              <h3 className="text-4xl font-bold text-yellow-400">
+
+              <h3 className="text-yellow-400 text-4xl font-bold">
                 5000+
               </h3>
-              <p className="mt-2 text-gray-300">
-                Video Ads Created
+
+              <p className="text-white/70">
+                Video Ads
               </p>
+
             </div>
 
             <div>
-              <h3 className="text-4xl font-bold text-yellow-400">
-                8+
+
+              <h3 className="text-yellow-400 text-4xl font-bold">
+                27+
               </h3>
-              <p className="mt-2 text-gray-300">
+
+              <p className="text-white/70">
                 Years Experience
               </p>
+
             </div>
 
             <div>
-              <h3 className="text-4xl font-bold text-yellow-400">
-                Pan India
+
+              <h3 className="text-yellow-400 text-4xl font-bold">
+                PAN INDIA
               </h3>
-              <p className="mt-2 text-gray-300">
-                Services
+
+              <p className="text-white/70">
+                Creative Services
               </p>
+
             </div>
 
           </div>
 
-        </motion.div>
+        </div>
 
       </div>
-
-      {/* Bottom Gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black via-black/80 to-transparent" />
 
     </section>
   );
