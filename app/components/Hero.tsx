@@ -4,42 +4,37 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
 
-      {/* Background */}
       <img
         src="/hero-bg.jpg"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/20"></div>
+      <div className="absolute inset-0 bg-black/70"></div>
 
-      {/* Content */}
-      <div className="relative z-10 flex items-center h-full">
+      <div className="relative z-10 flex items-center min-h-screen px-6 lg:px-20">
 
-        <div className="max-w-2xl px-6 lg:px-16">
-
-          {/* Logo */}
+        <div className="max-w-2xl">
 
           <div className="flex items-center gap-4 mb-8">
 
             <Image
               src="/logo.png"
               alt="Logo"
-              width={85}
-              height={85}
+              width={90}
+              height={90}
               priority
             />
 
             <div>
 
-              <h2 className="text-4xl font-extrabold text-white">
+              <h2 className="text-4xl font-black text-white">
                 Sri Krishna Films
               </h2>
 
-              <p className="text-yellow-400 tracking-[4px] uppercase text-sm">
+              <p className="text-yellow-400 uppercase tracking-[5px] text-sm">
                 & Advertisement Industry
               </p>
 
@@ -47,99 +42,58 @@ export default function Hero() {
 
           </div>
 
-          {/* Experience */}
+          <span className="inline-block border border-yellow-500 rounded-full px-5 py-2 text-yellow-400 font-semibold">
+            Since 1999 • 27+ Years Experience
+          </span>
 
-          <div className="inline-block border border-yellow-500 rounded-full px-5 py-2 mb-8">
+          <h1 className="mt-8 text-6xl font-black leading-tight text-white">
 
-            <span className="text-yellow-400 font-semibold">
-              Since 1999 • 27+ Years Experience
-            </span>
+            We Create
 
-          </div>
-
-          {/* Heading */}
-
-          <h1 className="text-white font-black text-5xl lg:text-7xl leading-tight">
-
-            We Don't Just
-            <br />
-
-            Create Ads.
-
-            <br />
-
-            <span className="text-yellow-400">
-
-              We Create
-              <br />
-              Cinematic Experiences.
-
+            <span className="block text-yellow-400">
+              Cinematic Experiences
             </span>
 
           </h1>
 
-          {/* Description */}
-
-          <p className="mt-6 text-lg text-gray-300 leading-8">
-
-            TV Commercials • Corporate Films • AI Video Ads
-            <br />
-            Digital Marketing • Product Shoots • Brand Promotion
-
+          <p className="mt-6 text-lg text-gray-300">
+            TV Commercials • Corporate Films • AI Video Ads •
+            Digital Marketing
           </p>
 
-          {/* Buttons */}
-
-          <div className="mt-10 flex gap-4 flex-wrap">
+          <div className="mt-8 flex gap-4">
 
             <a
               href="#portfolio"
-              className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8 py-3 rounded-full transition"
+              className="bg-yellow-500 text-black font-bold px-7 py-3 rounded-full"
             >
               View Portfolio
             </a>
 
             <a
               href="#contact"
-              className="border border-white hover:bg-white hover:text-black text-white font-bold px-8 py-3 rounded-full transition"
+              className="border border-white text-white px-7 py-3 rounded-full"
             >
               Contact Us
             </a>
 
           </div>
 
-          {/* Stats */}
-
-          <div className="mt-12 flex gap-10 flex-wrap">
+          <div className="mt-10 flex gap-10">
 
             <div>
-              <h3 className="text-yellow-400 text-4xl font-bold">
-                27+
-              </h3>
-
-              <p className="text-white/70">
-                Years Experience
-              </p>
+              <h3 className="text-yellow-400 text-3xl font-bold">27+</h3>
+              <p className="text-white/70">Years</p>
             </div>
 
             <div>
-              <h3 className="text-yellow-400 text-4xl font-bold">
-                5000+
-              </h3>
-
-              <p className="text-white/70">
-                Video Advertisements
-              </p>
+              <h3 className="text-yellow-400 text-3xl font-bold">5000+</h3>
+              <p className="text-white/70">Ads</p>
             </div>
 
             <div>
-              <h3 className="text-yellow-400 text-4xl font-bold">
-                PAN INDIA
-              </h3>
-
-              <p className="text-white/70">
-                Creative Services
-              </p>
+              <h3 className="text-yellow-400 text-3xl font-bold">PAN INDIA</h3>
+              <p className="text-white/70">Services</p>
             </div>
 
           </div>
