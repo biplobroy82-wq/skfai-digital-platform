@@ -18,7 +18,7 @@ export default function Hero() {
           transform: "scale(1.08)",
         }}
       >
-        <source src="/skfai-showreel.mp4.mp4" type="video/mp4" />
+      <source src="/skfai-showreel.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
