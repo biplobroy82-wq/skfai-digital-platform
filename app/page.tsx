@@ -60,3 +60,16 @@ export default function Home() {
     </>
   );
 }
+export default function Home() {
+  return (
+    <video
+      autoPlay
+      muted
+      loop
+      controls
+      className="w-screen h-screen"
+    >
+      <source src="/skfai-showreel.mp4" type="video/mp4" />
+    </video>
+  );
+}
