@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,27 +17,26 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.skfai.online"),
 
   title: {
-    default: "Sri Krishna Films & Advertisement Industry | Video Production Company in Kolkata",
+    default: "Sri Krishna Films & Advertisement Industry | Video Production Company Kolkata",
     template: "%s | Sri Krishna Films",
   },
 
   description:
-    "Sri Krishna Films & Advertisement Industry is a leading video production company in Kolkata offering TV commercials, corporate films, AI videos, product shoots, digital marketing, website development and lead generation services across India.",
+    "Sri Krishna Films & Advertisement Industry is a leading video production, TV commercial, AI advertisement, corporate film, digital marketing and branding agency in Kolkata, West Bengal.",
 
   keywords: [
     "Video Production Company Kolkata",
-    "Advertising Agency Kolkata",
+    "Advertisement Agency Kolkata",
     "Corporate Film Production",
     "TV Commercial Production",
-    "Product Shoot Kolkata",
-    "Green Screen Studio",
-    "AI Video Production",
+    "AI Advertisement",
+    "Product Shoot",
     "Digital Marketing Agency",
-    "Google Ads Services",
-    "Meta Ads Agency",
-    "Website Development Kolkata",
-    "Lead Generation Company",
-    "Film Production House Kolkata",
+    "Google Ads Agency",
+    "Meta Ads",
+    "Website Development",
+    "Lead Generation",
+    "Green Screen Studio Kolkata",
     "Sri Krishna Films",
   ],
 
@@ -50,25 +50,8 @@ export const metadata: Metadata = {
 
   publisher: "Sri Krishna Films & Advertisement Industry",
 
-  applicationName: "Sri Krishna Films",
-
-  category: "Business",
-
   alternates: {
-    canonical: "/",
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    nocache: false,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
+    canonical: "https://www.skfai.online",
   },
 
   openGraph: {
@@ -77,9 +60,10 @@ export const metadata: Metadata = {
     url: "https://www.skfai.online",
     siteName: "Sri Krishna Films & Advertisement Industry",
     title:
-      "Sri Krishna Films | Video Production Company in Kolkata",
+      "Sri Krishna Films & Advertisement Industry | Video Production Company Kolkata",
     description:
-      "Professional TV Commercials, Corporate Films, AI Videos, Product Shoots, Digital Marketing and Website Development Services.",
+      "Professional TV Commercials, Corporate Films, AI Advertisement, Digital Marketing & Lead Generation Services.",
+
     images: [
       {
         url: "/og-image.jpg",
@@ -93,9 +77,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Sri Krishna Films | Video Production Company in Kolkata",
+      "Sri Krishna Films & Advertisement Industry | Video Production Company Kolkata",
     description:
-      "Professional TV Commercials, Corporate Films, AI Videos and Digital Marketing Services.",
+      "Professional Video Production, AI Ads, Corporate Films & Digital Marketing.",
     images: ["/og-image.jpg"],
   },
 
@@ -103,6 +87,11 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -114,10 +103,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-screen bg-[#050505] text-white antialiased">
+      <body className="min-h-full flex flex-col">
         {children}
+
+        <GoogleAnalytics gaId="G-RJDHN5TXXR" />
       </body>
     </html>
   );
