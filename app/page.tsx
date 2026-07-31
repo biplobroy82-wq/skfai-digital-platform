@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import Trust from "./components/trust/Trust";
 import Clients from "./components/Clients";
 import Services from "./components/Services";
 import About from "./components/About";
@@ -17,6 +18,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+
+      <Trust />
+
       <Clients />
       <Services />
       <About />
