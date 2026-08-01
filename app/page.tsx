@@ -91,35 +91,7 @@ export default function Home() {
       </main>
 
       <Footer />
-export default function Home() {
-  return (
-    <div className="h-screen">
-      <video
-        autoPlay
-        muted
-        loop
-        controls
-        className="w-full h-full object-cover"
-      >
-        <source src="/skfai-showreel.mp4" type="video/mp4" />
-      </video>
-    </div>
-  );
-}
       <FloatingButtons />
     </>
-  );
-}
-export default function Home() {
-  return (
-    <video
-      autoPlay
-      muted
-      loop
-      controls
-      className="w-screen h-screen"
-    >
-      <source src="/skfai-showreel.mp4" type="video/mp4" />
-    </video>
   );
 }

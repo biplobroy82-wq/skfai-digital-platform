@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
 
-import TextField from "@/app/admin/TextField";
-import TextArea from "@/app/admin/TextArea";
+import TextField from "@/app/admin/about/TextField";
+import TextArea from "@/app/admin/about/TextArea";
 
 export default function HeroCMS() {
   const [loading, setLoading] = useState(true);
@@ -54,7 +54,8 @@ export default function HeroCMS() {
         hero_title_line2: data.hero_title_line2 || "",
         hero_title_line3: data.hero_title_line3 || "",
         hero_title_line4: data.hero_title_line4 || "",
-                description: data.description || "",
+
+        description: data.description || "",
 
         button_text: data.button_text || "",
         button_link: data.button_link || "",
@@ -152,7 +153,8 @@ export default function HeroCMS() {
               setHero({ ...hero, hero_title_line1: value })
             }
           />
-                    <TextField
+
+          <TextField
             label="Hero Title Line 2"
             value={hero.hero_title_line2}
             onChange={(value) =>
