@@ -13,7 +13,7 @@ export default function OrganizationSchema() {
 
         logo: {
           "@type": "ImageObject",
-          url: "https://www.skfai.online/logo.png",
+          url: "https://www.skfai.online/og-image.jpg"
         },
 
         image: "https://www.skfai.online/logo.png",

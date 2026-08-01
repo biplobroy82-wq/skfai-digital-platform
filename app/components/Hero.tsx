@@ -90,7 +90,7 @@ export default function Hero() {
         <div className="w-full max-w-4xl">
           <div className="flex items-center gap-5">
             <Image
-              src="/logo.png"
+              src="/og-image.jpg"
               alt="Logo"
               width={90}
               height={90}
