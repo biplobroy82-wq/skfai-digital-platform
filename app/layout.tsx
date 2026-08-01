@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+
 import "./globals.css";
+import OrganizationSchema from "./components/seo/OrganizationSchema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,27 +19,35 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.skfai.online"),
 
   title: {
-    default: "Sri Krishna Films & Advertisement Industry | Video Production Company Kolkata",
+    default:
+      "Sri Krishna Films | Video Production, AI Ads, Digital Marketing & Lead Generation India",
     template: "%s | Sri Krishna Films",
   },
 
   description:
-    "Sri Krishna Films & Advertisement Industry is a leading video production, TV commercial, AI advertisement, corporate film, digital marketing and branding agency in Kolkata, West Bengal.",
+    "Since 1999, Sri Krishna Films & Advertisement Industry has been delivering TV Commercials, Corporate Films, AI Video Ads, Product Advertisements, Digital Marketing, Website Development and Lead Generation services for businesses across India.",
 
   keywords: [
-    "Video Production Company Kolkata",
-    "Advertisement Agency Kolkata",
-    "Corporate Film Production",
+    "Video Production Company India",
     "TV Commercial Production",
+    "Corporate Film Production",
+    "Corporate Video Production",
+    "AI Video Production",
     "AI Advertisement",
+    "AI Commercial",
+    "Product Advertisement",
     "Product Shoot",
-    "Digital Marketing Agency",
-    "Google Ads Agency",
-    "Meta Ads",
-    "Website Development",
+    "Documentary Film Production",
+    "Digital Marketing",
     "Lead Generation",
-    "Green Screen Studio Kolkata",
+    "Google Ads Agency",
+    "Meta Ads Agency",
+    "Website Development",
+    "Advertising Agency India",
+    "Creative Agency India",
     "Sri Krishna Films",
+    "Video Production House",
+    "Commercial Film Maker",
   ],
 
   authors: [
@@ -59,10 +69,12 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://www.skfai.online",
     siteName: "Sri Krishna Films & Advertisement Industry",
+
     title:
-      "Sri Krishna Films & Advertisement Industry | Video Production Company Kolkata",
+      "Sri Krishna Films | Video Production, AI Ads, Digital Marketing & Lead Generation",
+
     description:
-      "Professional TV Commercials, Corporate Films, AI Advertisement, Digital Marketing & Lead Generation Services.",
+      "Professional TV Commercials, Corporate Films, AI Advertisement, Digital Marketing & Lead Generation Services Across India Since 1999.",
 
     images: [
       {
@@ -76,10 +88,13 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title:
-      "Sri Krishna Films & Advertisement Industry | Video Production Company Kolkata",
+      "Sri Krishna Films | Video Production Company India",
+
     description:
-      "Professional Video Production, AI Ads, Corporate Films & Digital Marketing.",
+      "Professional TV Commercials, AI Advertisement, Corporate Films & Digital Marketing.",
+
     images: ["/og-image.jpg"],
   },
 
@@ -106,9 +121,13 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+
+        <OrganizationSchema />
+
         {children}
 
         <GoogleAnalytics gaId="G-RJDHN5TXXR" />
+
       </body>
     </html>
   );
