@@ -4,6 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
 import OrganizationSchema from "./components/seo/OrganizationSchema";
+import MetaPixel from "./components/MetaPixel";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -89,8 +90,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title:
-      "Sri Krishna Films | Video Production Company India",
+    title: "Sri Krishna Films | Video Production Company India",
 
     description:
       "Professional TV Commercials, AI Advertisement, Corporate Films & Digital Marketing.",
@@ -125,6 +125,8 @@ export default function RootLayout({
         <OrganizationSchema />
 
         {children}
+
+        <MetaPixel />
 
         <GoogleAnalytics gaId="G-RJDHN5TXXR" />
 
