@@ -5,6 +5,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import OrganizationSchema from "./components/seo/OrganizationSchema";
 import MetaPixel from "./components/MetaPixel";
+import LeadPopup from "./components/LeadPopup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -125,6 +126,8 @@ export default function RootLayout({
         <OrganizationSchema />
 
         {children}
+
+        <LeadPopup />
 
         <MetaPixel />
 
