@@ -88,33 +88,34 @@ export default function Hero() {
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center justify-between px-6 py-20 lg:px-12">
         {/* LEFT */}
         <div className="w-full max-w-4xl">
-          <div className="flex items-center gap-5">
+          <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-5">
             <Image
               src="/og-image.jpg"
               alt="Logo"
               width={90}
               height={90}
               priority
+              className="h-14 w-14 sm:h-[90px] sm:w-[90px]"
             />
 
-            <div>
-              <h2 className="text-4xl font-black text-white lg:text-5xl">
+            <div className="min-w-0">
+              <h2 className="break-words text-2xl font-black text-white sm:text-4xl lg:text-5xl">
                 {hero.company_name}
               </h2>
 
-              <p className="mt-2 uppercase tracking-[7px] text-yellow-400 text-sm">
+              <p className="mt-2 uppercase tracking-[3px] sm:tracking-[7px] text-yellow-400 text-xs sm:text-sm">
                 {hero.company_tagline}
               </p>
             </div>
           </div>
 
           <div className="mt-8 inline-flex rounded-full border border-yellow-500 bg-black/40 px-6 py-2 backdrop-blur">
-            <span className="font-semibold text-yellow-300">
+            <span className="font-semibold text-yellow-300 text-sm sm:text-base">
               {hero.badge}
             </span>
           </div>
 
-          <h1 className="mt-10 text-5xl font-black leading-tight lg:text-7xl">
+          <h1 className="mt-10 break-words text-3xl font-black leading-tight sm:text-5xl lg:text-7xl">
             <span className="block text-white">
               {hero.hero_title_line1}
             </span>
@@ -132,12 +133,12 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="mt-8 max-w-xl text-lg leading-8 text-gray-300">
+          <p className="mt-8 max-w-xl text-base leading-7 text-gray-300 sm:text-lg sm:leading-8">
             {hero.description}
           </p>
 
           <div className="mt-10 flex flex-wrap gap-5">
-            <a
+            
               href={hero.button_link}
               className="rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 px-9 py-4 font-bold text-black transition hover:scale-105"
             >

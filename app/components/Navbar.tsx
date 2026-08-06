@@ -44,11 +44,12 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3">
 
             <Image
-              src="/logo.png"
+              src="/og-image.jpg"
               alt="Sri Krishna Films"
-              width={70}
-              height={70}
+              width={60}
+              height={60}
               priority
+              className="h-12 w-12 rounded-full object-cover sm:h-[70px] sm:w-[70px]"
             />
 
             <div>
@@ -85,7 +86,7 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-4">
 
-            <a
+            
               href="https://wa.me/91XXXXXXXXXX"
               className="rounded-xl border border-yellow-500 px-5 py-3 text-sm text-white transition hover:bg-yellow-500 hover:text-black"
             >
