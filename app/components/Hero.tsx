@@ -8,18 +8,14 @@ export default function Hero() {
   const [hero, setHero] = useState({
     title: "",
     subtitle: "",
-
     company_name: "",
     company_tagline: "",
     badge: "",
-
     hero_title_line1: "",
     hero_title_line2: "",
     hero_title_line3: "",
     hero_title_line4: "",
-
     description: "",
-
     button_text: "",
     button_link: "",
     background_image: "/hero-bg.jpg",
@@ -39,18 +35,14 @@ export default function Hero() {
         setHero({
           title: data.title || "",
           subtitle: data.subtitle || "",
-
           company_name: data.company_name || "",
           company_tagline: data.company_tagline || "",
           badge: data.badge || "",
-
           hero_title_line1: data.hero_title_line1 || "",
           hero_title_line2: data.hero_title_line2 || "",
           hero_title_line3: data.hero_title_line3 || "",
           hero_title_line4: data.hero_title_line4 || "",
-
           description: data.description || "",
-
           button_text: data.button_text || "",
           button_link: data.button_link || "",
           background_image: data.background_image || "/hero-bg.jpg",
@@ -73,7 +65,6 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-black">
-      {/* Background */}
       <Image
         src={hero.background_image || "/hero-bg.jpg"}
         alt="Sri Krishna Films"
@@ -86,7 +77,6 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent" />
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center justify-between px-6 py-20 lg:px-12">
-        {/* LEFT */}
         <div className="w-full max-w-4xl">
           <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-5">
             <Image
@@ -97,12 +87,10 @@ export default function Hero() {
               priority
               className="h-14 w-14 sm:h-[90px] sm:w-[90px]"
             />
-
             <div className="min-w-0">
               <h2 className="break-words text-2xl font-black text-white sm:text-4xl lg:text-5xl">
                 {hero.company_name}
               </h2>
-
               <p className="mt-2 uppercase tracking-[3px] sm:tracking-[7px] text-yellow-400 text-xs sm:text-sm">
                 {hero.company_tagline}
               </p>
@@ -119,15 +107,12 @@ export default function Hero() {
             <span className="block text-white">
               {hero.hero_title_line1}
             </span>
-
             <span className="block bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
               {hero.hero_title_line2}
             </span>
-
             <span className="mt-2 block text-white">
               {hero.hero_title_line3}
             </span>
-
             <span className="block bg-gradient-to-r from-red-400 via-red-500 to-yellow-400 bg-clip-text text-transparent">
               {hero.hero_title_line4}
             </span>
@@ -148,7 +133,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom Fade */}
       <div className="absolute bottom-0 left-0 h-32 w-full bg-gradient-to-t from-black to-transparent" />
     </section>
   );
