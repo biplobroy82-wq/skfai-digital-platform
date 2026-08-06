@@ -1,42 +1,62 @@
+import Link from "next/link";
+
 export default function Services() {
   const services = [
     {
       title: "TV Commercial",
       desc: "Creative TV Ads that build trust and increase sales.",
       icon: "🎬",
+      href: "/tv-commercial-production",
     },
     {
       title: "AI Video Creation",
       desc: "Modern AI generated promotional videos for every business.",
       icon: "🤖",
+      href: "/ai-video-production",
     },
     {
       title: "Corporate Film",
       desc: "Professional company profile & documentary production.",
       icon: "🎥",
+      href: "/#contact",
     },
     {
       title: "Digital Marketing",
       desc: "Facebook, Instagram & Google Ads Lead Generation.",
       icon: "📱",
+      href: "/digital-marketing",
     },
     {
       title: "Lead Generation",
       desc: "High quality business leads with complete marketing strategy.",
       icon: "📈",
+      href: "/lead-generation",
     },
     {
       title: "Documentary",
       desc: "Government & Corporate documentary filmmaking.",
       icon: "🎞️",
+      href: "/#contact",
+    },
+    {
+      title: "Website Development",
+      desc: "Professional, fast and SEO-friendly business websites.",
+      icon: "💻",
+      href: "/website-development",
     },
   ];
 
   return (
-    <section className="bg-black py-24">
+    <section
+      id="services"
+      className="bg-black py-24"
+      aria-labelledby="services-heading"
+    >
       <div className="max-w-7xl mx-auto px-6">
-
-        <h2 className="text-5xl font-bold text-center text-yellow-400">
+        <h2
+          id="services-heading"
+          className="text-5xl font-bold text-center text-yellow-400"
+        >
           Our Services
         </h2>
 
@@ -45,13 +65,14 @@ export default function Services() {
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-yellow-500 hover:-translate-y-2 duration-300"
+          {services.map((service) => (
+            <Link
+              key={service.title}
+              href={service.href}
+              aria-label={`Learn more about ${service.title}`}
+              className="block bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-yellow-500 hover:-translate-y-2 duration-300"
             >
-              <div className="text-5xl mb-6">
+              <div className="text-5xl mb-6" aria-hidden="true">
                 {service.icon}
               </div>
 
@@ -62,11 +83,13 @@ export default function Services() {
               <p className="text-gray-400 leading-7">
                 {service.desc}
               </p>
-            </div>
+
+              <div className="mt-6 text-yellow-400 font-semibold">
+                Learn More →
+              </div>
+            </Link>
           ))}
-
         </div>
-
       </div>
     </section>
   );

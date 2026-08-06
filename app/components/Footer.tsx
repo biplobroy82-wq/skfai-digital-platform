@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
 
             <Image
-              src="/logo.png"
+              src="/og-image.jpg"
               alt="Sri Krishna Films"
               width={180}
               height={70}

@@ -11,7 +11,7 @@ export default function About() {
           <div className="flex justify-center">
 
             <Image
-              src="/logo.png"
+              src="/og-image.jpg"
               alt="Sri Krishna Films"
               width={420}
               height={420}

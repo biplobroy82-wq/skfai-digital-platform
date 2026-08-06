@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Phone, MessageCircle, ChevronUp } from "lucide-react";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function FloatingButtons() {
   const [showTop, setShowTop] = useState(false);
@@ -17,6 +18,10 @@ export default function FloatingButtons() {
   }, []);
 
   const scrollToTop = () => {
+    sendGAEvent("event", "back_to_top_click", {
+      location: "floating_button",
+    });
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -25,8 +30,6 @@ export default function FloatingButtons() {
 
   return (
     <>
-      {/* Floating Buttons */}
-
       <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
 
         {/* WhatsApp */}
@@ -36,6 +39,11 @@ export default function FloatingButtons() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"
+          onClick={() =>
+            sendGAEvent("event", "whatsapp_click", {
+              location: "floating_button",
+            })
+          }
           className="flex h-16 w-16 items-center justify-center rounded-full bg-green-500 text-white shadow-2xl transition-all duration-300 hover:scale-110 hover:bg-green-600"
         >
           <MessageCircle size={30} />
@@ -46,6 +54,11 @@ export default function FloatingButtons() {
         <a
           href="tel:+916204731481"
           aria-label="Call Now"
+          onClick={() =>
+            sendGAEvent("event", "phone_call_click", {
+              location: "floating_button",
+            })
+          }
           className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-yellow-400 bg-black text-yellow-400 shadow-2xl transition-all duration-300 hover:scale-110 hover:bg-yellow-400 hover:text-black"
         >
           <Phone size={28} />
