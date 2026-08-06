@@ -1,15 +1,28 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "RESEND_API_KEY is not configured.",
+        },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     const { name, phone, business } = await req.json();
 
     if (!name || !phone) {
       return NextResponse.json(
-        { success: false, message: "Missing required fields" },
+        {
+          success: false,
+          message: "Missing required fields",
+        },
         { status: 400 }
       );
     }
@@ -21,20 +34,16 @@ export async function POST(req: Request) {
 
       html: `
       <div style="font-family:Arial,sans-serif;padding:20px">
+        <h2>New Consultation Lead</h2>
 
-        <h2 style="color:#111">
-          New Consultation Lead
-        </h2>
-
-        <table cellpadding="10" cellspacing="0" border="1" style="border-collapse:collapse">
-
+        <table border="1" cellpadding="10" cellspacing="0" style="border-collapse:collapse;">
           <tr>
             <td><b>Name</b></td>
             <td>${name}</td>
           </tr>
 
           <tr>
-            <td><b>Mobile</b></td>
+            <td><b>Phone</b></td>
             <td>${phone}</td>
           </tr>
 
@@ -44,23 +53,10 @@ export async function POST(req: Request) {
           </tr>
 
           <tr>
-            <td><b>Website</b></td>
-            <td>https://www.skfai.online</td>
-          </tr>
-
-          <tr>
             <td><b>Date</b></td>
             <td>${new Date().toLocaleString("en-IN")}</td>
           </tr>
-
         </table>
-
-        <br>
-
-        <p>
-          This lead was submitted from the website popup.
-        </p>
-
       </div>
       `,
     });
@@ -75,6 +71,7 @@ export async function POST(req: Request) {
     return NextResponse.json(
       {
         success: false,
+        message: "Internal Server Error",
       },
       {
         status: 500,
