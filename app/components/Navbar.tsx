@@ -86,8 +86,8 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-4">
 
-            
-              href="https://wa.me/91XXXXXXXXXX"
+             <a (yani less-than sign aur 'a')
+              href="https://wa.me/916204731481"
               className="rounded-xl border border-yellow-500 px-5 py-3 text-sm text-white transition hover:bg-yellow-500 hover:text-black"
             >
               WhatsApp
@@ -148,7 +148,3 @@ export default function Navbar() {
       {/* Spacer */}
 
       <div className="h-24" />
-
-    </>
-  );
-}
