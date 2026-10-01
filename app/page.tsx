@@ -9,7 +9,6 @@ import Portfolio from "./components/Portfolio";
 import ProductionFacilities from "./components/ProductionFacilities";
 import BrandAmbassador from "./components/BrandAmbassador";
 import Testimonials from "./components/Testimonials";
-import BusinessDirectory from "./components/BusinessDirectory";
 import CTA from "./components/CTA";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -70,8 +69,6 @@ export default function Home() {
         <BrandAmbassador />
 
         <Testimonials />
-
-        <BusinessDirectory />
 
         <CTA />
 
