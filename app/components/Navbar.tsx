@@ -1,9 +1,10 @@
+
 "use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -19,105 +20,161 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 40);
-    };
+    const onScroll = () => setScrolled(window.scrollY > 30);
 
-    window.addEventListener("scroll", onScroll);
-
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
 
   return (
     <>
       <header
-        className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 ${
+        className={`fixed inset-x-0 top-0 z-50 w-full transition-all duration-300 ${
           scrolled
-            ? "bg-black/90 backdrop-blur-xl border-b border-yellow-500/30 shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
-            : "bg-black/70 backdrop-blur-md border-b border-yellow-500/10"
+            ? "border-b border-white/10 bg-[#0b0d10]/95 shadow-lg shadow-black/20 backdrop-blur-xl"
+            : "border-b border-white/[0.06] bg-[#0b0d10]/85 backdrop-blur-md"
         }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <Link href="/" className="flex items-center gap-3 group">
-            <Image
-              src="/og-image.jpg"
-              alt="Sri Krishna Films"
-              width={60}
-              height={60}
-              priority
-              className="h-12 w-12 rounded-full object-cover sm:h-[70px] sm:w-[70px] ring-2 ring-yellow-500/60 transition-all duration-300 group-hover:ring-yellow-400 group-hover:shadow-[0_0_18px_rgba(250,204,21,0.5)]"
-            />
-            <div>
-              <h2 className="text-xl font-bold text-white">
+        <div className="mx-auto flex min-h-[76px] w-full max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:min-h-[88px] lg:px-8">
+          {/* Brand */}
+          <Link
+            href="/"
+            aria-label="Sri Krishna Films home"
+            onClick={() => setMobileOpen(false)}
+            className="flex min-w-0 items-center gap-3"
+          >
+            <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border border-[#d9a441]/70 sm:h-12 sm:w-12">
+              <Image
+                src="/og-image.jpg"
+                alt="Sri Krishna Films logo"
+                fill
+                priority
+                sizes="48px"
+                className="object-cover"
+              />
+            </span>
+
+            <span className="min-w-0">
+              <span className="block truncate font-[var(--font-display)] text-base font-bold leading-tight tracking-wide text-white sm:text-xl">
                 Sri Krishna Films
-              </h2>
-              <p className="text-xs tracking-widest text-yellow-400 uppercase">
+              </span>
+              <span className="mt-1 block text-[9px] font-semibold uppercase tracking-[0.15em] text-[#ff9a3c] sm:text-[10px] sm:tracking-[0.2em]">
                 Advertisement Industry
-              </p>
-            </div>
+              </span>
+            </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-8">
+          {/* Desktop Navigation */}
+          <nav
+            aria-label="Main navigation"
+            className="hidden items-center gap-5 xl:flex 2xl:gap-7"
+          >
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="relative text-gray-300 text-sm font-medium transition-colors duration-300 hover:text-yellow-400 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1.5px] after:w-0 after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full"
+                className="group relative whitespace-nowrap py-2 text-[13px] font-medium text-white/75 transition-colors hover:text-[#ff9a3c]"
               >
                 {item.name}
+                <span className="absolute inset-x-0 -bottom-0.5 h-px origin-left scale-x-0 bg-[#ff9a3c] transition-transform duration-300 group-hover:scale-x-100" />
               </Link>
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-4">
+          {/* Desktop CTA */}
+          <div className="hidden shrink-0 items-center gap-3 xl:flex">
             <a
-              href="https://wa.me/91XXXXXXXXXX"
-              className="rounded-xl border border-yellow-500/70 px-5 py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-yellow-500 hover:text-black hover:shadow-[0_0_15px_rgba(250,204,21,0.4)]"
+              href="https://wa.me/919686425009"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-[#d9a441]/50 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-[#ff9a3c] hover:bg-[#ff9a3c]/10"
             >
               WhatsApp
             </a>
+
             <Link
               href="#contact"
-              className="rounded-xl bg-gradient-to-r from-yellow-500 to-yellow-400 px-6 py-3 font-semibold text-black transition-all duration-300 hover:shadow-[0_0_20px_rgba(250,204,21,0.6)] hover:scale-[1.03]"
+              className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#ff6a00] to-[#d9a441] px-4 py-2.5 text-sm font-bold text-black transition-all hover:shadow-lg hover:shadow-orange-500/20"
             >
-              Get Quote
+              Get a Quote
+              <ArrowUpRight
+                size={16}
+                className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
             </Link>
           </div>
 
+          {/* Mobile Menu Button */}
           <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden text-white"
+            type="button"
+            aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={mobileOpen}
+            onClick={() => setMobileOpen((open) => !open)}
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/10 text-white transition-colors hover:border-[#ff9a3c]/60 hover:text-[#ff9a3c] xl:hidden"
           >
-            {mobileOpen ? <X size={30} /> : <Menu size={30} />}
+            {mobileOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
 
+        {/* Mobile Navigation */}
         {mobileOpen && (
-          <div className="border-t border-yellow-500/20 bg-black/95 lg:hidden">
-            <div className="flex flex-col px-6 py-6">
-              {navItems.map((item) => (
+          <div className="max-h-[calc(100dvh-76px)] overflow-y-auto border-t border-white/10 bg-[#0b0d10] xl:hidden">
+            <nav
+              aria-label="Mobile navigation"
+              className="mx-auto flex w-full max-w-7xl flex-col px-4 pb-6 pt-3 sm:px-6"
+            >
+              {navItems.map((item, index) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="border-b border-gray-800 py-4 text-gray-300 hover:text-yellow-400"
+                  className="flex items-center justify-between border-b border-white/[0.07] py-4 text-sm font-medium text-white/80 transition-colors hover:text-[#ff9a3c]"
                 >
-                  {item.name}
+                  <span>
+                    <span className="mr-3 text-xs text-[#d9a441]/70">
+                      0{index + 1}
+                    </span>
+                    {item.name}
+                  </span>
+                  <ArrowUpRight size={16} className="text-white/40" />
                 </Link>
               ))}
-              <Link
-                href="#contact"
-                onClick={() => setMobileOpen(false)}
-                className="mt-6 rounded-xl bg-gradient-to-r from-yellow-500 to-yellow-400 py-4 text-center font-bold text-black transition-all duration-300 hover:shadow-[0_0_20px_rgba(250,204,21,0.6)]"
-              >
-                Get Quote
-              </Link>
-            </div>
+
+              <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <a
+                  href="https://wa.me/919686425009"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileOpen(false)}
+                  className="rounded-lg border border-[#d9a441]/50 px-4 py-3.5 text-center text-sm font-semibold text-white transition-colors hover:bg-[#d9a441]/10"
+                >
+                  WhatsApp Us
+                </a>
+
+                <Link
+                  href="#contact"
+                  onClick={() => setMobileOpen(false)}
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#ff6a00] to-[#d9a441] px-4 py-3.5 text-sm font-bold text-black"
+                >
+                  Get a Quote
+                  <ArrowUpRight size={16} />
+                </Link>
+              </div>
+            </nav>
           </div>
         )}
       </header>
 
-      <div className="h-24" />
+      {/* Space reserved for fixed navbar */}
+      <div className="h-[76px] w-full shrink-0 lg:h-[88px]" />
     </>
   );
 }
