@@ -1,3 +1,4 @@
+
 import Script from "next/script";
 
 import Hero from "./components/Hero";
@@ -6,7 +7,6 @@ import Clients from "./components/Clients";
 import Services from "./components/Services";
 import About from "./components/About";
 import WhyChoose from "./components/WhyChoose";
-import Recognition from "./components/Recognition";
 import Portfolio from "./components/Portfolio";
 import ProductionFacilities from "./components/ProductionFacilities";
 import BrandAmbassador from "./components/BrandAmbassador";
@@ -74,8 +74,6 @@ export default function Home() {
         <About />
 
         <WhyChoose />
-
-        <Recognition />
 
         <Portfolio />
 
