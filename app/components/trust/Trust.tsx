@@ -23,7 +23,7 @@ const organizations = [
     name: "Kolkata Metro",
     icon: TrainFront,
     image:
-      "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=800&q=85",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kolkata_Metro_at_Ravindra_Sadan_station.jpg?width=1200",
   },
   {
     name: "IIT Kharagpur",
@@ -79,10 +79,12 @@ export default function Trust() {
       />
 
       <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-[#05070b]/95 via-[#080b10]/85 to-[#080b10]/75" />
+
       <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-t from-[#080b10] via-transparent to-black/30" />
 
       {/* Studio light effects */}
       <div className="pointer-events-none absolute right-[10%] top-0 -z-10 h-72 w-72 rounded-full bg-orange-500/10 blur-[120px]" />
+
       <div className="pointer-events-none absolute bottom-0 left-0 -z-10 h-64 w-64 rounded-full bg-orange-600/10 blur-[120px]" />
 
       <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
@@ -90,6 +92,7 @@ export default function Trust() {
         <div className="mb-10 max-w-5xl sm:mb-12 lg:mb-14">
           <div className="mb-4 flex items-center gap-3">
             <span className="h-[3px] w-10 bg-[#ff6500]" />
+
             <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#ff8a3d] sm:text-xs sm:tracking-[0.3em]">
               Recognized by Leading Organizations
             </p>
@@ -108,7 +111,7 @@ export default function Trust() {
           </p>
         </div>
 
-        {/* Large organization cards */}
+        {/* Organization cards */}
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:gap-7">
           {organizations.map((organization) => {
             const Icon = organization.icon;
@@ -139,7 +142,7 @@ export default function Trust() {
                   </span>
                 </div>
 
-                {/* Name area */}
+                {/* Organization name */}
                 <div className="flex min-h-[76px] items-center justify-between gap-3 px-4 py-4 sm:px-5">
                   <h3 className="text-base font-bold leading-snug text-white transition-colors group-hover:text-[#ff8a3d] sm:text-lg">
                     {organization.name}
