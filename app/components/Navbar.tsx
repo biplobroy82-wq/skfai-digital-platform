@@ -15,6 +15,8 @@ const navItems = [
   { name: "Contact", href: "#contact" },
 ];
 
+const WHATSAPP_URL = "https://wa.me/916204731481";
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -23,7 +25,10 @@ export default function Navbar() {
     const onScroll = () => setScrolled(window.scrollY > 30);
 
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -66,6 +71,7 @@ export default function Navbar() {
               <span className="block truncate font-[var(--font-display)] text-base font-bold leading-tight tracking-wide text-white sm:text-xl">
                 Sri Krishna Films
               </span>
+
               <span className="mt-1 block text-[9px] font-semibold uppercase tracking-[0.15em] text-[#ff9a3c] sm:text-[10px] sm:tracking-[0.2em]">
                 Advertisement Industry
               </span>
@@ -84,15 +90,16 @@ export default function Navbar() {
                 className="group relative whitespace-nowrap py-2 text-[13px] font-medium text-white/75 transition-colors hover:text-[#ff9a3c]"
               >
                 {item.name}
+
                 <span className="absolute inset-x-0 -bottom-0.5 h-px origin-left scale-x-0 bg-[#ff9a3c] transition-transform duration-300 group-hover:scale-x-100" />
               </Link>
             ))}
           </nav>
 
-          {/* Desktop CTA */}
+          {/* Desktop Buttons */}
           <div className="hidden shrink-0 items-center gap-3 xl:flex">
             <a
-              href="https://wa.me/919686425009"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg border border-[#d9a441]/50 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-[#ff9a3c] hover:bg-[#ff9a3c]/10"
@@ -105,6 +112,7 @@ export default function Navbar() {
               className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#ff6a00] to-[#d9a441] px-4 py-2.5 text-sm font-bold text-black transition-all hover:shadow-lg hover:shadow-orange-500/20"
             >
               Get a Quote
+
               <ArrowUpRight
                 size={16}
                 className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
@@ -115,7 +123,11 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              mobileOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+            }
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((open) => !open)}
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/10 text-white transition-colors hover:border-[#ff9a3c]/60 hover:text-[#ff9a3c] xl:hidden"
@@ -142,15 +154,21 @@ export default function Navbar() {
                     <span className="mr-3 text-xs text-[#d9a441]/70">
                       0{index + 1}
                     </span>
+
                     {item.name}
                   </span>
-                  <ArrowUpRight size={16} className="text-white/40" />
+
+                  <ArrowUpRight
+                    size={16}
+                    className="text-white/40"
+                  />
                 </Link>
               ))}
 
+              {/* Mobile CTA Buttons */}
               <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <a
-                  href="https://wa.me/919686425009"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
