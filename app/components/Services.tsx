@@ -75,22 +75,30 @@ export default function Services() {
       id="services"
       className="relative overflow-hidden bg-[#090a0d] text-white"
     >
-      {/* Cinematic warm-light banner */}
+      {/* Warm cinematic studio banner */}
       <div
-        className="relative flex min-h-[260px] items-center justify-center overflow-hidden bg-cover bg-center px-5 py-16 sm:min-h-[300px] md:min-h-[340px]"
+        className="relative flex min-h-[280px] items-center justify-center overflow-hidden bg-cover bg-center px-5 py-16 sm:min-h-[310px] md:min-h-[350px]"
         style={{
           backgroundImage: `
             linear-gradient(
-              90deg,
-              rgba(8,8,10,0.83),
-              rgba(8,8,10,0.62),
-              rgba(8,8,10,0.83)
+              180deg,
+              rgba(8,8,10,0.42) 0%,
+              rgba(8,8,10,0.48) 55%,
+              rgba(9,10,13,0.96) 100%
             ),
-            url("https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2000&q=85")
+            linear-gradient(
+              90deg,
+              rgba(8,8,10,0.40),
+              rgba(8,8,10,0.12),
+              rgba(8,8,10,0.40)
+            ),
+            url("https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=2000&q=85")
           `,
+          backgroundPosition: "center 45%",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-[#090a0d] via-transparent to-black/20" />
+        {/* Warm light accents */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,135,35,0.13),transparent_65%)]" />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -101,9 +109,11 @@ export default function Services() {
         >
           <div className="mb-4 flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-orange-500 sm:w-14" />
-            <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-orange-500 sm:text-xs">
+
+            <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-orange-400 sm:text-xs">
               Creative Solutions
             </span>
+
             <span className="h-px w-10 bg-orange-500 sm:w-14" />
           </div>
 
@@ -111,7 +121,7 @@ export default function Services() {
             Our <span className="text-orange-500">Services</span>
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-gray-200 sm:text-base sm:leading-7">
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-gray-100 sm:text-base sm:leading-7">
             From creative video production to digital marketing, we provide
             practical solutions to help your business communicate, connect
             and grow.
@@ -119,7 +129,7 @@ export default function Services() {
 
           <a
             href="#contact"
-            className="mt-7 inline-flex items-center gap-3 rounded-md bg-orange-600 px-6 py-3 text-[11px] font-bold uppercase tracking-wider text-white transition hover:bg-orange-500"
+            className="mt-7 inline-flex items-center gap-3 rounded-md bg-orange-600 px-6 py-3.5 text-[10px] font-bold uppercase tracking-wider text-white transition duration-300 hover:bg-orange-500 sm:text-xs"
           >
             Discuss a Project
             <ArrowUpRight size={16} />
@@ -127,10 +137,19 @@ export default function Services() {
         </motion.div>
       </div>
 
-      {/* Compact services grid */}
-      <div className="relative px-5 pb-16 pt-8 sm:px-8 sm:pb-20 md:px-10 lg:px-12">
-        <div className="pointer-events-none absolute -left-20 top-10 h-64 w-64 rounded-full bg-orange-600/[0.04] blur-[100px]" />
-        <div className="pointer-events-none absolute -right-20 bottom-10 h-64 w-64 rounded-full bg-orange-600/[0.04] blur-[100px]" />
+      {/* Services grid */}
+      <div className="relative px-5 pb-16 pt-5 sm:px-8 sm:pb-20 sm:pt-8 md:px-10 lg:px-12">
+        {/* Subtle orange corner decoration */}
+        <div className="pointer-events-none absolute left-3 top-4 grid grid-cols-6 gap-3 opacity-40 sm:left-8">
+          {Array.from({ length: 18 }).map((_, index) => (
+            <span
+              key={index}
+              className="h-1 w-1 rounded-full bg-orange-500"
+            />
+          ))}
+        </div>
+
+        <div className="pointer-events-none absolute -right-24 bottom-10 h-64 w-64 rounded-full bg-orange-600/[0.05] blur-[100px]" />
 
         <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {services.map((service, index) => {
@@ -140,6 +159,7 @@ export default function Services() {
               <motion.a
                 key={service.title}
                 href="#contact"
+                aria-label={`Discuss ${service.title} service`}
                 initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
@@ -147,26 +167,30 @@ export default function Services() {
                   duration: 0.45,
                   delay: (index % 5) * 0.06,
                 }}
-                className="group relative flex min-h-[174px] flex-col items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-[#101115] px-4 py-6 text-center transition duration-300 hover:-translate-y-1 hover:border-orange-500/60 hover:bg-[#151311] hover:shadow-[0_8px_30px_rgba(255,101,0,0.08)] sm:min-h-[184px]"
+                className="group relative flex min-h-[170px] flex-col items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-[#101115] px-3 py-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-orange-500/60 hover:bg-[#15120f] hover:shadow-[0_8px_30px_rgba(255,101,0,0.09)] sm:min-h-[180px]"
               >
-                {/* Hover glow */}
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-orange-500/[0.06] to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                {/* Card glow */}
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-orange-500/[0.07] to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-                <div className="relative flex h-[68px] w-[68px] items-center justify-center rounded-full border border-orange-500/30 bg-[#171411] text-orange-500 transition duration-300 group-hover:border-orange-500 group-hover:shadow-[0_0_22px_rgba(255,101,0,0.15)]">
+                {/* Icon */}
+                <div className="relative flex h-[66px] w-[66px] items-center justify-center rounded-full border border-orange-500/40 bg-[#171411] text-orange-500 transition-all duration-300 group-hover:border-orange-500 group-hover:shadow-[0_0_24px_rgba(255,101,0,0.18)]">
                   <Icon
-                    size={31}
+                    size={30}
                     strokeWidth={1.7}
                     aria-hidden="true"
                   />
                 </div>
 
-                <h3 className="relative mt-4 text-sm font-bold leading-snug text-gray-100 transition-colors group-hover:text-orange-400 sm:text-[15px]">
+                {/* Service name */}
+                <h3 className="relative mt-4 text-sm font-bold leading-snug text-gray-100 transition-colors duration-300 group-hover:text-orange-400 sm:text-[15px]">
                   {service.title}
                 </h3>
 
+                {/* Orange accent */}
                 <span className="relative mt-3 h-[3px] w-7 rounded-full bg-orange-600 transition-all duration-300 group-hover:w-12" />
 
-                <p className="sr-only">{service.description}</p>
+                {/* Accessible description */}
+                <span className="sr-only">{service.description}</span>
               </motion.a>
             );
           })}
