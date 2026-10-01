@@ -58,24 +58,23 @@ export default function About() {
       <div className="mx-auto w-full max-w-[1600px] px-5 sm:px-8 lg:px-12">
         {/* Main content */}
         <div className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16 xl:gap-20">
-          {/* LEFT: Founder photo */}
+          {/* LEFT: Logo and cinematic frame */}
           <div className="relative mx-auto w-full max-w-[590px]">
             {/* Decorative orange diagonal */}
             <div className="pointer-events-none absolute -left-8 -top-10 h-32 w-32 -rotate-45 border-l-[22px] border-orange-600/90 sm:-left-12 sm:-top-12 sm:h-44 sm:w-44 sm:border-l-[30px]" />
 
             <div className="pointer-events-none absolute -bottom-8 -right-5 h-28 w-28 -rotate-45 border-r-[20px] border-orange-600/90 sm:-bottom-10 sm:-right-10 sm:h-40 sm:w-40 sm:border-r-[28px]" />
 
-            {/* Founder photo panel */}
+            {/* Main logo panel */}
             <div className="relative overflow-hidden rounded-xl border border-orange-500/80 bg-black/80 p-3 shadow-[0_0_45px_rgba(255,90,0,0.12)] sm:p-5">
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-orange-500/[0.07] via-transparent to-transparent" />
 
               <Image
-                src="/biplob-roy-founder.png"
-                alt="Biplob Roy, Founder and Director of Sri Krishna Films"
-                width={1024}
-                height={1536}
+                src="/og-image.jpg"
+                alt="Sri Krishna Films & Advertisement Industry logo"
+                width={700}
+                height={700}
                 className="relative z-10 h-auto w-full rounded-lg object-contain"
-                priority
                 sizes="(max-width: 1024px) 90vw, 45vw"
               />
 
