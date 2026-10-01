@@ -1,3 +1,4 @@
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -8,7 +9,7 @@ const clients = [
   "IIT Kharagpur",
   "DAV Model School",
   "Medica Hospital",
-  "Shyam Steel",
+  "Acadfinity",
   "Shree Height Builders",
   "HLC Electrical India",
 ];
@@ -30,7 +31,6 @@ export default function Clients() {
           transition={{ duration: .7 }}
           className="text-center"
         >
-
           <span className="inline-block border border-yellow-500 rounded-full px-5 py-2 text-yellow-400 uppercase tracking-[3px] text-sm">
             Trusted By
           </span>
@@ -48,15 +48,12 @@ export default function Clients() {
             educational institutions, hospitals, builders and corporate
             companies across India.
           </p>
-
         </motion.div>
 
         {/* Clients */}
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
-
           {clients.map((client, index) => (
-
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
@@ -69,15 +66,11 @@ export default function Clients() {
               }}
               className="group rounded-2xl border border-yellow-500/30 bg-zinc-900 p-10 flex items-center justify-center h-44 transition-all duration-300 hover:border-yellow-400 hover:shadow-[0_0_30px_rgba(255,215,0,0.15)]"
             >
-
               <h3 className="text-yellow-400 text-2xl font-bold text-center group-hover:text-white transition">
                 {client}
               </h3>
-
             </motion.div>
-
           ))}
-
         </div>
 
       </div>
