@@ -1,3 +1,4 @@
+
 import {
   Award,
   BriefcaseBusiness,
@@ -7,28 +8,28 @@ import {
 
 const stats = [
   {
-    icon: <Award size={42} />,
+    icon: Award,
     number: "27+",
-    title: "Years Experience",
+    title: "Years of Experience",
     desc: "Creative excellence since 1999.",
   },
   {
-    icon: <BriefcaseBusiness size={42} />,
+    icon: BriefcaseBusiness,
     number: "5000+",
     title: "Projects Completed",
-    desc: "Advertising, films & digital campaigns.",
+    desc: "Advertising, films and digital campaigns.",
   },
   {
-    icon: <Star size={42} />,
+    icon: Star,
     number: "1000+",
     title: "Happy Clients",
     desc: "Businesses that trust our creativity.",
   },
   {
-    icon: <Building2 size={42} />,
+    icon: Building2,
     number: "200+",
     title: "Brands Served",
-    desc: "Companies across multiple industries.",
+    desc: "Brands across multiple industries.",
   },
 ];
 
@@ -36,73 +37,81 @@ export default function Trust() {
   return (
     <section
       id="trust"
-      className="relative overflow-hidden bg-[#050505] py-24"
+      className="relative isolate overflow-hidden bg-[#0B0D10] py-16 sm:py-20 lg:py-24"
     >
-      {/* Background Glow */}
-      <div className="absolute inset-0">
-        <div className="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-yellow-500/10 blur-[140px]" />
-        <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-yellow-500/5 blur-[120px]" />
-        <div className="absolute top-40 right-0 h-80 w-80 rounded-full bg-yellow-400/5 blur-[140px]" />
+      {/* Background glow */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-[#FF5A00]/10 blur-[130px]" />
+        <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-[#FF5A00]/5 blur-[120px]" />
+        <div className="absolute right-0 top-1/3 h-72 w-72 rounded-full bg-orange-600/5 blur-[120px]" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6">
-        {/* Heading */}
-        <div className="text-center">
-          <span className="inline-flex items-center rounded-full border border-yellow-500/40 bg-yellow-500/10 px-6 py-2 text-sm font-medium uppercase tracking-[4px] text-yellow-400 backdrop-blur">
-            Trust & Experience
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        {/* Section heading */}
+        <div className="mx-auto max-w-4xl text-center">
+          <span className="inline-flex items-center rounded-full border border-[#FF5A00]/40 bg-[#FF5A00]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[2px] text-[#FF7A33] sm:px-6 sm:text-sm sm:tracking-[4px]">
+            Trust &amp; Experience
           </span>
 
-          <h2 className="mt-7 text-4xl font-bold leading-tight text-white md:text-6xl">
+          <h2 className="mt-6 text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
             Trusted by Businesses
             <br />
-            <span className="text-yellow-400">Since 1999</span>
+            <span className="text-[#FF5A00]">
+              Since 1999
+            </span>
           </h2>
 
-          <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-gray-400">
+          <p className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-gray-400 sm:mt-7 sm:text-base sm:leading-8 lg:text-lg">
             With over{" "}
-            <span className="font-semibold text-yellow-400">27+ Years</span> of
-            experience,{" "}
-            <span className="font-semibold text-yellow-400">5000+</span>{" "}
-            successful projects,{" "}
-            <span className="font-semibold text-yellow-400">1000+</span>{" "}
-            satisfied clients and{" "}
-            <span className="font-semibold text-yellow-400">200+</span> brands
-            served, Sri Krishna Films & Advertisement Industry continues to
-            deliver premium creative solutions across India.
+            <span className="font-semibold text-[#FF7A33]">27+ years</span>{" "}
+            of experience,{" "}
+            <span className="font-semibold text-[#FF7A33]">5000+</span>{" "}
+            projects,{" "}
+            <span className="font-semibold text-[#FF7A33]">1000+</span>{" "}
+            clients and{" "}
+            <span className="font-semibold text-[#FF7A33]">200+</span>{" "}
+            brands served, Sri Krishna Films &amp; Advertisement Industry
+            delivers creative video production and advertising solutions.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
-          {stats.map((item, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-3xl border border-yellow-500/20 bg-zinc-900/90 p-8 text-center backdrop-blur transition-all duration-500 hover:-translate-y-3 hover:border-yellow-400 hover:bg-zinc-950"
-            >
-              {/* Glow */}
-              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent opacity-70" />
+        {/* Statistics cards */}
+        <div className="mt-12 grid grid-cols-1 gap-5 sm:mt-16 sm:grid-cols-2 sm:gap-6 xl:grid-cols-4">
+          {stats.map((item) => {
+            const Icon = item.icon;
 
-              <div className="flex justify-center">
-                <div className="flex h-20 w-20 items-center justify-center rounded-full border border-yellow-500/30 bg-yellow-500/10 text-yellow-400 transition-all duration-500 group-hover:scale-110 group-hover:bg-yellow-500 group-hover:text-black">
-                  {item.icon}
+            return (
+              <div
+                key={item.title}
+                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#25282E] p-7 text-center transition-all duration-300 hover:-translate-y-2 hover:border-[#FF5A00]/60 hover:bg-[#292D33] sm:p-8"
+              >
+                {/* Orange top accent */}
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-[#FF5A00] to-transparent opacity-80" />
+
+                {/* Icon */}
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-xl border border-[#FF5A00]/30 bg-[#FF5A00]/10 text-[#FF5A00] transition-all duration-300 group-hover:bg-[#FF5A00] group-hover:text-white sm:h-20 sm:w-20">
+                  <Icon size={36} strokeWidth={1.7} />
                 </div>
+
+                {/* Number */}
+                <h3 className="mt-6 text-4xl font-extrabold tracking-tight text-[#FF5A00] sm:text-5xl">
+                  {item.number}
+                </h3>
+
+                <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-[#FF5A00]/70" />
+
+                {/* Title */}
+                <h4 className="mt-5 text-lg font-bold text-white sm:text-xl">
+                  {item.title}
+                </h4>
+
+                {/* Description */}
+                <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-gray-400 sm:text-base sm:leading-7">
+                  {item.desc}
+                </p>
               </div>
-
-              <h3 className="mt-6 text-5xl font-extrabold text-yellow-400">
-                {item.number}
-              </h3>
-
-              <div className="mx-auto mt-4 h-px w-16 bg-yellow-500/40" />
-
-              <h4 className="mt-5 text-xl font-semibold text-white">
-                {item.title}
-              </h4>
-
-              <p className="mt-4 leading-7 text-gray-400">
-                {item.desc}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
