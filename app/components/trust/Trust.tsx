@@ -1,35 +1,65 @@
 
+"use client";
+
 import {
-  Award,
-  BriefcaseBusiness,
+  Factory,
+  TrainFront,
+  GraduationCap,
+  School,
+  Hospital,
   Building2,
-  Star,
+  HardHat,
+  Zap,
 } from "lucide-react";
 
-const stats = [
+const organizations = [
   {
-    icon: Award,
-    number: "27+",
-    title: "Years of Experience",
-    desc: "Creative excellence since 1999.",
+    name: "IOCL",
+    icon: Factory,
+    image:
+      "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=500&q=80",
   },
   {
-    icon: BriefcaseBusiness,
-    number: "5000+",
-    title: "Projects Completed",
-    desc: "Advertising, films and digital campaigns.",
+    name: "Kolkata Metro",
+    icon: TrainFront,
+    image:
+      "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=500&q=80",
   },
   {
-    icon: Star,
-    number: "1000+",
-    title: "Happy Clients",
-    desc: "Businesses that trust our creativity.",
+    name: "IIT Kharagpur",
+    icon: GraduationCap,
+    image:
+      "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=500&q=80",
   },
   {
-    icon: Building2,
-    number: "200+",
-    title: "Brands Served",
-    desc: "Brands across multiple industries.",
+    name: "DAV Model School",
+    icon: School,
+    image:
+      "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    name: "Medica Hospital",
+    icon: Hospital,
+    image:
+      "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    name: "Acadfinity",
+    icon: GraduationCap,
+    image:
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    name: "Shree Height Builders",
+    icon: HardHat,
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    name: "HLC Electrical India",
+    icon: Zap,
+    image:
+      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=500&q=80",
   },
 ];
 
@@ -37,78 +67,86 @@ export default function Trust() {
   return (
     <section
       id="trust"
-      className="relative isolate overflow-hidden bg-[#0B0D10] py-16 sm:py-20 lg:py-24"
+      className="relative isolate overflow-hidden border-y border-white/10 bg-[#080b10] py-12 sm:py-14 lg:py-16"
     >
-      {/* Background glow */}
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-[#FF5A00]/10 blur-[130px]" />
-        <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-[#FF5A00]/5 blur-[120px]" />
-        <div className="absolute right-0 top-1/3 h-72 w-72 rounded-full bg-orange-600/5 blur-[120px]" />
-      </div>
+      {/* Cinematic background */}
+      <div
+        className="pointer-events-none absolute inset-0 -z-20 bg-cover bg-center opacity-25"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2000&q=85')",
+        }}
+      />
 
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      {/* Dark cinematic overlays */}
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-[#05070b] via-[#080b10]/95 to-[#080b10]/75" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-t from-[#080b10] via-transparent to-black/30" />
+
+      {/* Warm studio lights */}
+      <div className="pointer-events-none absolute right-[12%] top-0 -z-10 h-48 w-48 rounded-full bg-orange-500/10 blur-[100px]" />
+      <div className="pointer-events-none absolute left-0 top-1/2 -z-10 h-40 w-40 -translate-y-1/2 rounded-full bg-orange-600/5 blur-[90px]" />
+
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-9">
         {/* Section heading */}
-        <div className="mx-auto max-w-4xl text-center">
-          <span className="inline-flex items-center rounded-full border border-[#FF5A00]/40 bg-[#FF5A00]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[2px] text-[#FF7A33] sm:px-6 sm:text-sm sm:tracking-[4px]">
-            Trust &amp; Experience
-          </span>
+        <div className="mb-7 max-w-4xl sm:mb-9">
+          <div className="mb-3 flex items-center gap-2">
+            <span className="h-[2px] w-7 bg-[#ff6500]" />
+            <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#ff8a3d] sm:text-[10px] sm:tracking-[0.28em]">
+              Recognized by Leading Organizations
+            </p>
+          </div>
 
-          <h2 className="mt-6 text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-            Trusted by Businesses
-            <br />
-            <span className="text-[#FF5A00]">
-              Since 1999
-            </span>
+          <h2 className="max-w-4xl text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl md:text-4xl">
+            Organizations That{" "}
+            <span className="text-[#ff6500]">Trust</span>{" "}
+            Sri Krishna Films
           </h2>
 
-          <p className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-gray-400 sm:mt-7 sm:text-base sm:leading-8 lg:text-lg">
-            With over{" "}
-            <span className="font-semibold text-[#FF7A33]">27+ years</span>{" "}
-            of experience,{" "}
-            <span className="font-semibold text-[#FF7A33]">5000+</span>{" "}
-            projects,{" "}
-            <span className="font-semibold text-[#FF7A33]">1000+</span>{" "}
-            clients and{" "}
-            <span className="font-semibold text-[#FF7A33]">200+</span>{" "}
-            brands served, Sri Krishna Films &amp; Advertisement Industry
-            delivers creative video production and advertising solutions.
+          <p className="mt-2 max-w-3xl text-xs leading-5 text-gray-400 sm:text-sm sm:leading-6">
+            For more than 27 years, we have worked across advertising,
+            video production and creative campaigns for organizations
+            in different sectors.
           </p>
         </div>
 
-        {/* Statistics cards */}
-        <div className="mt-12 grid grid-cols-1 gap-5 sm:mt-16 sm:grid-cols-2 sm:gap-6 xl:grid-cols-4">
-          {stats.map((item) => {
-            const Icon = item.icon;
+        {/* Organization cards */}
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-3 lg:grid-cols-4 xl:grid-cols-8">
+          {organizations.map((organization) => {
+            const Icon = organization.icon;
 
             return (
               <div
-                key={item.title}
-                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#25282E] p-7 text-center transition-all duration-300 hover:-translate-y-2 hover:border-[#FF5A00]/60 hover:bg-[#292D33] sm:p-8"
+                key={organization.name}
+                className="group relative min-w-0 overflow-hidden rounded-lg border border-white/15 bg-[#151a21] transition-all duration-300 hover:-translate-y-1 hover:border-[#ff6500]/80 hover:shadow-[0_8px_28px_rgba(255,101,0,0.13)]"
               >
-                {/* Orange top accent */}
-                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-[#FF5A00] to-transparent opacity-80" />
+                {/* Organization image */}
+                <div className="relative h-[86px] overflow-hidden sm:h-[92px] lg:h-[82px]">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                    style={{
+                      backgroundImage: `url('${organization.image}')`,
+                    }}
+                  />
 
-                {/* Icon */}
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-xl border border-[#FF5A00]/30 bg-[#FF5A00]/10 text-[#FF5A00] transition-all duration-300 group-hover:bg-[#FF5A00] group-hover:text-white sm:h-20 sm:w-20">
-                  <Icon size={36} strokeWidth={1.7} />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#080b10] via-[#080b10]/35 to-black/10" />
+
+                  {/* Icon */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/25 bg-black/35 text-white/90 backdrop-blur-sm transition-all duration-300 group-hover:border-[#ff6500] group-hover:bg-[#ff6500] group-hover:text-white">
+                      <Icon size={19} strokeWidth={1.6} />
+                    </div>
+                  </div>
                 </div>
 
-                {/* Number */}
-                <h3 className="mt-6 text-4xl font-extrabold tracking-tight text-[#FF5A00] sm:text-5xl">
-                  {item.number}
-                </h3>
+                {/* Organization name */}
+                <div className="flex min-h-[48px] items-center justify-center px-2 py-2 text-center">
+                  <h3 className="text-[10px] font-semibold leading-4 text-gray-200 transition-colors group-hover:text-white sm:text-[11px]">
+                    {organization.name}
+                  </h3>
+                </div>
 
-                <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-[#FF5A00]/70" />
-
-                {/* Title */}
-                <h4 className="mt-5 text-lg font-bold text-white sm:text-xl">
-                  {item.title}
-                </h4>
-
-                {/* Description */}
-                <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-gray-400 sm:text-base sm:leading-7">
-                  {item.desc}
-                </p>
+                {/* Orange bottom accent */}
+                <div className="mx-auto mb-0 h-[2px] w-8 bg-[#ff6500] transition-all duration-300 group-hover:w-full" />
               </div>
             );
           })}
