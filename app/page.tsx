@@ -1,9 +1,7 @@
 
 import Script from "next/script";
-
 import Hero from "./components/Hero";
 import Trust from "./components/trust/Trust";
-import Clients from "./components/Clients";
 import Services from "./components/Services";
 import About from "./components/About";
 import WhyChoose from "./components/WhyChoose";
@@ -29,7 +27,6 @@ export default function Home() {
     logo: "https://www.skfai.online/logo.png",
 
     image: "https://www.skfai.online/og-image.jpg",
-
     description:
       "Sri Krishna Films & Advertisement Industry is a professional video production company in Kolkata offering TV commercials, corporate films, AI video production, product shoots, digital marketing, website development and lead generation services across India.",
 
@@ -43,7 +40,6 @@ export default function Home() {
     },
 
     areaServed: "India",
-
     sameAs: [
       "https://www.facebook.com/",
       "https://www.instagram.com/",
@@ -65,9 +61,8 @@ export default function Home() {
       <main>
         <Hero />
 
+        {/* New organization image-card section */}
         <Trust />
-
-        <Clients />
 
         <Services />
 
@@ -89,6 +84,7 @@ export default function Home() {
       </main>
 
       <Footer />
+
       <FloatingButtons />
     </>
   );
