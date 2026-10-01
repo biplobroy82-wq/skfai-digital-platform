@@ -13,7 +13,6 @@ import {
   Leaf,
   Smartphone,
   Hotel,
-  Sprout,
   ShoppingBag,
   PawPrint,
   Heart,
@@ -24,491 +23,579 @@ import {
   Globe,
   Landmark,
   Monitor,
-  Camera,
-  Clapperboard,
   Video,
-  Package,
-  BookOpen,
-  Stethoscope,
+  Film,
+  Clapperboard,
   BriefcaseBusiness,
-  ChevronDown,
+  Stethoscope,
+  BookOpen,
+  Sprout,
+  type LucideIcon,
 } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
 
-const clients = [
+type Group =
+  | "Government"
+  | "Corporate"
+  | "Education"
+  | "Healthcare"
+  | "Real Estate"
+  | "Retail & FMCG"
+  | "Hospitality"
+  | "Others";
+
+type Client = {
+  name: string;
+  category: string;
+  group: Group;
+  highlight: string;
+  icon: LucideIcon;
+};
+
+const clients: Client[] = [
   {
     name: "Kolkata Metro",
     category: "Government Infrastructure",
-    highlight:
-      "Organizational communication videos and professional production services.",
+    group: "Government",
+    highlight: "Organizational communication and professional video production.",
+    icon: Building2,
   },
   {
     name: "Indian Oil Corporation (IOCL)",
-    category: "Corporate & Energy",
-    highlight:
-      "Corporate communication, branding and advertisement production.",
+    category: "Energy & Corporate",
+    group: "Corporate",
+    highlight: "Corporate communication, branding and advertising production.",
+    icon: Factory,
   },
   {
     name: "IIT Kharagpur",
-    category: "Educational Institution",
-    highlight:
-      "Filming, video editing and institutional production services.",
+    category: "Education",
+    group: "Education",
+    highlight: "Institutional filming, video editing and production services.",
+    icon: GraduationCap,
   },
   {
     name: "DAV Model School",
     category: "Education",
-    highlight:
-      "Educational promotional videos and event-related content.",
+    group: "Education",
+    highlight: "Educational promotional videos and event-related content.",
+    icon: BookOpen,
   },
   {
     name: "Medica Hospital",
     category: "Healthcare",
-    highlight:
-      "Healthcare communication and hospital promotional content.",
+    group: "Healthcare",
+    highlight: "Healthcare communication and hospital promotional content.",
+    icon: Stethoscope,
   },
   {
     name: "Shree Height Builders",
     category: "Real Estate",
-    highlight:
-      "Property marketing videos and real estate advertisements.",
+    group: "Real Estate",
+    highlight: "Property marketing videos and real estate advertisements.",
+    icon: Building2,
   },
   {
     name: "Herbal & Cosmetic Brands",
     category: "Beauty & Wellness",
-    highlight:
-      "Product advertisements and beauty brand communication.",
+    group: "Retail & FMCG",
+    highlight: "Product advertisements and beauty brand communication.",
+    icon: Sprout,
   },
   {
     name: "Mobile App & Tech Startups",
     category: "Technology",
-    highlight:
-      "App explainers, digital product videos and promotional content.",
+    group: "Others",
+    highlight: "App explainers, digital product videos and promotional content.",
+    icon: Smartphone,
   },
   {
     name: "Acadfinity",
     category: "Education Technology",
-    highlight:
-      "Educational platform promotion and digital video content.",
+    group: "Education",
+    highlight: "Educational platform promotion and digital video content.",
+    icon: School,
   },
   {
     name: "Right Real Estate Jhabua",
     category: "Real Estate",
-    highlight:
-      "Property promotion and real estate marketing videos.",
+    group: "Real Estate",
+    highlight: "Property promotion and real estate marketing videos.",
+    icon: House,
   },
   {
     name: "Basant Home Stay",
-    category: "Hospitality & Tourism",
-    highlight:
-      "Hospitality promotion and property showcase videos.",
+    category: "Hospitality",
+    group: "Hospitality",
+    highlight: "Hospitality promotion and property showcase videos.",
+    icon: Hotel,
   },
   {
     name: "KinKeeper Mobile App",
     category: "Mobile Application",
-    highlight:
-      "Mobile app promotion and digital product communication.",
+    group: "Others",
+    highlight: "Mobile app promotion and digital product communication.",
+    icon: Smartphone,
   },
   {
     name: "Izra Herbs",
     category: "Herbal Products",
-    highlight:
-      "Herbal product advertisements and brand promotion.",
+    group: "Retail & FMCG",
+    highlight: "Herbal product advertisements and brand promotion.",
+    icon: Leaf,
   },
   {
     name: "Natraj Bag",
     category: "Bags & Accessories",
-    highlight:
-      "Product showcase videos and promotional advertising.",
+    group: "Retail & FMCG",
+    highlight: "Product showcases and promotional advertising content.",
+    icon: ShoppingBag,
   },
   {
     name: "Vet Sunrise Animal Food Products",
     category: "Animal Nutrition",
-    highlight:
-      "Animal food product promotion and commercial video content.",
+    group: "Retail & FMCG",
+    highlight: "Animal food product promotion and commercial video content.",
+    icon: PawPrint,
   },
   {
     name: "Benefit Wellness",
     category: "Health & Wellness",
-    highlight:
-      "Wellness product promotion and digital advertising content.",
+    group: "Retail & FMCG",
+    highlight: "Wellness product promotion and digital advertising content.",
+    icon: Heart,
   },
   {
     name: "Luminexa",
     category: "Brand & Product Promotion",
-    highlight:
-      "Brand communication and product-focused video content.",
+    group: "Others",
+    highlight: "Brand communication and product-focused video content.",
+    icon: Lightbulb,
   },
   {
     name: "Maa Sarda Marble & Sanitation",
     category: "Marble & Sanitaryware",
-    highlight:
-      "Product showcases and showroom promotional videos.",
+    group: "Retail & FMCG",
+    highlight: "Product showcases and showroom promotional videos.",
+    icon: Gem,
   },
   {
     name: "Ashmika Hair Oil",
     category: "Hair Care & Beauty",
-    highlight:
-      "Hair care product advertisements and brand promotion.",
+    group: "Retail & FMCG",
+    highlight: "Hair care product advertisements and brand promotion.",
+    icon: Sprout,
   },
   {
     name: "Raylight",
     category: "Brand & Product Promotion",
-    highlight:
-      "Commercial video content and product advertising.",
+    group: "Others",
+    highlight: "Commercial video content and product advertising.",
+    icon: Lightbulb,
   },
   {
     name: "Vaanchata Stone Decor",
-    category: "Stone & Building Materials",
-    highlight:
-      "Laterite stone product promotion and brand showcase videos.",
+    category: "Construction Materials",
+    group: "Others",
+    highlight: "Laterite stone product promotion and brand showcase content.",
+    icon: Gem,
   },
   {
     name: "Sumit Imported Korean Night Suits",
     category: "Fashion & Apparel",
-    highlight:
-      "Fashion product showcases and promotional video content.",
+    group: "Retail & FMCG",
+    highlight: "Fashion product showcases and promotional video content.",
+    icon: Shirt,
   },
   {
     name: "Fit & Glow Collagen Mix Coffee",
-    category: "Beauty & Wellness Products",
-    highlight:
-      "Product advertisements and promotional brand communication.",
+    category: "Food & Wellness",
+    group: "Retail & FMCG",
+    highlight: "Product advertisements and promotional brand communication.",
+    icon: Coffee,
   },
   {
     name: "Vrumi Vedic",
     category: "Ayurvedic Products",
-    highlight:
-      "Ayurvedic product promotion and commercial advertising.",
+    group: "Retail & FMCG",
+    highlight: "Ayurvedic product promotion and commercial advertising.",
+    icon: Leaf,
   },
   {
     name: "Kerala Stone Factory",
-    category: "Stone & Building Materials",
-    highlight:
-      "Stone product showcases and business promotional videos.",
+    category: "Construction Materials",
+    group: "Others",
+    highlight: "Stone product showcases and business promotional videos.",
+    icon: Gem,
   },
   {
     name: "Puja Lite",
     category: "Lighting Products",
-    highlight:
-      "Lighting product promotion and commercial advertising.",
+    group: "Retail & FMCG",
+    highlight: "Lighting product promotion and commercial advertising.",
+    icon: Lightbulb,
   },
   {
     name: "MF Industries Pvt. Ltd.",
     category: "Manufacturing",
-    highlight:
-      "Product-focused promotional content for business communication.",
+    group: "Corporate",
+    highlight: "Product-focused promotional content for business communication.",
+    icon: Factory,
   },
   {
     name: "Baro Maa Multi-Speciality Hospital",
     category: "Healthcare",
-    highlight:
-      "Healthcare communication and hospital promotional content.",
+    group: "Healthcare",
+    highlight: "Healthcare communication and hospital promotional content.",
+    icon: HeartPulse,
   },
   {
     name: "NoticesInfo.com",
     category: "Digital Platform",
-    highlight:
-      "Digital platform awareness videos and promotional content.",
+    group: "Others",
+    highlight: "Digital platform awareness videos and promotional content.",
+    icon: Monitor,
   },
   {
     name: "Kolkata Federation",
     category: "Industry & Organization",
-    highlight:
-      "Video production and creative communication services.",
+    group: "Government",
+    highlight: "Video production and creative communication services.",
+    icon: Landmark,
   },
 ];
 
-function getClientIcon(
-  name: string,
-  category: string
-): LucideIcon {
-  const text = `${name} ${category}`.toLowerCase();
+const filters: { label: string; group: Group | "All"; icon: LucideIcon }[] = [
+  { label: "All", group: "All", icon: Building2 },
+  { label: "Government", group: "Government", icon: Landmark },
+  { label: "Corporate", group: "Corporate", icon: Building2 },
+  { label: "Education", group: "Education", icon: GraduationCap },
+  { label: "Healthcare", group: "Healthcare", icon: HeartPulse },
+  { label: "Real Estate", group: "Real Estate", icon: House },
+  { label: "Retail & FMCG", group: "Retail & FMCG", icon: ShoppingBag },
+  { label: "Hospitality", group: "Hospitality", icon: Hotel },
+  { label: "Others", group: "Others", icon: BriefcaseBusiness },
+];
 
-  if (text.includes("metro")) return Building2;
-  if (text.includes("oil") || text.includes("energy")) return Factory;
-  if (text.includes("iit")) return GraduationCap;
-  if (text.includes("school") || text.includes("education")) {
-    return School;
-  }
-  if (text.includes("hospital") || text.includes("healthcare")) {
-    return Stethoscope;
-  }
-  if (text.includes("real estate") || text.includes("builder")) {
-    return House;
-  }
-  if (text.includes("herb") || text.includes("ayurvedic")) {
-    return Sprout;
-  }
-  if (text.includes("wellness") || text.includes("collagen")) {
-    return Heart;
-  }
-  if (text.includes("app") || text.includes("technology")) {
-    return Smartphone;
-  }
-  if (text.includes("home stay") || text.includes("tourism")) {
-    return Hotel;
-  }
-  if (text.includes("animal") || text.includes("vet ")) {
-    return PawPrint;
-  }
-  if (text.includes("bag")) return ShoppingBag;
-  if (text.includes("marble") || text.includes("stone")) {
-    return Gem;
-  }
-  if (text.includes("hair care") || text.includes("hair oil")) {
-    return Leaf;
-  }
-  if (text.includes("fashion") || text.includes("apparel")) {
-    return Shirt;
-  }
-  if (text.includes("coffee")) return Coffee;
-  if (text.includes("lighting")) return Lightbulb;
-  if (text.includes("manufacturing")) return Factory;
-  if (text.includes("digital platform")) return Globe;
-  if (text.includes("federation") || text.includes("organization")) {
-    return Landmark;
-  }
-  if (text.includes("brand") || text.includes("product")) {
-    return Package;
-  }
-  if (text.includes("mobile")) return Smartphone;
-
-  return BriefcaseBusiness;
-}
-
-const cardThemes = [
-  {
-    border: "border-orange-500/40",
-    glow: "group-hover:shadow-orange-500/10",
-    iconBg: "from-orange-500/20 to-orange-500/5",
-    iconColor: "text-orange-400",
-    shape: "rounded-tl-2xl rounded-br-2xl",
-  },
-  {
-    border: "border-white/15",
-    glow: "group-hover:shadow-white/5",
-    iconBg: "from-white/10 to-zinc-800/20",
-    iconColor: "text-white",
-    shape: "rounded-2xl",
-  },
-  {
-    border: "border-orange-500/25",
-    glow: "group-hover:shadow-orange-500/10",
-    iconBg: "from-orange-400/15 to-transparent",
-    iconColor: "text-orange-300",
-    shape: "rounded-xl",
-  },
-  {
-    border: "border-zinc-700",
-    glow: "group-hover:shadow-orange-500/10",
-    iconBg: "from-zinc-700/60 to-black",
-    iconColor: "text-orange-400",
-    shape: "rounded-t-2xl rounded-b-lg",
-  },
+const accents = [
+  "border-orange-500/80",
+  "border-orange-500/60",
+  "border-zinc-700",
+  "border-orange-400/70",
+  "border-zinc-700",
 ];
 
 export default function Testimonials() {
-  const [expandedClient, setExpandedClient] = useState<string | null>(
-    null
-  );
+  const [activeFilter, setActiveFilter] = useState<Group | "All">("All");
+  const [showAll, setShowAll] = useState(false);
+  const [expanded, setExpanded] = useState<string | null>(null);
+
+  const filteredClients =
+    activeFilter === "All"
+      ? clients
+      : clients.filter((client) => client.group === activeFilter);
+
+  const visibleClients =
+    activeFilter === "All" && !showAll
+      ? filteredClients.slice(0, 15)
+      : filteredClients;
+
+  const selectFilter = (group: Group | "All") => {
+    setActiveFilter(group);
+    setExpanded(null);
+  };
 
   return (
     <section
       id="testimonials"
-      className="relative isolate overflow-hidden bg-[#070707] px-4 py-14 sm:px-6 sm:py-20"
+      className="relative isolate overflow-hidden bg-[#050505] px-4 py-14 sm:px-6 sm:py-20"
     >
-      {/* Background glow */}
+      {/* Cinematic background accents */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -left-32 top-20 -z-10 h-72 w-72 rounded-full bg-orange-600/10 blur-[110px]"
+        className="pointer-events-none absolute -left-20 top-10 -z-10 h-64 w-64 rounded-full bg-orange-600/10 blur-[100px]"
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-32 bottom-20 -z-10 h-72 w-72 rounded-full bg-orange-500/10 blur-[110px]"
+        className="pointer-events-none absolute -right-20 top-20 -z-10 h-72 w-72 rounded-full bg-orange-500/10 blur-[110px]"
       />
 
-      <div className="relative mx-auto max-w-7xl">
-        {/* Animated heading */}
+      <motion.div
+        aria-hidden="true"
+        animate={{ rotate: 360 }}
+        transition={{ duration: 90, repeat: Infinity, ease: "linear" }}
+        className="pointer-events-none absolute -right-24 top-12 -z-10 hidden opacity-[0.06] lg:block"
+      >
+        <Film size={300} strokeWidth={0.7} className="text-orange-500" />
+      </motion.div>
+
+      <motion.div
+        aria-hidden="true"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        className="pointer-events-none absolute -left-10 top-20 -z-10 hidden opacity-[0.07] lg:block"
+      >
+        <Video size={220} strokeWidth={0.7} className="text-orange-500" />
+      </motion.div>
+
+      <div className="mx-auto max-w-[1500px]">
+        {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="mx-auto max-w-3xl text-center"
+          transition={{ duration: 0.65 }}
+          className="mx-auto max-w-4xl text-center"
         >
-          <motion.span
-            animate={{ borderColor: [
-              "rgba(249,115,22,0.35)",
-              "rgba(249,115,22,0.8)",
-              "rgba(249,115,22,0.35)",
-            ] }}
-            transition={{ duration: 3, repeat: Infinity }}
-            className="inline-flex items-center gap-2 rounded-full border bg-orange-500/[0.06] px-4 py-2 text-[10px] font-bold uppercase tracking-[2px] text-orange-400 sm:text-xs"
-          >
+          <div className="flex items-center justify-center gap-3">
             <motion.span
-              animate={{ opacity: [0.5, 1, 0.5], scale: [0.85, 1.15, 0.85] }}
-              transition={{ duration: 1.8, repeat: Infinity }}
-              className="h-1.5 w-1.5 rounded-full bg-orange-500"
+              animate={{ width: [20, 45, 20] }}
+              transition={{ duration: 3, repeat: Infinity }}
+              className="h-[2px] bg-orange-500"
             />
-            Our Clients & Brands
-          </motion.span>
 
-          <h2 className="mt-5 text-2xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
+            <motion.span
+              animate={{
+                boxShadow: [
+                  "0 0 0px rgba(249,115,22,0)",
+                  "0 0 14px rgba(249,115,22,0.3)",
+                  "0 0 0px rgba(249,115,22,0)",
+                ],
+              }}
+              transition={{ duration: 3, repeat: Infinity }}
+              className="rounded-full border border-orange-500 px-4 py-2 text-[10px] font-bold uppercase tracking-[3px] text-orange-400 sm:text-xs"
+            >
+              Our Clients & Brands
+            </motion.span>
+
+            <motion.span
+              animate={{ width: [20, 45, 20] }}
+              transition={{ duration: 3, repeat: Infinity }}
+              className="h-[2px] bg-orange-500"
+            />
+          </div>
+
+          <h2 className="mt-5 text-3xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
             Organizations We&apos;ve{" "}
             <motion.span
-              animate={{ color: ["#F97316", "#FDBA74", "#F97316"] }}
-              transition={{ duration: 3, repeat: Infinity }}
+              animate={{ color: ["#FFFFFF", "#FF6500", "#FFFFFF"] }}
+              transition={{ duration: 4, repeat: Infinity }}
               className="inline-block"
             >
               Worked With
             </motion.span>
           </h2>
 
-          <p className="mx-auto mt-3 max-w-2xl text-xs leading-6 text-zinc-400 sm:mt-4 sm:text-sm sm:leading-7">
-            Explore our work across corporate, education, healthcare,
-            real estate, technology, manufacturing and consumer brands.
+          <p className="mx-auto mt-4 max-w-3xl text-sm leading-6 text-zinc-300 sm:text-base sm:leading-7">
+            We have had the privilege of working with organizations
+            across different industries, helping them create impactful
+            video content and marketing solutions.
           </p>
 
           <motion.div
-            animate={{ width: [38, 68, 38], opacity: [0.65, 1, 0.65] }}
+            animate={{
+              width: [45, 85, 45],
+              boxShadow: [
+                "0 0 4px rgba(249,115,22,0.3)",
+                "0 0 16px rgba(249,115,22,0.8)",
+                "0 0 4px rgba(249,115,22,0.3)",
+              ],
+            }}
             transition={{ duration: 3, repeat: Infinity }}
-            className="mx-auto mt-5 h-0.5 rounded-full bg-orange-500"
+            className="mx-auto mt-5 h-[2px] bg-orange-500"
           />
         </motion.div>
 
-        {/* Compact client directory */}
-        <div className="mt-9 grid grid-cols-2 gap-3 sm:mt-12 sm:grid-cols-3 sm:gap-4 xl:grid-cols-4 xl:gap-5">
-          {clients.map((client, index) => {
-            const theme = cardThemes[index % cardThemes.length];
-            const Icon = getClientIcon(client.name, client.category);
-            const isExpanded = expandedClient === client.name;
+        {/* Category filters */}
+        <div className="mt-8 rounded-full border border-orange-500/80 bg-[#111113] p-1.5 shadow-[0_0_20px_rgba(249,115,22,0.07)] sm:mt-10">
+          <div className="flex gap-1 overflow-x-auto scrollbar-none">
+            {filters.map((filter) => {
+              const FilterIcon = filter.icon;
+              const selected = activeFilter === filter.group;
 
-            return (
-              <motion.article
-                key={client.name}
-                layout
-                initial={{ opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.1 }}
-                transition={{
-                  duration: 0.4,
-                  delay: (index % 4) * 0.045,
-                }}
-                whileHover={{ y: -4, scale: 1.01 }}
-                className={`group relative flex min-w-0 flex-col overflow-hidden border bg-zinc-950/90 p-3 shadow-lg transition-colors duration-300 hover:border-orange-400 hover:bg-zinc-900 sm:p-4 ${theme.border} ${theme.shape} ${theme.glow}`}
-              >
-                {/* Animated top accent */}
-                <motion.div
-                  animate={{ opacity: [0.65, 1, 0.65] }}
-                  transition={{
-                    duration: 2.8,
-                    repeat: Infinity,
-                    delay: (index % 5) * 0.15,
-                  }}
-                  className="absolute left-0 top-0 h-0.5 w-10 bg-orange-500 transition-all duration-300 group-hover:w-full"
-                />
+              const count =
+                filter.group === "All"
+                  ? clients.length
+                  : clients.filter((c) => c.group === filter.group).length;
 
-                {/* Icon + animated category */}
-                <div className="flex min-w-0 items-start justify-between gap-2">
-                  <motion.div
-                    animate={{
-                      y: [0, -3, 0],
-                      rotate: [0, 2, 0, -2, 0],
-                    }}
-                    transition={{
-                      duration: 4,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                      delay: (index % 6) * 0.12,
-                    }}
-                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-gradient-to-br ${theme.iconBg} sm:h-10 sm:w-10`}
-                  >
-                    <Icon
-                      size={19}
-                      strokeWidth={1.7}
-                      className={theme.iconColor}
-                    />
-                  </motion.div>
-
-                  <span className="max-w-[65%] break-words rounded-full border border-white/[0.08] bg-white/[0.03] px-2 py-1 text-[8px] leading-3 text-zinc-400 sm:text-[9px] sm:leading-4">
-                    {client.category}
-                  </span>
-                </div>
-
-                {/* Animated company name */}
-                <motion.h3
-                  whileHover={{ x: 2 }}
-                  className="mt-3 break-words text-sm font-bold leading-snug text-white transition-colors duration-300 group-hover:text-orange-400 sm:text-base"
-                >
-                  {client.name}
-                </motion.h3>
-
-                <div className="mt-2 flex items-center gap-1.5">
-                  <motion.span
-                    animate={{ width: [12, 22, 12] }}
-                    transition={{ duration: 3, repeat: Infinity }}
-                    className="h-0.5 shrink-0 rounded-full bg-orange-500"
-                  />
-                  <span className="text-[8px] font-semibold uppercase tracking-wider text-orange-400 sm:text-[9px]">
-                    Project Highlights
-                  </span>
-                </div>
-
-                {/* Expandable project details */}
+              return (
                 <button
+                  key={filter.label}
                   type="button"
-                  aria-expanded={isExpanded}
-                  onClick={() =>
-                    setExpandedClient(isExpanded ? null : client.name)
-                  }
-                  className="mt-3 flex w-full items-center justify-between gap-2 border-t border-white/10 pt-3 text-left text-[10px] font-medium text-zinc-400 transition hover:text-orange-400 sm:text-xs"
+                  onClick={() => selectFilter(filter.group)}
+                  className={`flex shrink-0 items-center justify-center gap-2 rounded-full px-3 py-3 text-xs font-medium transition-all duration-300 sm:flex-1 sm:px-4 sm:text-sm ${
+                    selected
+                      ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-[0_0_16px_rgba(249,115,22,0.2)]"
+                      : "text-zinc-300 hover:bg-white/[0.06] hover:text-orange-400"
+                  }`}
                 >
-                  <span>
-                    {isExpanded ? "Hide details" : "View details"}
-                  </span>
-                  <motion.span
-                    animate={{ rotate: isExpanded ? 180 : 0 }}
-                    transition={{ duration: 0.25 }}
-                    className="shrink-0"
-                  >
-                    <ChevronDown size={14} />
-                  </motion.span>
-                </button>
-
-                <AnimatePresence initial={false}>
-                  {isExpanded && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0, y: -5 }}
-                      animate={{ height: "auto", opacity: 1, y: 0 }}
-                      exit={{ height: 0, opacity: 0, y: -5 }}
-                      transition={{ duration: 0.25 }}
-                      className="overflow-hidden"
-                    >
-                      <p className="pt-3 text-xs leading-5 text-zinc-400">
-                        {client.highlight}
-                      </p>
-                      <p className="mt-2 text-[10px] font-medium text-orange-400/80">
-                        Sri Krishna Films
-                      </p>
-                    </motion.div>
+                  <FilterIcon size={16} />
+                  <span>{filter.label}</span>
+                  {selected && (
+                    <span className="text-[10px] opacity-80">
+                      ({count})
+                    </span>
                   )}
-                </AnimatePresence>
-              </motion.article>
-            );
-          })}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        {/* Compact footer note */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="mt-8 text-center text-[10px] leading-5 text-zinc-500 sm:mt-10 sm:text-xs"
+        {/* Client cards */}
+        <motion.div
+          layout
+          className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-3.5"
         >
+          <AnimatePresence mode="popLayout">
+            {visibleClients.map((client, index) => {
+              const Icon = client.icon;
+              const isExpanded = expanded === client.name;
+
+              return (
+                <motion.article
+                  layout
+                  key={client.name}
+                  initial={{ opacity: 0, y: 14, scale: 0.98 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 8, scale: 0.97 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: (index % 5) * 0.025,
+                  }}
+                  whileHover={{ y: -3 }}
+                  className={`group relative min-w-0 overflow-hidden rounded-xl border bg-gradient-to-br from-[#191919] to-[#101012] p-3 transition-colors duration-300 hover:border-orange-400 hover:shadow-[0_0_18px_rgba(249,115,22,0.12)] sm:p-3.5 ${accents[index % accents.length]}`}
+                >
+                  {/* Animated orange top accent */}
+                  <motion.div
+                    animate={{ opacity: [0.65, 1, 0.65] }}
+                    transition={{
+                      duration: 2.8,
+                      repeat: Infinity,
+                      delay: (index % 5) * 0.15,
+                    }}
+                    className="absolute left-0 top-0 h-[2px] w-10 bg-orange-500 group-hover:w-full"
+                  />
+
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setExpanded(isExpanded ? null : client.name)
+                    }
+                    aria-expanded={isExpanded}
+                    className="flex w-full min-w-0 items-center gap-3 text-left"
+                  >
+                    {/* Industry icon */}
+                    <motion.div
+                      animate={{
+                        y: [0, -2, 0],
+                        rotate: [0, 2, 0, -2, 0],
+                      }}
+                      transition={{
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: (index % 6) * 0.12,
+                      }}
+                      className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-gradient-to-br from-orange-500/20 via-zinc-800 to-black shadow-inner sm:h-[54px] sm:w-[54px]"
+                    >
+                      <div className="absolute inset-0 rounded-xl bg-orange-500/[0.04]" />
+                      <Icon
+                        size={27}
+                        strokeWidth={1.8}
+                        className="relative text-orange-400 drop-shadow-[0_0_5px_rgba(249,115,22,0.3)]"
+                      />
+                    </motion.div>
+
+                    {/* Name and category */}
+                    <div className="min-w-0 flex-1">
+                      <h3 className="break-words text-sm font-semibold leading-snug text-white transition-colors group-hover:text-orange-300 sm:text-[13px]">
+                        {client.name}
+                      </h3>
+
+                      <p className="mt-1 break-words text-[11px] leading-4 text-orange-400 sm:text-xs">
+                        {client.category}
+                      </p>
+                    </div>
+
+                    {/* Arrow */}
+                    <motion.span
+                      animate={{ x: isExpanded ? 2 : [0, 2, 0] }}
+                      transition={{
+                        duration: 2,
+                        repeat: isExpanded ? 0 : Infinity,
+                      }}
+                      className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-zinc-600 text-zinc-300 transition-colors group-hover:border-orange-400 group-hover:text-orange-400"
+                    >
+                      <span className="text-lg leading-none">
+                        {isExpanded ? "−" : "›"}
+                      </span>
+                    </motion.span>
+                  </button>
+
+                  <AnimatePresence initial={false}>
+                    {isExpanded && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mt-3 border-t border-white/10 pt-3">
+                          <p className="text-xs leading-5 text-zinc-300">
+                            {client.highlight}
+                          </p>
+                          <div className="mt-2 flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-wider text-orange-400">
+                            <Clapperboard size={12} />
+                            Project Highlights
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.article>
+              );
+            })}
+          </AnimatePresence>
+        </motion.div>
+
+        {/* View all clients */}
+        {activeFilter === "All" && (
+          <div className="mt-7 flex items-center justify-center gap-3 sm:mt-8 sm:gap-6">
+            <motion.div
+              animate={{ opacity: [0.4, 1, 0.4] }}
+              transition={{ duration: 2.5, repeat: Infinity }}
+              className="hidden h-px flex-1 bg-gradient-to-r from-transparent via-orange-500 to-orange-500/20 sm:block"
+            />
+
+            <motion.button
+              type="button"
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.97 }}
+              onClick={() => {
+                setShowAll(!showAll);
+                setExpanded(null);
+              }}
+              className="flex items-center gap-3 rounded-full border border-orange-500 bg-[#101010] px-6 py-3 text-sm font-semibold text-white shadow-[0_0_18px_rgba(249,115,22,0.12)] transition-colors hover:bg-orange-500 hover:text-white"
+            >
+              {showAll ? "Show Less" : `View All Clients (${clients.length})`}
+              <span className="flex h-6 w-6 items-center justify-center rounded-full border border-orange-400 text-base">
+                {showAll ? "↑" : "→"}
+              </span>
+            </motion.button>
+
+            <motion.div
+              animate={{ opacity: [0.4, 1, 0.4] }}
+              transition={{ duration: 2.5, repeat: Infinity }}
+              className="hidden h-px flex-1 bg-gradient-to-l from-transparent via-orange-500 to-orange-500/20 sm:block"
+            />
+          </div>
+        )}
+
+        <p className="mt-6 text-center text-[10px] leading-5 text-zinc-500 sm:text-xs">
           Creative video production and advertising solutions across
           multiple industries.
-        </motion.p>
+        </p>
       </div>
     </section>
   );
