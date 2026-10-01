@@ -3,6 +3,7 @@ import Script from "next/script";
 import Hero from "./components/Hero";
 import Trust from "./components/trust/Trust";
 import Services from "./components/Services";
+import ServiceRateCard from "./components/ServiceRateCard";
 import About from "./components/About";
 import WhyChoose from "./components/WhyChoose";
 import Portfolio from "./components/Portfolio";
@@ -58,6 +59,9 @@ export default function Home() {
         <Trust />
 
         <Services />
+
+        {/* Service Rate Card */}
+        <ServiceRateCard />
 
         <About />
 
