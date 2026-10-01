@@ -9,6 +9,7 @@ import Portfolio from "./components/Portfolio";
 import ProductionFacilities from "./components/ProductionFacilities";
 import BrandAmbassador from "./components/BrandAmbassador";
 import Testimonials from "./components/Testimonials";
+import BusinessDirectory from "./components/BusinessDirectory";
 import CTA from "./components/CTA";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -18,27 +19,20 @@ export default function Home() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-
     name: "Sri Krishna Films & Advertisement Industry",
     alternateName: "Sri Krishna Films",
-
     url: "https://www.skfai.online",
-
     logo: "https://www.skfai.online/logo.png",
-
     image: "https://www.skfai.online/og-image.jpg",
     description:
       "Sri Krishna Films & Advertisement Industry is a professional video production company in Kolkata offering TV commercials, corporate films, AI video production, product shoots, digital marketing, website development and lead generation services across India.",
-
     email: "info@skfai.online",
-
     address: {
       "@type": "PostalAddress",
       addressLocality: "Kolkata",
       addressRegion: "West Bengal",
       addressCountry: "IN",
     },
-
     areaServed: "India",
     sameAs: [
       "https://www.facebook.com/",
@@ -61,7 +55,6 @@ export default function Home() {
       <main>
         <Hero />
 
-        {/* New organization image-card section */}
         <Trust />
 
         <Services />
@@ -77,6 +70,8 @@ export default function Home() {
         <BrandAmbassador />
 
         <Testimonials />
+
+        <BusinessDirectory />
 
         <CTA />
 
