@@ -1,42 +1,32 @@
 
-"use client";
-
 import Image from "next/image";
 import {
   Video,
   Users,
-  CalendarDays,
+  Trophy,
   MapPinned,
-  Clapperboard,
   Building2,
-  Award,
-  Sparkles,
-  ArrowUpRight,
 } from "lucide-react";
 
 const stats = [
   {
     number: "5000+",
-    label: "Video Advertisements",
-    detail: "Creative campaigns produced",
+    label: "VIDEO ADVERTISEMENTS",
     icon: Video,
   },
   {
     number: "1000+",
-    label: "Happy Clients",
-    detail: "Businesses and organizations",
+    label: "HAPPY CLIENTS",
     icon: Users,
   },
   {
     number: "27+",
-    label: "Years Experience",
-    detail: "Established in 1999",
-    icon: CalendarDays,
+    label: "YEARS EXPERIENCE",
+    icon: Trophy,
   },
   {
-    number: "PAN India",
-    label: "Creative Services",
-    detail: "Serving brands across India",
+    number: "PAN INDIA",
+    label: "CREATIVE SERVICES",
     icon: MapPinned,
   },
 ];
@@ -46,89 +36,80 @@ export default function About() {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="relative isolate w-full overflow-hidden border-y border-white/10 bg-[#08090c] py-16 text-white sm:py-20 lg:py-28"
+      className="relative isolate w-full overflow-hidden bg-[#08090c] py-16 text-white sm:py-20 lg:py-24"
     >
-      {/* Cinematic background accents */}
-      <div className="pointer-events-none absolute -left-40 top-20 -z-10 h-96 w-96 rounded-full bg-yellow-500/[0.07] blur-[120px]" />
-      <div className="pointer-events-none absolute -right-40 bottom-0 -z-10 h-96 w-96 rounded-full bg-orange-600/[0.06] blur-[120px]" />
+      {/* Cinematic film-studio background */}
+      <div
+        className="pointer-events-none absolute inset-0 -z-20 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2200&q=85')",
+        }}
+      />
 
-      <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12">
-        {/* Main About Layout */}
-        <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 xl:gap-24">
-          {/* Left: Brand Visual */}
-          <div className="relative mx-auto w-full max-w-[480px]">
-            <div className="absolute -inset-3 rounded-2xl border border-yellow-500/20 sm:-inset-5" />
+      {/* Dark overlay for text readability */}
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-black/95 via-[#08090c]/95 to-black/80" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-black/35" />
 
-            <div className="absolute -left-3 -top-3 z-10 h-14 w-14 border-l-2 border-t-2 border-yellow-400 sm:-left-5 sm:-top-5 sm:h-20 sm:w-20" />
+      {/* Orange cinematic light */}
+      <div className="pointer-events-none absolute left-0 top-24 -z-10 h-72 w-72 rounded-full bg-orange-600/10 blur-[120px]" />
+      <div className="pointer-events-none absolute bottom-0 right-0 -z-10 h-80 w-80 rounded-full bg-orange-500/10 blur-[130px]" />
 
-            <div className="absolute -bottom-3 -right-3 z-10 h-14 w-14 border-b-2 border-r-2 border-yellow-400 sm:-bottom-5 sm:-right-5 sm:h-20 sm:w-20" />
+      <div className="mx-auto w-full max-w-[1600px] px-5 sm:px-8 lg:px-12">
+        {/* Main content */}
+        <div className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16 xl:gap-20">
+          {/* LEFT: Logo and cinematic frame */}
+          <div className="relative mx-auto w-full max-w-[590px]">
+            {/* Decorative orange diagonal */}
+            <div className="pointer-events-none absolute -left-8 -top-10 h-32 w-32 -rotate-45 border-l-[22px] border-orange-600/90 sm:-left-12 sm:-top-12 sm:h-44 sm:w-44 sm:border-l-[30px]" />
 
-            <div className="relative overflow-hidden rounded-xl border border-white/10 bg-[#111216] p-3 sm:p-5">
+            <div className="pointer-events-none absolute -bottom-8 -right-5 h-28 w-28 -rotate-45 border-r-[20px] border-orange-600/90 sm:-bottom-10 sm:-right-10 sm:h-40 sm:w-40 sm:border-r-[28px]" />
+
+            {/* Main logo panel */}
+            <div className="relative overflow-hidden rounded-xl border border-orange-500/80 bg-black/80 p-3 shadow-[0_0_45px_rgba(255,90,0,0.12)] sm:p-5">
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-orange-500/[0.07] via-transparent to-transparent" />
+
               <Image
                 src="/og-image.jpg"
-                alt="Sri Krishna Films & Advertisement Industry emblem"
-                width={600}
-                height={600}
-                priority={false}
-                className="h-auto w-full rounded-lg object-contain"
+                alt="Sri Krishna Films & Advertisement Industry logo"
+                width={700}
+                height={700}
+                className="relative z-10 h-auto w-full rounded-lg object-contain"
+                sizes="(max-width: 1024px) 90vw, 45vw"
               />
 
-              <div className="absolute inset-x-3 bottom-3 rounded-b-lg bg-gradient-to-t from-black/90 via-black/40 to-transparent px-5 pb-5 pt-16 sm:inset-x-5 sm:bottom-5 sm:px-6">
-                <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-yellow-400 sm:text-xs">
-                  Our Legacy
-                </p>
-                <p className="mt-1 text-lg font-extrabold uppercase tracking-wide text-white sm:text-2xl">
-                  Creativity Since 1999
-                </p>
-              </div>
-            </div>
-
-            {/* Floating experience badge */}
-            <div className="absolute -right-2 top-6 flex items-center gap-3 border border-yellow-500/40 bg-[#15161a] px-4 py-3 shadow-xl sm:-right-6 sm:top-10 sm:px-5">
-              <Award
-                size={25}
-                className="shrink-0 text-yellow-400"
-                strokeWidth={1.6}
-              />
-              <div>
-                <p className="text-lg font-black leading-tight text-yellow-400">
-                  27+ Years
-                </p>
-                <p className="mt-1 text-[9px] uppercase tracking-widest text-gray-400">
-                  Of Excellence
-                </p>
-              </div>
+              {/* Frame corner accents */}
+              <span className="absolute left-0 top-0 z-20 h-12 w-12 border-l-2 border-t-2 border-orange-500 sm:h-16 sm:w-16" />
+              <span className="absolute bottom-0 right-0 z-20 h-12 w-12 border-b-2 border-r-2 border-orange-500 sm:h-16 sm:w-16" />
             </div>
           </div>
 
-          {/* Right: Company Information */}
+          {/* RIGHT: About information */}
           <div className="min-w-0">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-yellow-500/40 bg-yellow-500/[0.06] px-4 py-2">
-              <span className="h-2 w-2 rounded-full bg-yellow-400" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-yellow-400 sm:text-xs sm:tracking-[0.22em]">
-                Since 1999 • 27+ Years of Excellence
+            {/* Experience label */}
+            <div className="inline-flex max-w-full items-center rounded-full border border-orange-500 px-4 py-2 sm:px-5">
+              <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-orange-400 sm:text-xs sm:tracking-[0.22em]">
+                Since 1999 <span className="px-1">•</span> 27+ Years of
+                Excellence
               </span>
             </div>
 
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-gray-500">
-              Who We Are
-            </p>
+            {/* Heading */}
+            <div className="mt-7">
+              <span className="mb-1 block text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+                About
+              </span>
 
-            <h2
-              id="about-heading"
-              className="text-3xl font-black leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl"
-            >
-              About Sri Krishna{" "}
-              <span className="text-yellow-400">Films</span>
-            </h2>
-
-            <div className="mt-5 flex items-center gap-3">
-              <span className="h-[3px] w-14 bg-yellow-400" />
-              <span className="h-[3px] w-5 bg-orange-500" />
-              <span className="h-[3px] w-2 bg-white/30" />
+              <h2
+                id="about-heading"
+                className="text-4xl font-black leading-tight tracking-tight text-orange-500 sm:text-5xl lg:text-6xl"
+              >
+                Sri Krishna Films
+              </h2>
             </div>
 
-            <p className="mt-7 text-sm leading-7 text-gray-300 sm:text-base sm:leading-8">
+            {/* Intro paragraph */}
+            <p className="mt-5 text-sm leading-7 text-gray-300 sm:text-base sm:leading-[1.65]">
               Sri Krishna Films &amp; Advertisement Industry is one of
               Kolkata&apos;s trusted production houses, delivering creative
               visual solutions since{" "}
@@ -140,40 +121,32 @@ export default function About() {
               Professional Photography.
             </p>
 
-            <div className="my-7 border-l-2 border-yellow-500/70 bg-white/[0.03] py-4 pl-5 pr-4 sm:pl-6">
-              <div className="flex items-start gap-3">
-                <Sparkles
-                  size={21}
-                  className="mt-1 shrink-0 text-yellow-400"
-                />
-                <p className="text-sm leading-7 text-gray-300 sm:text-base">
-                  With{" "}
-                  <span className="font-bold text-yellow-400">
-                    27+ years of experience
-                  </span>
-                  , we have successfully completed{" "}
-                  <span className="font-bold text-yellow-400">
-                    5000+ video advertisements
-                  </span>{" "}
-                  and served{" "}
-                  <span className="font-bold text-yellow-400">
-                    1000+ happy clients
-                  </span>{" "}
-                  across India.
-                </p>
-              </div>
-            </div>
+            {/* Experience and achievements */}
+            <p className="mt-5 text-sm leading-7 text-gray-400 sm:text-base sm:leading-7">
+              With{" "}
+              <span className="font-semibold text-yellow-400">
+                27+ years of experience
+              </span>
+              , we have successfully completed{" "}
+              <span className="font-semibold text-yellow-400">
+                5000+ video advertisements
+              </span>{" "}
+              and served{" "}
+              <span className="font-semibold text-yellow-400">
+                1000+ happy clients
+              </span>{" "}
+              across India.
+            </p>
 
-            {/* Client information */}
-            <div>
-              <div className="mb-3 flex items-center gap-2">
-                <Building2 size={18} className="text-yellow-400" />
-                <h3 className="text-xs font-bold uppercase tracking-[0.16em] text-white sm:text-sm">
-                  Organizations We Have Worked With
-                </h3>
-              </div>
+            {/* Client list */}
+            <div className="mt-5 flex items-start gap-3">
+              <Building2
+                size={20}
+                strokeWidth={1.7}
+                className="mt-1 shrink-0 text-orange-500"
+              />
 
-              <p className="text-sm leading-7 text-gray-400">
+              <p className="text-sm leading-7 text-gray-400 sm:text-base">
                 Our prestigious clients include{" "}
                 <span className="font-semibold text-white">IOCL</span>,{" "}
                 <span className="font-semibold text-white">
@@ -200,53 +173,40 @@ export default function About() {
                 organizations.
               </p>
             </div>
-
-            {/* Section footer */}
-            <a
-              href="#services"
-              className="mt-8 inline-flex items-center gap-3 border-b border-yellow-500/40 pb-2 text-xs font-bold uppercase tracking-[0.14em] text-yellow-400 transition-colors hover:border-yellow-400 hover:text-white"
-            >
-              Explore Our Services
-              <ArrowUpRight size={17} />
-            </a>
           </div>
         </div>
 
-        {/* Statistics */}
-        <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:mt-24 lg:grid-cols-4 lg:gap-5">
-          {stats.map((stat, index) => {
+        {/* Bottom achievement cards */}
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:mt-16 sm:grid-cols-2 lg:mt-20 xl:grid-cols-4 xl:gap-5">
+          {stats.map((stat) => {
             const Icon = stat.icon;
 
             return (
               <div
                 key={stat.label}
-                className="group relative overflow-hidden border border-white/10 bg-[#15171c] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-yellow-500/60 hover:bg-[#1b1d22] sm:p-7"
+                className="group flex min-h-[135px] min-w-0 items-center gap-5 rounded-xl border border-orange-500/80 bg-[#111216]/90 px-5 py-6 transition-all duration-300 hover:-translate-y-1 hover:bg-[#191a1e] hover:shadow-[0_8px_30px_rgba(255,90,0,0.10)] sm:px-6"
               >
-                <div className="absolute left-0 top-0 h-[2px] w-10 bg-yellow-400 transition-all duration-500 group-hover:w-full" />
-
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <h3 className="text-3xl font-black tracking-tight text-yellow-400 sm:text-4xl">
-                      {stat.number}
-                    </h3>
-
-                    <p className="mt-3 text-sm font-bold text-white sm:text-base">
-                      {stat.label}
-                    </p>
-                  </div>
-
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center border border-yellow-500/25 bg-yellow-500/[0.07] text-yellow-400 transition-all duration-300 group-hover:border-yellow-400 group-hover:bg-yellow-400 group-hover:text-black">
-                    <Icon size={22} strokeWidth={1.7} />
-                  </div>
+                {/* Individual icon */}
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center text-orange-500 transition-transform duration-300 group-hover:scale-110 sm:h-[72px] sm:w-[72px]">
+                  <Icon
+                    size={54}
+                    strokeWidth={1.8}
+                    className="max-h-full max-w-full"
+                  />
                 </div>
 
-                <p className="mt-3 text-xs leading-5 text-gray-500">
-                  {stat.detail}
-                </p>
+                {/* Vertical divider */}
+                <div className="h-[70px] w-px shrink-0 bg-orange-500/70" />
 
-                <div className="mt-5 flex items-center gap-2">
-                  <span className="h-[2px] w-7 bg-yellow-400" />
-                  <span className="h-[2px] w-3 bg-orange-500/70" />
+                {/* Statistic text */}
+                <div className="min-w-0">
+                  <h3 className="break-words text-2xl font-black leading-tight text-white sm:text-3xl">
+                    {stat.number}
+                  </h3>
+
+                  <p className="mt-2 text-[11px] font-medium leading-5 tracking-wide text-gray-200 sm:text-xs sm:tracking-wider">
+                    {stat.label}
+                  </p>
                 </div>
               </div>
             );
