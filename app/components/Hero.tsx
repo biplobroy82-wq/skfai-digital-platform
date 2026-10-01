@@ -40,7 +40,8 @@ export default function Hero() {
         }
 
         if (data) {
-          setHero({
+          setHero((previous) => ({
+            ...previous,
             title: data.title || "",
             subtitle: data.subtitle || "",
             company_name: data.company_name || "",
@@ -55,7 +56,7 @@ export default function Hero() {
             button_link: data.button_link || "",
             background_image:
               data.background_image || "/hero-bg.jpg",
-          });
+          }));
         }
       } catch (error) {
         console.error("Failed to load hero:", error);
@@ -69,72 +70,75 @@ export default function Hero() {
 
   if (loading) {
     return (
-      <section className="flex min-h-[75svh] items-center justify-center bg-[#111318] px-4 text-center">
-        <div className="h-8 w-8 animate-spin rounded-full border-2 border-white/20 border-t-[#ff5a00]" />
+      <section className="flex min-h-[calc(100svh-76px)] items-center justify-center bg-[#0b0d10] px-4 text-center">
+        <div className="h-9 w-9 animate-spin rounded-full border-2 border-white/20 border-t-[#ff5a00]" />
       </section>
     );
   }
 
   return (
-    <section className="relative isolate flex min-h-[min(780px,calc(100svh-76px))] w-full items-center overflow-hidden bg-[#111318] sm:min-h-[min(820px,calc(100svh-88px))]">
-      {/* Cinematic Background */}
+    <section
+      className="relative isolate flex min-h-[min(780px,calc(100svh-76px))] w-full items-center overflow-hidden bg-[#0b0d10] sm:min-h-[min(820px,calc(100svh-88px))]"
+    >
+      {/* Background Image */}
       <Image
         src={hero.background_image || "/hero-bg.jpg"}
         alt="Sri Krishna Films video production studio"
         fill
         priority
         sizes="100vw"
-        className="object-cover object-center"
+        className="object-cover object-[60%_center] sm:object-center"
       />
 
-      {/* Dark overlays for readable text */}
-      <div className="absolute inset-0 bg-[#08090b]/55" />
+      {/* Balanced overlays: keep the subject visible */}
+      <div className="absolute inset-0 bg-[#08090b]/25" />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#08090b]/95 via-[#08090b]/75 to-[#08090b]/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#08090b]/90 via-[#08090b]/55 to-[#08090b]/10" />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#111318]/90 via-transparent to-[#08090b]/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0b0d10]/75 via-transparent to-[#08090b]/10" />
 
-      {/* Orange cinematic accent */}
-      <div className="absolute left-0 top-1/4 h-40 w-1 bg-[#ff5a00] sm:h-56" />
+      {/* Orange accent */}
+      <div className="absolute left-0 top-1/4 h-36 w-1 bg-[#ff5a00] sm:h-52" />
 
-      {/* Hero Content */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
-        <div className="w-full max-w-4xl">
+      {/* Main Content */}
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+        <div className="w-full max-w-5xl">
+
           {/* Company Identity */}
-          <div className="mb-7 flex min-w-0 items-center gap-4 sm:mb-9 sm:gap-5">
+          <div className="mb-6 flex min-w-0 items-center gap-3 sm:mb-7 sm:gap-4">
             <Image
               src="/og-image.jpg"
               alt="Sri Krishna Films logo"
-              width={76}
-              height={76}
+              width={64}
+              height={64}
               priority
-              className="h-12 w-12 shrink-0 rounded-full border border-[#ff5a00]/70 object-cover sm:h-16 sm:w-16"
+              className="h-11 w-11 shrink-0 rounded-full border border-[#ff5a00]/70 object-cover sm:h-14 sm:w-14"
             />
 
             <div className="min-w-0">
-              <h2 className="font-[var(--font-display)] text-xl font-bold leading-tight tracking-wide text-white sm:text-3xl lg:text-4xl">
-                {hero.company_name}
+              <h2 className="font-[var(--font-display)] text-lg font-bold leading-tight tracking-wide text-white sm:text-2xl lg:text-3xl">
+                {hero.company_name || "Sri Krishna Films"}
               </h2>
 
-              <p className="mt-1.5 text-[9px] font-semibold uppercase leading-relaxed tracking-[0.16em] text-[#ff7a32] sm:text-xs sm:tracking-[0.28em] lg:text-sm">
-                {hero.company_tagline}
+              <p className="mt-1 text-[9px] font-semibold uppercase leading-relaxed tracking-[0.16em] text-[#ff9a3c] sm:text-[11px] sm:tracking-[0.25em]">
+                {hero.company_tagline || "Advertisement Industry"}
               </p>
             </div>
           </div>
 
           {/* Experience Badge */}
           {hero.badge && (
-            <div className="mb-7 inline-flex max-w-full items-center gap-2 rounded-full border border-[#ff5a00]/60 bg-black/40 px-4 py-2 backdrop-blur-sm sm:mb-9">
+            <div className="mb-6 inline-flex max-w-full items-center gap-2 rounded-full border border-[#ff5a00]/60 bg-black/45 px-3.5 py-2 backdrop-blur-sm sm:mb-7">
               <span className="h-2 w-2 shrink-0 rounded-full bg-[#ff5a00]" />
 
-              <span className="text-xs font-semibold leading-relaxed text-white sm:text-sm">
+              <span className="text-xs font-medium leading-relaxed text-white sm:text-sm">
                 {hero.badge}
               </span>
             </div>
           )}
 
-          {/* Main Heading */}
-          <h1 className="max-w-4xl font-[var(--font-display)] text-[clamp(2.6rem,7vw,6rem)] font-black uppercase leading-[0.98] tracking-[-0.025em]">
+          {/* Responsive Main Heading */}
+          <h1 className="w-full max-w-5xl font-[var(--font-display)] text-[clamp(2.25rem,5.2vw,5.25rem)] font-black uppercase leading-[0.98] tracking-[-0.035em]">
             {hero.hero_title_line1 && (
               <span className="block text-white">
                 {hero.hero_title_line1}
@@ -148,7 +152,7 @@ export default function Hero() {
             )}
 
             {hero.hero_title_line3 && (
-              <span className="mt-1 block text-white">
+              <span className="block text-white">
                 {hero.hero_title_line3}
               </span>
             )}
@@ -162,20 +166,18 @@ export default function Hero() {
 
           {/* Description */}
           {hero.description && (
-            <p className="mt-6 max-w-2xl text-sm leading-7 text-gray-300 sm:mt-7 sm:text-base sm:leading-8 lg:text-lg">
+            <p className="mt-5 max-w-2xl text-sm leading-6 text-gray-200 sm:mt-6 sm:text-base sm:leading-7 lg:text-lg">
               {hero.description}
             </p>
           )}
 
-          {/* CTA */}
-          <div className="mt-8 flex flex-wrap items-center gap-3 sm:mt-9 sm:gap-4">
+          {/* CTA Buttons */}
+          <div className="mt-7 flex flex-wrap items-center gap-3 sm:mt-8 sm:gap-4">
             <a
               href={hero.button_link || "#contact"}
-              className="group inline-flex min-h-12 max-w-full items-center justify-center gap-3 rounded-sm bg-[#ff5a00] px-5 py-3 text-center text-sm font-bold uppercase tracking-wide text-white transition-colors duration-300 hover:bg-[#e94f00] sm:px-7 sm:py-4"
+              className="group inline-flex min-h-12 items-center justify-center gap-2.5 rounded-sm bg-[#ff5a00] px-5 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors duration-300 hover:bg-[#e94f00] sm:px-7"
             >
-              <span>
-                {hero.button_text || "GET A QUOTE"}
-              </span>
+              <span>{hero.button_text || "GET A QUOTE"}</span>
 
               <ArrowRight
                 size={18}
@@ -185,7 +187,7 @@ export default function Hero() {
 
             <a
               href="#services"
-              className="group inline-flex min-h-12 max-w-full items-center justify-center gap-3 rounded-sm border border-white/35 bg-black/20 px-5 py-3 text-center text-sm font-semibold uppercase tracking-wide text-white transition-colors duration-300 hover:border-[#ff5a00] hover:text-[#ff7a32] sm:px-7 sm:py-4"
+              className="group inline-flex min-h-12 items-center justify-center gap-2.5 rounded-sm border border-white/40 bg-black/25 px-5 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-colors duration-300 hover:border-[#ff5a00] hover:text-[#ff9a3c] sm:px-7"
             >
               Our Services
 
@@ -198,8 +200,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom Fade */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#111318] to-transparent sm:h-28" />
+      {/* Bottom transition into the next section */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#0b0d10]/80 to-transparent sm:h-20" />
     </section>
   );
 }
