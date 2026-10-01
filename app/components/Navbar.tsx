@@ -56,7 +56,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen(false)}
             className="flex min-w-0 items-center gap-3"
           >
-            <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border border-[#d9a441]/70 sm:h-12 sm:w-12">
+            <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border border-[#FF5A00]/70 sm:h-12 sm:w-12">
               <Image
                 src="/og-image.jpg"
                 alt="Sri Krishna Films logo"
@@ -71,10 +71,6 @@ export default function Navbar() {
               <span className="block truncate font-[var(--font-display)] text-base font-bold leading-tight tracking-wide text-white sm:text-xl">
                 Sri Krishna Films
               </span>
-
-              <span className="mt-1 block text-[9px] font-semibold uppercase tracking-[0.15em] text-[#ff9a3c] sm:text-[10px] sm:tracking-[0.2em]">
-                Advertisement Industry
-              </span>
             </span>
           </Link>
 
@@ -87,11 +83,11 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="group relative whitespace-nowrap py-2 text-[13px] font-medium text-white/75 transition-colors hover:text-[#ff9a3c]"
+                className="group relative whitespace-nowrap py-2 text-[13px] font-medium text-white/75 transition-colors hover:text-[#FF5A00]"
               >
                 {item.name}
 
-                <span className="absolute inset-x-0 -bottom-0.5 h-px origin-left scale-x-0 bg-[#ff9a3c] transition-transform duration-300 group-hover:scale-x-100" />
+                <span className="absolute inset-x-0 -bottom-0.5 h-px origin-left scale-x-0 bg-[#FF5A00] transition-transform duration-300 group-hover:scale-x-100" />
               </Link>
             ))}
           </nav>
@@ -102,14 +98,14 @@ export default function Navbar() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-[#d9a441]/50 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-[#ff9a3c] hover:bg-[#ff9a3c]/10"
+              className="rounded-lg border border-[#FF5A00]/50 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-[#FF5A00] hover:bg-[#FF5A00]/10"
             >
               WhatsApp
             </a>
 
             <Link
               href="#contact"
-              className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#ff6a00] to-[#d9a441] px-4 py-2.5 text-sm font-bold text-black transition-all hover:shadow-lg hover:shadow-orange-500/20"
+              className="group inline-flex items-center gap-2 rounded-lg bg-[#FF5A00] px-4 py-2.5 text-sm font-bold text-white transition-all hover:bg-[#E65000] hover:shadow-lg hover:shadow-orange-500/20"
             >
               Get a Quote
 
@@ -130,7 +126,7 @@ export default function Navbar() {
             }
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((open) => !open)}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/10 text-white transition-colors hover:border-[#ff9a3c]/60 hover:text-[#ff9a3c] xl:hidden"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/10 text-white transition-colors hover:border-[#FF5A00]/60 hover:text-[#FF5A00] xl:hidden"
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -148,13 +144,12 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-between border-b border-white/[0.07] py-4 text-sm font-medium text-white/80 transition-colors hover:text-[#ff9a3c]"
+                  className="flex items-center justify-between border-b border-white/[0.07] py-4 text-sm font-medium text-white/80 transition-colors hover:text-[#FF5A00]"
                 >
                   <span>
-                    <span className="mr-3 text-xs text-[#d9a441]/70">
+                    <span className="mr-3 text-xs text-[#FF5A00]/70">
                       0{index + 1}
                     </span>
-
                     {item.name}
                   </span>
 
@@ -172,7 +167,7 @@ export default function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
-                  className="rounded-lg border border-[#d9a441]/50 px-4 py-3.5 text-center text-sm font-semibold text-white transition-colors hover:bg-[#d9a441]/10"
+                  className="rounded-lg border border-[#FF5A00]/50 px-4 py-3.5 text-center text-sm font-semibold text-white transition-colors hover:bg-[#FF5A00]/10"
                 >
                   WhatsApp Us
                 </a>
@@ -180,7 +175,7 @@ export default function Navbar() {
                 <Link
                   href="#contact"
                   onClick={() => setMobileOpen(false)}
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#ff6a00] to-[#d9a441] px-4 py-3.5 text-sm font-bold text-black"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#FF5A00] px-4 py-3.5 text-sm font-bold text-white transition-colors hover:bg-[#E65000]"
                 >
                   Get a Quote
                   <ArrowUpRight size={16} />
