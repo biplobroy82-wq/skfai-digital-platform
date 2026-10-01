@@ -75,30 +75,31 @@ export default function Services() {
       id="services"
       className="relative overflow-hidden bg-[#090a0d] text-white"
     >
-      {/* Warm cinematic studio banner */}
+      {/* Warm golden-lit film studio background */}
       <div
         className="relative flex min-h-[280px] items-center justify-center overflow-hidden bg-cover bg-center px-5 py-16 sm:min-h-[310px] md:min-h-[350px]"
         style={{
           backgroundImage: `
             linear-gradient(
               180deg,
-              rgba(8,8,10,0.42) 0%,
-              rgba(8,8,10,0.48) 55%,
-              rgba(9,10,13,0.96) 100%
+              rgba(8,8,10,0.38) 0%,
+              rgba(8,8,10,0.42) 55%,
+              rgba(9,10,13,0.98) 100%
             ),
             linear-gradient(
               90deg,
-              rgba(8,8,10,0.40),
+              rgba(8,8,10,0.35),
               rgba(8,8,10,0.12),
-              rgba(8,8,10,0.40)
+              rgba(8,8,10,0.35)
             ),
-            url("https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=2000&q=85")
+            url("/services-studio-bg.png")
           `,
-          backgroundPosition: "center 45%",
+          backgroundPosition: "center 48%",
+          backgroundSize: "cover",
         }}
       >
-        {/* Warm light accents */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,135,35,0.13),transparent_65%)]" />
+        {/* Warm cinematic glow */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,135,35,0.12),transparent_70%)]" />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -137,9 +138,9 @@ export default function Services() {
         </motion.div>
       </div>
 
-      {/* Services grid */}
+      {/* Compact 10-service grid */}
       <div className="relative px-5 pb-16 pt-5 sm:px-8 sm:pb-20 sm:pt-8 md:px-10 lg:px-12">
-        {/* Subtle orange corner decoration */}
+        {/* Orange dot decoration */}
         <div className="pointer-events-none absolute left-3 top-4 grid grid-cols-6 gap-3 opacity-40 sm:left-8">
           {Array.from({ length: 18 }).map((_, index) => (
             <span
@@ -169,10 +170,10 @@ export default function Services() {
                 }}
                 className="group relative flex min-h-[170px] flex-col items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-[#101115] px-3 py-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-orange-500/60 hover:bg-[#15120f] hover:shadow-[0_8px_30px_rgba(255,101,0,0.09)] sm:min-h-[180px]"
               >
-                {/* Card glow */}
+                {/* Hover glow */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-orange-500/[0.07] to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-                {/* Icon */}
+                {/* Orange service icon */}
                 <div className="relative flex h-[66px] w-[66px] items-center justify-center rounded-full border border-orange-500/40 bg-[#171411] text-orange-500 transition-all duration-300 group-hover:border-orange-500 group-hover:shadow-[0_0_24px_rgba(255,101,0,0.18)]">
                   <Icon
                     size={30}
@@ -181,15 +182,12 @@ export default function Services() {
                   />
                 </div>
 
-                {/* Service name */}
                 <h3 className="relative mt-4 text-sm font-bold leading-snug text-gray-100 transition-colors duration-300 group-hover:text-orange-400 sm:text-[15px]">
                   {service.title}
                 </h3>
 
-                {/* Orange accent */}
                 <span className="relative mt-3 h-[3px] w-7 rounded-full bg-orange-600 transition-all duration-300 group-hover:w-12" />
 
-                {/* Accessible description */}
                 <span className="sr-only">{service.description}</span>
               </motion.a>
             );
