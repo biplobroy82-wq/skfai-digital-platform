@@ -1,0 +1,4852 @@
+[
+  {
+    "name": "Aarohan Media Works",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Aarohan Creative Studio",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Aarohan Project Services",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Aarohan Solutions Group",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Eastern Crest Media Works",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Eastern Crest Creative Studio",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Eastern Crest Project Services",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Eastern Crest Solutions Group",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Blue Orbit Media Works",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Blue Orbit Creative Studio",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Blue Orbit Project Services",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Blue Orbit Solutions Group",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Nexora Media Works",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Nexora Creative Studio",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Nexora Project Services",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Nexora Solutions Group",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Urban Bridge Media Works",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Urban Bridge Creative Studio",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Urban Bridge Project Services",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Urban Bridge Solutions Group",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Silverline Media Works",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Silverline Creative Studio",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Silverline Project Services",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Silverline Solutions Group",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Prime Axis Media Works",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Prime Axis Creative Studio",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Prime Axis Project Services",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Prime Axis Solutions Group",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "BrightPath Media Works",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "BrightPath Creative Studio",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "BrightPath Project Services",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "BrightPath Solutions Group",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "CedarStone Media Works",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "CedarStone Creative Studio",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "CedarStone Project Services",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "CedarStone Solutions Group",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Northstar Media Works",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Northstar Creative Studio",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Northstar Project Services",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Northstar Solutions Group",
+    "category": "Government & Public Infrastructure",
+    "icon": "landmark"
+  },
+  {
+    "name": "Vertex Business Solutions",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Vertex Enterprise Services",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Vertex Consulting House",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Vertex Professional Group",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Crownfield Business Solutions",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Crownfield Enterprise Services",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Crownfield Consulting House",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Crownfield Professional Group",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "SummitWorks Business Solutions",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "SummitWorks Enterprise Services",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "SummitWorks Consulting House",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "SummitWorks Professional Group",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "NoblePeak Business Solutions",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "NoblePeak Enterprise Services",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "NoblePeak Consulting House",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "NoblePeak Professional Group",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Meridian Business Solutions",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Meridian Enterprise Services",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Meridian Consulting House",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Meridian Professional Group",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Pinnacle Business Solutions",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Pinnacle Enterprise Services",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Pinnacle Consulting House",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Pinnacle Professional Group",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Asterion Business Solutions",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Asterion Enterprise Services",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Asterion Consulting House",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Asterion Professional Group",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "CoreVista Business Solutions",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "CoreVista Enterprise Services",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "CoreVista Consulting House",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "CoreVista Professional Group",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Evermark Business Solutions",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Evermark Enterprise Services",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Evermark Consulting House",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "Evermark Professional Group",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "GrandOak Business Solutions",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "GrandOak Enterprise Services",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "GrandOak Consulting House",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "GrandOak Professional Group",
+    "category": "Corporate & Business Services",
+    "icon": "building-2"
+  },
+  {
+    "name": "LearnSpring Learning Centre",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "LearnSpring Education Services",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "LearnSpring Academy Network",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "LearnSpring Digital Learning",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "EduOrbit Learning Centre",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "EduOrbit Education Services",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "EduOrbit Academy Network",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "EduOrbit Digital Learning",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "BrightMinds Learning Centre",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "BrightMinds Education Services",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "BrightMinds Academy Network",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "BrightMinds Digital Learning",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "ScholarBridge Learning Centre",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "ScholarBridge Education Services",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "ScholarBridge Academy Network",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "ScholarBridge Digital Learning",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "NextChapter Learning Centre",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "NextChapter Education Services",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "NextChapter Academy Network",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "NextChapter Digital Learning",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "OpenPath Learning Centre",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "OpenPath Education Services",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "OpenPath Academy Network",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "OpenPath Digital Learning",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "WisdomTree Learning Centre",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "WisdomTree Education Services",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "WisdomTree Academy Network",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "WisdomTree Digital Learning",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "SkillHarbor Learning Centre",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "SkillHarbor Education Services",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "SkillHarbor Academy Network",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "SkillHarbor Digital Learning",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "CampusNova Learning Centre",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "CampusNova Education Services",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "CampusNova Academy Network",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "CampusNova Digital Learning",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "FutureSeed Learning Centre",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "FutureSeed Education Services",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "FutureSeed Academy Network",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "FutureSeed Digital Learning",
+    "category": "Education & EdTech",
+    "icon": "graduation-cap"
+  },
+  {
+    "name": "CareHarbor Care Centre",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "CareHarbor Health Services",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "CareHarbor Medical Network",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "CareHarbor Wellness Group",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "WellSpring Care Centre",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "WellSpring Health Services",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "WellSpring Medical Network",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "WellSpring Wellness Group",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "MediCrest Care Centre",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "MediCrest Health Services",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "MediCrest Medical Network",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "MediCrest Wellness Group",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "LifeBridge Care Centre",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "LifeBridge Health Services",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "LifeBridge Medical Network",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "LifeBridge Wellness Group",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "HealthNova Care Centre",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "HealthNova Health Services",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "HealthNova Medical Network",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "HealthNova Wellness Group",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "CurePath Care Centre",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "CurePath Health Services",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "CurePath Medical Network",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "CurePath Wellness Group",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "VitalNest Care Centre",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "VitalNest Health Services",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "VitalNest Medical Network",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "VitalNest Wellness Group",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "CareVista Care Centre",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "CareVista Health Services",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "CareVista Medical Network",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "CareVista Wellness Group",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "PulsePoint Care Centre",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "PulsePoint Health Services",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "PulsePoint Medical Network",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "PulsePoint Wellness Group",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "Hopewell Care Centre",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "Hopewell Health Services",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "Hopewell Medical Network",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "Hopewell Wellness Group",
+    "category": "Healthcare & Hospitals",
+    "icon": "hospital"
+  },
+  {
+    "name": "StoneArc Developers",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "StoneArc BuildWorks",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "StoneArc Property Solutions",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "StoneArc Infrastructure Group",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Horizon Habitat Developers",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Horizon Habitat BuildWorks",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Horizon Habitat Property Solutions",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Horizon Habitat Infrastructure Group",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "UrbanNest Developers",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "UrbanNest BuildWorks",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "UrbanNest Property Solutions",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "UrbanNest Infrastructure Group",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "CrestBuild Developers",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "CrestBuild BuildWorks",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "CrestBuild Property Solutions",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "CrestBuild Infrastructure Group",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "TerraHomes Developers",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "TerraHomes BuildWorks",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "TerraHomes Property Solutions",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "TerraHomes Infrastructure Group",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Skyline Grove Developers",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Skyline Grove BuildWorks",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Skyline Grove Property Solutions",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Skyline Grove Infrastructure Group",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Brickstone Developers",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Brickstone BuildWorks",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Brickstone Property Solutions",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Brickstone Infrastructure Group",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "GreenPlot Developers",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "GreenPlot BuildWorks",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "GreenPlot Property Solutions",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "GreenPlot Infrastructure Group",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "CivicRise Developers",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "CivicRise BuildWorks",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "CivicRise Property Solutions",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "CivicRise Infrastructure Group",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Landmark Bay Developers",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Landmark Bay BuildWorks",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Landmark Bay Property Solutions",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "Landmark Bay Infrastructure Group",
+    "category": "Real Estate & Construction",
+    "icon": "house"
+  },
+  {
+    "name": "DailyNest Retail House",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "DailyNest Consumer Brands",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "DailyNest Market Solutions",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "DailyNest Distribution Group",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "MarketBloom Retail House",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "MarketBloom Consumer Brands",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "MarketBloom Market Solutions",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "MarketBloom Distribution Group",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "FreshBasket Retail House",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "FreshBasket Consumer Brands",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "FreshBasket Market Solutions",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "FreshBasket Distribution Group",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "ValueHarbor Retail House",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "ValueHarbor Consumer Brands",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "ValueHarbor Market Solutions",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "ValueHarbor Distribution Group",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "Everyday Crest Retail House",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "Everyday Crest Consumer Brands",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "Everyday Crest Market Solutions",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "Everyday Crest Distribution Group",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "UrbanCart Retail House",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "UrbanCart Consumer Brands",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "UrbanCart Market Solutions",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "UrbanCart Distribution Group",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "BrightMart Retail House",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "BrightMart Consumer Brands",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "BrightMart Market Solutions",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "BrightMart Distribution Group",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "ChoiceLane Retail House",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "ChoiceLane Consumer Brands",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "ChoiceLane Market Solutions",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "ChoiceLane Distribution Group",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "RetailRoot Retail House",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "RetailRoot Consumer Brands",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "RetailRoot Market Solutions",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "RetailRoot Distribution Group",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "GoldenShelf Retail House",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "GoldenShelf Consumer Brands",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "GoldenShelf Market Solutions",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "GoldenShelf Distribution Group",
+    "category": "Retail & FMCG",
+    "icon": "shopping-bag"
+  },
+  {
+    "name": "Riverstone Hospitality Group",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Riverstone Stay Experiences",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Riverstone Travel House",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Riverstone Resort Collection",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Blue Haven Hospitality Group",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Blue Haven Stay Experiences",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Blue Haven Travel House",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Blue Haven Resort Collection",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "MapleStay Hospitality Group",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "MapleStay Stay Experiences",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "MapleStay Travel House",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "MapleStay Resort Collection",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Cedar Retreat Hospitality Group",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Cedar Retreat Stay Experiences",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Cedar Retreat Travel House",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Cedar Retreat Resort Collection",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "WanderNest Hospitality Group",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "WanderNest Stay Experiences",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "WanderNest Travel House",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "WanderNest Resort Collection",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Coastline Hospitality Group",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Coastline Stay Experiences",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Coastline Travel House",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Coastline Resort Collection",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "VistaTrail Hospitality Group",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "VistaTrail Stay Experiences",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "VistaTrail Travel House",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "VistaTrail Resort Collection",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Royal Fern Hospitality Group",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Royal Fern Stay Experiences",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Royal Fern Travel House",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Royal Fern Resort Collection",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Amber Resort Hospitality Group",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Amber Resort Stay Experiences",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Amber Resort Travel House",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "Amber Resort Resort Collection",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "CloudNine Hospitality Group",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "CloudNine Stay Experiences",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "CloudNine Travel House",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "CloudNine Resort Collection",
+    "category": "Hospitality & Tourism",
+    "icon": "hotel"
+  },
+  {
+    "name": "ForgeLine Industrial Works",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "ForgeLine Manufacturing Co",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "ForgeLine Engineering Group",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "ForgeLine Production Systems",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "IronCrest Industrial Works",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "IronCrest Manufacturing Co",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "IronCrest Engineering Group",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "IronCrest Production Systems",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "MechaNova Industrial Works",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "MechaNova Manufacturing Co",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "MechaNova Engineering Group",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "MechaNova Production Systems",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "Precision Bay Industrial Works",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "Precision Bay Manufacturing Co",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "Precision Bay Engineering Group",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "Precision Bay Production Systems",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "IndusPeak Industrial Works",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "IndusPeak Manufacturing Co",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "IndusPeak Engineering Group",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "IndusPeak Production Systems",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "CraftCore Industrial Works",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "CraftCore Manufacturing Co",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "CraftCore Engineering Group",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "CraftCore Production Systems",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "MetalSpring Industrial Works",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "MetalSpring Manufacturing Co",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "MetalSpring Engineering Group",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "MetalSpring Production Systems",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "AxisFoundry Industrial Works",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "AxisFoundry Manufacturing Co",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "AxisFoundry Engineering Group",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "AxisFoundry Production Systems",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "BuildForge Industrial Works",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "BuildForge Manufacturing Co",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "BuildForge Engineering Group",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "BuildForge Production Systems",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "ProMotive Industrial Works",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "ProMotive Manufacturing Co",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "ProMotive Engineering Group",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "ProMotive Production Systems",
+    "category": "Manufacturing & Industrial",
+    "icon": "factory"
+  },
+  {
+    "name": "CodeHarbor Digital Systems",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "CodeHarbor Technology Labs",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "CodeHarbor Software Works",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "CodeHarbor Innovation Group",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "PixelSpring Digital Systems",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "PixelSpring Technology Labs",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "PixelSpring Software Works",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "PixelSpring Innovation Group",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "CloudCrest Digital Systems",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "CloudCrest Technology Labs",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "CloudCrest Software Works",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "CloudCrest Innovation Group",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "NexaLogic Digital Systems",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "NexaLogic Technology Labs",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "NexaLogic Software Works",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "NexaLogic Innovation Group",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "DataBridge Digital Systems",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "DataBridge Technology Labs",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "DataBridge Software Works",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "DataBridge Innovation Group",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "ByteBloom Digital Systems",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "ByteBloom Technology Labs",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "ByteBloom Software Works",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "ByteBloom Innovation Group",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "TechVista Digital Systems",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "TechVista Technology Labs",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "TechVista Software Works",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "TechVista Innovation Group",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "QuantumLeaf Digital Systems",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "QuantumLeaf Technology Labs",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "QuantumLeaf Software Works",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "QuantumLeaf Innovation Group",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "DigitalArc Digital Systems",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "DigitalArc Technology Labs",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "DigitalArc Software Works",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "DigitalArc Innovation Group",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "CircuitNest Digital Systems",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "CircuitNest Technology Labs",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "CircuitNest Software Works",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "CircuitNest Innovation Group",
+    "category": "IT, Software & Technology",
+    "icon": "monitor"
+  },
+  {
+    "name": "GlowHarbor Beauty House",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "GlowHarbor Personal Care Co",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "GlowHarbor Cosmetic Labs",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "GlowHarbor Glow Solutions",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "VelvetBloom Beauty House",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "VelvetBloom Personal Care Co",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "VelvetBloom Cosmetic Labs",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "VelvetBloom Glow Solutions",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "LustreLane Beauty House",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "LustreLane Personal Care Co",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "LustreLane Cosmetic Labs",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "LustreLane Glow Solutions",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "AuraCrest Beauty House",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "AuraCrest Personal Care Co",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "AuraCrest Cosmetic Labs",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "AuraCrest Glow Solutions",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "PurePetal Beauty House",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "PurePetal Personal Care Co",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "PurePetal Cosmetic Labs",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "PurePetal Glow Solutions",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "SilkRoot Beauty House",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "SilkRoot Personal Care Co",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "SilkRoot Cosmetic Labs",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "SilkRoot Glow Solutions",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "RadiantNest Beauty House",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "RadiantNest Personal Care Co",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "RadiantNest Cosmetic Labs",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "RadiantNest Glow Solutions",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "BelleSpring Beauty House",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "BelleSpring Personal Care Co",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "BelleSpring Cosmetic Labs",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "BelleSpring Glow Solutions",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "Dewdrop Beauty House",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "Dewdrop Personal Care Co",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "Dewdrop Cosmetic Labs",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "Dewdrop Glow Solutions",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "LumaCare Beauty House",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "LumaCare Personal Care Co",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "LumaCare Cosmetic Labs",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "LumaCare Glow Solutions",
+    "category": "Beauty, Cosmetics & Personal Care",
+    "icon": "sparkles"
+  },
+  {
+    "name": "VedaSpring Herbal Products",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "VedaSpring Natural Wellness",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "VedaSpring Ayurveda House",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "VedaSpring Botanical Care",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "HerbCrest Herbal Products",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "HerbCrest Natural Wellness",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "HerbCrest Ayurveda House",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "HerbCrest Botanical Care",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "NatureNest Herbal Products",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "NatureNest Natural Wellness",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "NatureNest Ayurveda House",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "NatureNest Botanical Care",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "Root & Ritual Herbal Products",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "Root & Ritual Natural Wellness",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "Root & Ritual Ayurveda House",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "Root & Ritual Botanical Care",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "PranaBloom Herbal Products",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "PranaBloom Natural Wellness",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "PranaBloom Ayurveda House",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "PranaBloom Botanical Care",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "AyuraLeaf Herbal Products",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "AyuraLeaf Natural Wellness",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "AyuraLeaf Ayurveda House",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "AyuraLeaf Botanical Care",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "GreenVeda Herbal Products",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "GreenVeda Natural Wellness",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "GreenVeda Ayurveda House",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "GreenVeda Botanical Care",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "BotaniCore Herbal Products",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "BotaniCore Natural Wellness",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "BotaniCore Ayurveda House",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "BotaniCore Botanical Care",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "EarthAura Herbal Products",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "EarthAura Natural Wellness",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "EarthAura Ayurveda House",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "EarthAura Botanical Care",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "Heritage Herb Herbal Products",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "Heritage Herb Natural Wellness",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "Heritage Herb Ayurveda House",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "Heritage Herb Botanical Care",
+    "category": "Herbal, Ayurvedic & Wellness",
+    "icon": "leaf"
+  },
+  {
+    "name": "SpiceHarbor Foods & Beverages",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "SpiceHarbor Kitchen Works",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "SpiceHarbor Food Products",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "SpiceHarbor Culinary House",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Golden Grain Foods & Beverages",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Golden Grain Kitchen Works",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Golden Grain Food Products",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Golden Grain Culinary House",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "FreshWhisk Foods & Beverages",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "FreshWhisk Kitchen Works",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "FreshWhisk Food Products",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "FreshWhisk Culinary House",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "BrewCrest Foods & Beverages",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "BrewCrest Kitchen Works",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "BrewCrest Food Products",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "BrewCrest Culinary House",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "HarvestTable Foods & Beverages",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "HarvestTable Kitchen Works",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "HarvestTable Food Products",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "HarvestTable Culinary House",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "MellowMug Foods & Beverages",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "MellowMug Kitchen Works",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "MellowMug Food Products",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "MellowMug Culinary House",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Saffron Lane Foods & Beverages",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Saffron Lane Kitchen Works",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Saffron Lane Food Products",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Saffron Lane Culinary House",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "OrchardNest Foods & Beverages",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "OrchardNest Kitchen Works",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "OrchardNest Food Products",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "OrchardNest Culinary House",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "TastyTrail Foods & Beverages",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "TastyTrail Kitchen Works",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "TastyTrail Food Products",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "TastyTrail Culinary House",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Daily Platter Foods & Beverages",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Daily Platter Kitchen Works",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Daily Platter Food Products",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "Daily Platter Culinary House",
+    "category": "Food, Beverage & Restaurants",
+    "icon": "coffee"
+  },
+  {
+    "name": "ThreadCrest Apparel House",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "ThreadCrest Textile Works",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "ThreadCrest Fashion Collective",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "ThreadCrest Lifestyle Wear",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "Indigo Loom Apparel House",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "Indigo Loom Textile Works",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "Indigo Loom Fashion Collective",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "Indigo Loom Lifestyle Wear",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "SilkHarbor Apparel House",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "SilkHarbor Textile Works",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "SilkHarbor Fashion Collective",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "SilkHarbor Lifestyle Wear",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "UrbanWeave Apparel House",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "UrbanWeave Textile Works",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "UrbanWeave Fashion Collective",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "UrbanWeave Lifestyle Wear",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "CottonNest Apparel House",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "CottonNest Textile Works",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "CottonNest Fashion Collective",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "CottonNest Lifestyle Wear",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "StyleSpring Apparel House",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "StyleSpring Textile Works",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "StyleSpring Fashion Collective",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "StyleSpring Lifestyle Wear",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "Loom & Leaf Apparel House",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "Loom & Leaf Textile Works",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "Loom & Leaf Fashion Collective",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "Loom & Leaf Lifestyle Wear",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "VelvetTrail Apparel House",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "VelvetTrail Textile Works",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "VelvetTrail Fashion Collective",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "VelvetTrail Lifestyle Wear",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "ModaCove Apparel House",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "ModaCove Textile Works",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "ModaCove Fashion Collective",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "ModaCove Lifestyle Wear",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "FabricNova Apparel House",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "FabricNova Textile Works",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "FabricNova Fashion Collective",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "FabricNova Lifestyle Wear",
+    "category": "Fashion, Apparel & Textiles",
+    "icon": "shirt"
+  },
+  {
+    "name": "MotionCrest Mobility Solutions",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "MotionCrest Automotive Works",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "MotionCrest Motor Services",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "MotionCrest Transport Systems",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "RoadSpring Mobility Solutions",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "RoadSpring Automotive Works",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "RoadSpring Motor Services",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "RoadSpring Transport Systems",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "AutoHarbor Mobility Solutions",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "AutoHarbor Automotive Works",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "AutoHarbor Motor Services",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "AutoHarbor Transport Systems",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "GearVista Mobility Solutions",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "GearVista Automotive Works",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "GearVista Motor Services",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "GearVista Transport Systems",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "DriveNest Mobility Solutions",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "DriveNest Automotive Works",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "DriveNest Motor Services",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "DriveNest Transport Systems",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "TorqueLine Mobility Solutions",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "TorqueLine Automotive Works",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "TorqueLine Motor Services",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "TorqueLine Transport Systems",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "MetroMotion Mobility Solutions",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "MetroMotion Automotive Works",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "MetroMotion Motor Services",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "MetroMotion Transport Systems",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "AxleBloom Mobility Solutions",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "AxleBloom Automotive Works",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "AxleBloom Motor Services",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "AxleBloom Transport Systems",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "FleetCrest Mobility Solutions",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "FleetCrest Automotive Works",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "FleetCrest Motor Services",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "FleetCrest Transport Systems",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "WheelWorks Mobility Solutions",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "WheelWorks Automotive Works",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "WheelWorks Motor Services",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "WheelWorks Transport Systems",
+    "category": "Automotive & Mobility",
+    "icon": "car-front"
+  },
+  {
+    "name": "TrustHarbor Financial Services",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "TrustHarbor Capital Partners",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "TrustHarbor Advisory Group",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "TrustHarbor Insurance Solutions",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "FinCrest Financial Services",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "FinCrest Capital Partners",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "FinCrest Advisory Group",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "FinCrest Insurance Solutions",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "CapitalSpring Financial Services",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "CapitalSpring Capital Partners",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "CapitalSpring Advisory Group",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "CapitalSpring Insurance Solutions",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "SureBridge Financial Services",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "SureBridge Capital Partners",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "SureBridge Advisory Group",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "SureBridge Insurance Solutions",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "LedgerNest Financial Services",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "LedgerNest Capital Partners",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "LedgerNest Advisory Group",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "LedgerNest Insurance Solutions",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "WealthVista Financial Services",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "WealthVista Capital Partners",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "WealthVista Advisory Group",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "WealthVista Insurance Solutions",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "BlueLedger Financial Services",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "BlueLedger Capital Partners",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "BlueLedger Advisory Group",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "BlueLedger Insurance Solutions",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "PrimeTrust Financial Services",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "PrimeTrust Capital Partners",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "PrimeTrust Advisory Group",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "PrimeTrust Insurance Solutions",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "CivicCapital Financial Services",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "CivicCapital Capital Partners",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "CivicCapital Advisory Group",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "CivicCapital Insurance Solutions",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "ClearPath Finance Financial Services",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "ClearPath Finance Capital Partners",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "ClearPath Finance Advisory Group",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "ClearPath Finance Insurance Solutions",
+    "category": "Finance, Banking & Insurance",
+    "icon": "wallet"
+  },
+  {
+    "name": "SwiftHarbor Logistics Group",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "SwiftHarbor Transport Works",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "SwiftHarbor Supply Chain Co",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "SwiftHarbor Delivery Solutions",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "CargoCrest Logistics Group",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "CargoCrest Transport Works",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "CargoCrest Supply Chain Co",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "CargoCrest Delivery Solutions",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "RouteSpring Logistics Group",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "RouteSpring Transport Works",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "RouteSpring Supply Chain Co",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "RouteSpring Delivery Solutions",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "FleetBridge Logistics Group",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "FleetBridge Transport Works",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "FleetBridge Supply Chain Co",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "FleetBridge Delivery Solutions",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "TransitNest Logistics Group",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "TransitNest Transport Works",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "TransitNest Supply Chain Co",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "TransitNest Delivery Solutions",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "ParcelPeak Logistics Group",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "ParcelPeak Transport Works",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "ParcelPeak Supply Chain Co",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "ParcelPeak Delivery Solutions",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "MoveVista Logistics Group",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "MoveVista Transport Works",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "MoveVista Supply Chain Co",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "MoveVista Delivery Solutions",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "FreightLeaf Logistics Group",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "FreightLeaf Transport Works",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "FreightLeaf Supply Chain Co",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "FreightLeaf Delivery Solutions",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "RapidRoute Logistics Group",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "RapidRoute Transport Works",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "RapidRoute Supply Chain Co",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "RapidRoute Delivery Solutions",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "Wayfinder Logistics Group",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "Wayfinder Transport Works",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "Wayfinder Supply Chain Co",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "Wayfinder Delivery Solutions",
+    "category": "Logistics & Transportation",
+    "icon": "truck"
+  },
+  {
+    "name": "AgriSpring Agri Solutions",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "AgriSpring Farm Products",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "AgriSpring Agro Services",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "AgriSpring Crop Systems",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "HarvestCrest Agri Solutions",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "HarvestCrest Farm Products",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "HarvestCrest Agro Services",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "HarvestCrest Crop Systems",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "FarmVista Agri Solutions",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "FarmVista Farm Products",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "FarmVista Agro Services",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "FarmVista Crop Systems",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "TerraCrop Agri Solutions",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "TerraCrop Farm Products",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "TerraCrop Agro Services",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "TerraCrop Crop Systems",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "GreenFurrow Agri Solutions",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "GreenFurrow Farm Products",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "GreenFurrow Agro Services",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "GreenFurrow Crop Systems",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "FieldNest Agri Solutions",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "FieldNest Farm Products",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "FieldNest Agro Services",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "FieldNest Crop Systems",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "CropHarbor Agri Solutions",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "CropHarbor Farm Products",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "CropHarbor Agro Services",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "CropHarbor Crop Systems",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "RootHarvest Agri Solutions",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "RootHarvest Farm Products",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "RootHarvest Agro Services",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "RootHarvest Crop Systems",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "AgroBridge Agri Solutions",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "AgroBridge Farm Products",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "AgroBridge Agro Services",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "AgroBridge Crop Systems",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "Golden Acre Agri Solutions",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "Golden Acre Farm Products",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "Golden Acre Agro Services",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "Golden Acre Crop Systems",
+    "category": "Agriculture & AgriTech",
+    "icon": "wheat"
+  },
+  {
+    "name": "SunCrest Energy Systems",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "SunCrest Power Solutions",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "SunCrest Renewable Works",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "SunCrest Green Energy Co",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "VoltHarbor Energy Systems",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "VoltHarbor Power Solutions",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "VoltHarbor Renewable Works",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "VoltHarbor Green Energy Co",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "SolarSpring Energy Systems",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "SolarSpring Power Solutions",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "SolarSpring Renewable Works",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "SolarSpring Green Energy Co",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "EcoCurrent Energy Systems",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "EcoCurrent Power Solutions",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "EcoCurrent Renewable Works",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "EcoCurrent Green Energy Co",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "BrightGrid Energy Systems",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "BrightGrid Power Solutions",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "BrightGrid Renewable Works",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "BrightGrid Green Energy Co",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "GreenWatt Energy Systems",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "GreenWatt Power Solutions",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "GreenWatt Renewable Works",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "GreenWatt Green Energy Co",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "RayNova Energy Systems",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "RayNova Power Solutions",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "RayNova Renewable Works",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "RayNova Green Energy Co",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "PowerNest Energy Systems",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "PowerNest Power Solutions",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "PowerNest Renewable Works",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "PowerNest Green Energy Co",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "TerraVolt Energy Systems",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "TerraVolt Power Solutions",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "TerraVolt Renewable Works",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "TerraVolt Green Energy Co",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "EverSpark Energy Systems",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "EverSpark Power Solutions",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "EverSpark Renewable Works",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "EverSpark Green Energy Co",
+    "category": "Energy & Renewable Power",
+    "icon": "zap"
+  },
+  {
+    "name": "FrameHarbor Entertainment House",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "FrameHarbor Film Works",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "FrameHarbor Production Studio",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "FrameHarbor Creative Media",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "SilverScreen Entertainment House",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "SilverScreen Film Works",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "SilverScreen Production Studio",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "SilverScreen Creative Media",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "StoryCrest Entertainment House",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "StoryCrest Film Works",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "StoryCrest Production Studio",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "StoryCrest Creative Media",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "MotionNest Entertainment House",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "MotionNest Film Works",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "MotionNest Production Studio",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "MotionNest Creative Media",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "CineSpring Entertainment House",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "CineSpring Film Works",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "CineSpring Production Studio",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "CineSpring Creative Media",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "PixelStage Entertainment House",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "PixelStage Film Works",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "PixelStage Production Studio",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "PixelStage Creative Media",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "Spotlight Bay Entertainment House",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "Spotlight Bay Film Works",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "Spotlight Bay Production Studio",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "Spotlight Bay Creative Media",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "ReelVista Entertainment House",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "ReelVista Film Works",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "ReelVista Production Studio",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "ReelVista Creative Media",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "SceneCraft Entertainment House",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "SceneCraft Film Works",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "SceneCraft Production Studio",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "SceneCraft Creative Media",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "FableWorks Entertainment House",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "FableWorks Film Works",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "FableWorks Production Studio",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "FableWorks Creative Media",
+    "category": "Media, Film & Entertainment",
+    "icon": "clapperboard"
+  },
+  {
+    "name": "AdSpring Advertising House",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "AdSpring Brand Studio",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "AdSpring Digital Reach",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "AdSpring Marketing Works",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "BrandHarbor Advertising House",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "BrandHarbor Brand Studio",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "BrandHarbor Digital Reach",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "BrandHarbor Marketing Works",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "ReachCrest Advertising House",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "ReachCrest Brand Studio",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "ReachCrest Digital Reach",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "ReachCrest Marketing Works",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "CampaignNest Advertising House",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "CampaignNest Brand Studio",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "CampaignNest Digital Reach",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "CampaignNest Marketing Works",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "MarketVista Advertising House",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "MarketVista Brand Studio",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "MarketVista Digital Reach",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "MarketVista Marketing Works",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "ClickBloom Advertising House",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "ClickBloom Brand Studio",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "ClickBloom Digital Reach",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "ClickBloom Marketing Works",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "SignalWorks Advertising House",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "SignalWorks Brand Studio",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "SignalWorks Digital Reach",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "SignalWorks Marketing Works",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "OrangePixel Advertising House",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "OrangePixel Brand Studio",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "OrangePixel Digital Reach",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "OrangePixel Marketing Works",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "AmplifyLane Advertising House",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "AmplifyLane Brand Studio",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "AmplifyLane Digital Reach",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "AmplifyLane Marketing Works",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "CreativeBridge Advertising House",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "CreativeBridge Brand Studio",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "CreativeBridge Digital Reach",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "CreativeBridge Marketing Works",
+    "category": "Advertising & Digital Marketing",
+    "icon": "megaphone"
+  },
+  {
+    "name": "HearthCrest Home Solutions",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "HearthCrest Interior Works",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "HearthCrest Living Studio",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "HearthCrest Decor House",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "Oak & Ember Home Solutions",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "Oak & Ember Interior Works",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "Oak & Ember Living Studio",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "Oak & Ember Decor House",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "NestVista Home Solutions",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "NestVista Interior Works",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "NestVista Living Studio",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "NestVista Decor House",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "HomeBloom Home Solutions",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "HomeBloom Interior Works",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "HomeBloom Living Studio",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "HomeBloom Decor House",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "LivingHarbor Home Solutions",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "LivingHarbor Interior Works",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "LivingHarbor Living Studio",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "LivingHarbor Decor House",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "LuxeCorner Home Solutions",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "LuxeCorner Interior Works",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "LuxeCorner Living Studio",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "LuxeCorner Decor House",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "RoomSpring Home Solutions",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "RoomSpring Interior Works",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "RoomSpring Living Studio",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "RoomSpring Decor House",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "TerraLiving Home Solutions",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "TerraLiving Interior Works",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "TerraLiving Living Studio",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "TerraLiving Decor House",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "Crafted Nest Home Solutions",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "Crafted Nest Interior Works",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "Crafted Nest Living Studio",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "Crafted Nest Decor House",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "ComfortCove Home Solutions",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "ComfortCove Interior Works",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "ComfortCove Living Studio",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "ComfortCove Decor House",
+    "category": "Home Decor, Furniture & Lifestyle",
+    "icon": "sofa"
+  },
+  {
+    "name": "VoltCrest Electrical Works",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "VoltCrest Electronics Co",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "VoltCrest Power Systems",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "VoltCrest Device Solutions",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "SparkHarbor Electrical Works",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "SparkHarbor Electronics Co",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "SparkHarbor Power Systems",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "SparkHarbor Device Solutions",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "ElectraSpring Electrical Works",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "ElectraSpring Electronics Co",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "ElectraSpring Power Systems",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "ElectraSpring Device Solutions",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "CircuitBay Electrical Works",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "CircuitBay Electronics Co",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "CircuitBay Power Systems",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "CircuitBay Device Solutions",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "BrightCurrent Electrical Works",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "BrightCurrent Electronics Co",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "BrightCurrent Power Systems",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "BrightCurrent Device Solutions",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "NovaSwitch Electrical Works",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "NovaSwitch Electronics Co",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "NovaSwitch Power Systems",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "NovaSwitch Device Solutions",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "PowerBridge Electrical Works",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "PowerBridge Electronics Co",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "PowerBridge Power Systems",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "PowerBridge Device Solutions",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "WireNest Electrical Works",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "WireNest Electronics Co",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "WireNest Power Systems",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "WireNest Device Solutions",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "LumaVolt Electrical Works",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "LumaVolt Electronics Co",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "LumaVolt Power Systems",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "LumaVolt Device Solutions",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "GridCraft Electrical Works",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "GridCraft Electronics Co",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "GridCraft Power Systems",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "GridCraft Device Solutions",
+    "category": "Electronics & Electricals",
+    "icon": "plug"
+  },
+  {
+    "name": "MediSpring Pharma Solutions",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "MediSpring Medical Supplies",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "MediSpring Healthcare Products",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "MediSpring Life Sciences",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "PharmaCrest Pharma Solutions",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "PharmaCrest Medical Supplies",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "PharmaCrest Healthcare Products",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "PharmaCrest Life Sciences",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "VitalDose Pharma Solutions",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "VitalDose Medical Supplies",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "VitalDose Healthcare Products",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "VitalDose Life Sciences",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "CureHarbor Pharma Solutions",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "CureHarbor Medical Supplies",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "CureHarbor Healthcare Products",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "CureHarbor Life Sciences",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "BioBridge Pharma Solutions",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "BioBridge Medical Supplies",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "BioBridge Healthcare Products",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "BioBridge Life Sciences",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "MedNova Pharma Solutions",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "MedNova Medical Supplies",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "MedNova Healthcare Products",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "MedNova Life Sciences",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "LifeScience Bay Pharma Solutions",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "LifeScience Bay Medical Supplies",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "LifeScience Bay Healthcare Products",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "LifeScience Bay Life Sciences",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "WellDose Pharma Solutions",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "WellDose Medical Supplies",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "WellDose Healthcare Products",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "WellDose Life Sciences",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "CareChem Pharma Solutions",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "CareChem Medical Supplies",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "CareChem Healthcare Products",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "CareChem Life Sciences",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "Pillars Health Pharma Solutions",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "Pillars Health Medical Supplies",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "Pillars Health Healthcare Products",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "Pillars Health Life Sciences",
+    "category": "Pharma & Medical Products",
+    "icon": "pill"
+  },
+  {
+    "name": "Celebration Crest Events & Travel",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "Celebration Crest Celebration House",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "Celebration Crest Event Planners",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "Celebration Crest Journey Services",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "MomentHarbor Events & Travel",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "MomentHarbor Celebration House",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "MomentHarbor Event Planners",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "MomentHarbor Journey Services",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "EverAfter Events & Travel",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "EverAfter Celebration House",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "EverAfter Event Planners",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "EverAfter Journey Services",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "VoyageNest Events & Travel",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "VoyageNest Celebration House",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "VoyageNest Event Planners",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "VoyageNest Journey Services",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "FestiveSpring Events & Travel",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "FestiveSpring Celebration House",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "FestiveSpring Event Planners",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "FestiveSpring Journey Services",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "GrandJourney Events & Travel",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "GrandJourney Celebration House",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "GrandJourney Event Planners",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "GrandJourney Journey Services",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "Marigold Events Events & Travel",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "Marigold Events Celebration House",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "Marigold Events Event Planners",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "Marigold Events Journey Services",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "MemoraLane Events & Travel",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "MemoraLane Celebration House",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "MemoraLane Event Planners",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "MemoraLane Journey Services",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "GatherVista Events & Travel",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "GatherVista Celebration House",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "GatherVista Event Planners",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "GatherVista Journey Services",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "WishTrail Events & Travel",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "WishTrail Celebration House",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "WishTrail Event Planners",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "WishTrail Journey Services",
+    "category": "Travel, Events & Wedding Services",
+    "icon": "calendar-days"
+  },
+  {
+    "name": "ClearCrest Consulting Services",
+    "category": "Professional & Consulting Services",
+    "icon": "briefcase-business"
+  },
+  {
+    "name": "ClearCrest Advisory Partners",
+    "category": "Professional & Consulting Services",
+    "icon": "briefcase-business"
+  },
+  {
+    "name": "ClearCrest Professional Solutions",
+    "category": "Professional & Consulting Services",
+    "icon": "briefcase-business"
+  },
+  {
+    "name": "ClearCrest Business Advisory",
+    "category": "Professional & Consulting Services",
+    "icon": "briefcase-business"
+  },
+  {
+    "name": "InsightHarbor Consulting Services",
+    "category": "Professional & Consulting Services",
+    "icon": "briefcase-business"
+  },
+  {
+    "name": "InsightHarbor Advisory Partners",
+    "category": "Professional & Consulting Services",
+    "icon": "briefcase-business"
+  },
+  {
+    "name": "InsightHarbor Professional Solutions",
+    "category": "Professional & Consulting Services",
+    "icon": "briefcase-business"
+  },
+  {
+    "name": "InsightHarbor Business Advisory",
+    "category": "Professional & Consulting Services",
+    "icon": "briefcase-business"
+  },
+  {
+    "name": "MeritBridge Consulting Services",
+    "category": "Professional & Consulting Services",
+    "icon": "briefcase-business"
+  },
+  {
+    "name": "MeritBridge Advisory Partners",
+    "category": "Professional & Consulting Services",
+    "icon": "briefcase-business"
+  }
+]
