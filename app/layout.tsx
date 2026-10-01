@@ -82,10 +82,10 @@ export const metadata: Metadata = {
       "Professional TV Commercials, Corporate Films, AI Advertisement, Digital Marketing & Lead Generation Services Across India Since 1999.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/whatsapp-preview.jpg",
         width: 1200,
         height: 630,
-        alt: "Sri Krishna Films",
+        alt: "Sri Krishna Films & Advertisement Industry - Video Production and Advertising Services",
       },
     ],
   },
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     title: "Sri Krishna Films | Video Production Company India",
     description:
       "Professional TV Commercials, AI Advertisement, Corporate Films & Digital Marketing.",
-    images: ["/og-image.jpg"],
+    images: ["/whatsapp-preview.jpg"],
   },
 
   icons: {
