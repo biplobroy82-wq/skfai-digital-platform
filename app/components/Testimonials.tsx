@@ -3,191 +3,195 @@
 
 import { motion } from "framer-motion";
 
-const testimonials = [
-  // Existing organizations — retained
+const clients = [
   {
     name: "Kolkata Metro",
-    designation: "Government Infrastructure",
-    review:
-      "Video production and creative content services for organizational communication.",
+    category: "Government Infrastructure",
+    highlight: "Organizational communication videos and professional production services.",
   },
   {
     name: "Indian Oil Corporation (IOCL)",
-    designation: "Corporate & Energy",
-    review:
-      "Corporate communication, branding and advertisement production.",
+    category: "Corporate & Energy",
+    highlight: "Corporate communication, branding and advertisement production.",
   },
   {
     name: "IIT Kharagpur",
-    designation: "Educational Institution",
-    review:
-      "Filming, video editing and professional production services.",
+    category: "Educational Institution",
+    highlight: "Filming, video editing and institutional production services.",
   },
   {
     name: "DAV Model School",
-    designation: "Education",
-    review:
-      "Educational promotional videos and event-related production.",
+    category: "Education",
+    highlight: "Educational promotional videos and event-related content.",
   },
   {
     name: "Medica Hospital",
-    designation: "Healthcare",
-    review:
-      "Healthcare promotional content and professional video production.",
+    category: "Healthcare",
+    highlight: "Healthcare communication and hospital promotional content.",
   },
   {
     name: "Shree Height Builders",
-    designation: "Real Estate",
-    review:
-      "Real estate promotional videos and property marketing content.",
+    category: "Real Estate",
+    highlight: "Property marketing videos and real estate advertisements.",
   },
   {
     name: "Herbal & Cosmetic Brands",
-    designation: "Beauty & Wellness",
-    review:
-      "Product advertisements, promotional videos and brand communication.",
+    category: "Beauty & Wellness",
+    highlight: "Product advertisements and beauty brand communication.",
   },
   {
     name: "Mobile App & Tech Startups",
-    designation: "Technology",
-    review:
-      "App promotion videos, product explainers and digital content.",
+    category: "Technology",
+    highlight: "App explainers, digital product videos and promotional content.",
   },
-
-  // New company and brand names
   {
     name: "Acadfinity",
-    designation: "Education Technology",
-    review:
-      "Educational platform promotion and digital video content.",
+    category: "Education Technology",
+    highlight: "Educational platform promotion and digital video content.",
   },
   {
     name: "Right Real Estate Jhabua",
-    designation: "Real Estate",
-    review:
-      "Property promotion, real estate advertisements and marketing videos.",
+    category: "Real Estate",
+    highlight: "Property promotion and real estate marketing videos.",
   },
   {
     name: "Basant Home Stay",
-    designation: "Hospitality & Tourism",
-    review:
-      "Hospitality promotion and property showcase video content.",
+    category: "Hospitality & Tourism",
+    highlight: "Hospitality promotion and property showcase videos.",
   },
   {
     name: "KinKeeper Mobile App",
-    designation: "Mobile Application",
-    review:
-      "Mobile app promotional videos and digital product communication.",
+    category: "Mobile Application",
+    highlight: "Mobile app promotion and digital product communication.",
   },
   {
     name: "Izra Herbs",
-    designation: "Herbal Products",
-    review:
-      "Herbal product advertisements and brand promotion content.",
+    category: "Herbal Products",
+    highlight: "Herbal product advertisements and brand promotion.",
   },
   {
     name: "Natraj Bag",
-    designation: "Bags & Accessories",
-    review:
-      "Product showcase videos and promotional advertising content.",
+    category: "Bags & Accessories",
+    highlight: "Product showcase videos and promotional advertising.",
   },
   {
     name: "Vet Sunrise Animal Food Products",
-    designation: "Animal Nutrition",
-    review:
-      "Animal food product promotion and commercial video content.",
+    category: "Animal Nutrition",
+    highlight: "Animal food product promotion and commercial video content.",
   },
   {
     name: "Benefit Wellness",
-    designation: "Health & Wellness",
-    review:
-      "Wellness product promotion and digital advertising content.",
+    category: "Health & Wellness",
+    highlight: "Wellness product promotion and digital advertising content.",
   },
   {
     name: "Luminexa",
-    designation: "Brand & Product Promotion",
-    review:
-      "Brand communication and product-focused video content.",
+    category: "Brand & Product Promotion",
+    highlight: "Brand communication and product-focused video content.",
   },
   {
     name: "Maa Sarda Marble & Sanitation",
-    designation: "Marble & Sanitaryware",
-    review:
-      "Product showcases and showroom promotional video content.",
+    category: "Marble & Sanitaryware",
+    highlight: "Product showcases and showroom promotional videos.",
   },
   {
     name: "Ashmika Hair Oil",
-    designation: "Hair Care & Beauty",
-    review:
-      "Hair care product advertisements and brand promotion.",
+    category: "Hair Care & Beauty",
+    highlight: "Hair care product advertisements and brand promotion.",
   },
   {
     name: "Raylight",
-    designation: "Brand & Product Promotion",
-    review:
-      "Commercial video content and product advertising.",
+    category: "Brand & Product Promotion",
+    highlight: "Commercial video content and product advertising.",
   },
-
-  // Additional brands and projects discussed
   {
     name: "Vaanchata Stone Decor",
-    designation: "Stone & Building Materials",
-    review:
-      "Laterite stone product promotion and brand showcase content.",
+    category: "Stone & Building Materials",
+    highlight: "Laterite stone product promotion and brand showcase videos.",
   },
   {
     name: "Sumit Imported Korean Night Suits",
-    designation: "Fashion & Apparel",
-    review:
-      "Fashion product showcase and promotional video content.",
+    category: "Fashion & Apparel",
+    highlight: "Fashion product showcases and promotional video content.",
   },
   {
     name: "Fit & Glow Collagen Mix Coffee",
-    designation: "Beauty & Wellness Products",
-    review:
-      "Product advertisements and promotional brand communication.",
+    category: "Beauty & Wellness Products",
+    highlight: "Product advertisements and promotional brand communication.",
   },
   {
     name: "Vrumi Vedic",
-    designation: "Ayurvedic Products",
-    review:
-      "Ayurvedic product promotion and commercial advertising content.",
+    category: "Ayurvedic Products",
+    highlight: "Ayurvedic product promotion and commercial advertising.",
   },
   {
     name: "Kerala Stone Factory",
-    designation: "Stone & Building Materials",
-    review:
-      "Stone product showcases and business promotional videos.",
+    category: "Stone & Building Materials",
+    highlight: "Stone product showcases and business promotional videos.",
   },
   {
     name: "Puja Lite",
-    designation: "Lighting Products",
-    review:
-      "Product promotion and commercial advertising content.",
+    category: "Lighting Products",
+    highlight: "Lighting product promotion and commercial advertising.",
   },
   {
     name: "MF Industries Pvt. Ltd.",
-    designation: "Manufacturing",
-    review:
-      "Product-focused promotional content for business communication.",
+    category: "Manufacturing",
+    highlight: "Product-focused promotional content for business communication.",
   },
   {
     name: "Baro Maa Multi-Speciality Hospital",
-    designation: "Healthcare",
-    review:
-      "Healthcare communication and hospital promotional content.",
+    category: "Healthcare",
+    highlight: "Healthcare communication and hospital promotional content.",
   },
   {
     name: "NoticesInfo.com",
-    designation: "Digital Platform",
-    review:
-      "Digital platform awareness videos and promotional content.",
+    category: "Digital Platform",
+    highlight: "Digital platform awareness videos and promotional content.",
   },
   {
     name: "Kolkata Federation",
-    designation: "Industry & Organization",
-    review:
-      "Video production and creative communication services.",
+    category: "Industry & Organization",
+    highlight: "Video production and creative communication services.",
+  },
+];
+
+const cardStyles = [
+  {
+    border: "border-orange-500/40 hover:border-orange-400",
+    accent: "bg-orange-500",
+    icon: "text-orange-400",
+    shape: "rounded-tl-3xl rounded-br-3xl",
+  },
+  {
+    border: "border-white/15 hover:border-orange-400",
+    accent: "bg-white",
+    icon: "text-white",
+    shape: "rounded-2xl",
+  },
+  {
+    border: "border-orange-500/30 hover:border-orange-400",
+    accent: "bg-orange-400",
+    icon: "text-orange-300",
+    shape: "rounded-2xl",
+  },
+  {
+    border: "border-zinc-700 hover:border-orange-400",
+    accent: "bg-orange-500",
+    icon: "text-orange-400",
+    shape: "rounded-t-3xl rounded-b-xl",
+  },
+  {
+    border: "border-orange-500/40 hover:border-orange-400",
+    accent: "bg-white",
+    icon: "text-orange-400",
+    shape: "rounded-2xl",
+  },
+  {
+    border: "border-white/20 hover:border-orange-400",
+    accent: "bg-orange-500",
+    icon: "text-white",
+    shape: "rounded-tl-2xl rounded-br-2xl",
   },
 ];
 
@@ -195,104 +199,144 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="w-full overflow-x-clip bg-black px-4 py-16 sm:px-6 sm:py-24"
+      className="relative w-full overflow-hidden bg-black px-4 py-16 sm:px-6 sm:py-24"
     >
-      <div className="mx-auto w-full max-w-7xl">
-        {/* Heading */}
+      {/* Background accents */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-40 top-32 h-80 w-80 rounded-full bg-orange-600/10 blur-[120px]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-40 bottom-20 h-80 w-80 rounded-full bg-orange-500/10 blur-[120px]"
+      />
+
+      <div className="relative mx-auto w-full max-w-7xl">
+        {/* Section heading */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-4xl text-center"
         >
-          <span className="inline-block rounded-full border border-yellow-500 px-5 py-2 text-xs uppercase tracking-[3px] text-yellow-400 sm:text-sm">
+          <span className="inline-flex items-center gap-2 rounded-full border border-orange-500/40 bg-orange-500/10 px-5 py-2 text-xs font-semibold uppercase tracking-[2px] text-orange-400 sm:text-sm">
+            <span className="h-2 w-2 rounded-full bg-orange-500" />
             Our Clients & Brands
           </span>
 
-          <h2 className="mt-6 text-3xl font-bold leading-tight text-yellow-400 sm:text-4xl lg:text-5xl">
-            Organizations We've Worked With
+          <h2 className="mt-6 text-3xl font-extrabold leading-tight text-white sm:text-4xl lg:text-5xl">
+            Organizations We&apos;ve{" "}
+            <span className="text-orange-500">Worked With</span>
           </h2>
 
-          <p className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-gray-400 sm:text-base sm:leading-8">
-            From corporate organizations and educational institutions
-            to healthcare, real estate, manufacturing and consumer
-            brands, Sri Krishna Films provides creative video
-            production and advertising solutions.
+          <p className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-zinc-400 sm:text-base sm:leading-8">
+            Exploring our range of video production and advertising
+            services across corporate, education, healthcare, real estate,
+            manufacturing, lifestyle and consumer brands.
           </p>
+
+          <div className="mx-auto mt-7 h-1 w-20 rounded-full bg-orange-500" />
         </motion.div>
 
-        {/* Company Cards */}
-        <div className="mt-12 grid w-full grid-cols-1 gap-5 sm:mt-16 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8">
-          {testimonials.map((client, index) => (
-            <motion.div
-              key={client.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: (index % 6) * 0.05 }}
-              whileHover={{ y: -5 }}
-              className="min-w-0 rounded-2xl border border-yellow-500/30 bg-zinc-900 p-5 transition-colors duration-300 hover:border-yellow-400 sm:p-7"
-            >
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full border border-yellow-500/30 bg-black text-yellow-400">
-                <span className="text-lg font-bold">
-                  {client.name.charAt(0)}
-                </span>
+        {/* Company cards */}
+        <div className="mt-12 grid grid-cols-1 gap-5 sm:mt-16 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-7">
+          {clients.map((client, index) => {
+            const style = cardStyles[index % cardStyles.length];
+
+            return (
+              <motion.article
+                key={client.name}
+                initial={{ opacity: 0, y: 22 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{
+                  duration: 0.4,
+                  delay: (index % 3) * 0.07,
+                }}
+                whileHover={{ y: -5 }}
+                className={`group relative flex min-w-0 flex-col overflow-hidden border bg-zinc-950/90 p-5 transition-all duration-300 hover:bg-zinc-900 sm:p-7 ${style.border} ${style.shape}`}
+              >
+                {/* Top accent */}
+                <div
+                  className={`absolute left-0 top-0 h-1 w-16 transition-all duration-300 group-hover:w-full ${style.accent}`}
+                />
+
+                <div className="flex items-start justify-between gap-3">
+                  <div
+                    className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-black text-xl font-extrabold ${style.icon}`}
+                  >
+                    {client.name.charAt(0)}
+                  </div>
+
+                  <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-zinc-400 sm:text-xs">
+                    {client.category}
+                  </span>
+                </div>
+
+                <h3 className="mt-5 break-words text-xl font-bold leading-snug text-white transition-colors group-hover:text-orange-400 sm:text-2xl">
+                  {client.name}
+                </h3>
+
+                <div className="mt-4 flex items-center gap-2">
+                  <span className="h-1 w-6 rounded-full bg-orange-500" />
+                  <p className="text-xs font-bold uppercase tracking-[1.5px] text-orange-400">
+                    Project Experience Highlights
+                  </p>
+                </div>
+
+                <p className="mt-3 flex-1 break-words text-sm leading-7 text-zinc-400 sm:text-base">
+                  {client.highlight}
+                </p>
+
+                <div className="mt-6 border-t border-white/10 pt-4">
+                  <span className="text-xs font-medium text-zinc-500">
+                    Sri Krishna Films
+                  </span>
+                </div>
+              </motion.article>
+            );
+          })}
+        </div>
+
+        {/* Statistics */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-16 border-t border-white/10 pt-12 sm:mt-20 sm:pt-16"
+        >
+          <div className="mb-8 text-center">
+            <h3 className="text-xl font-bold text-white sm:text-2xl">
+              Our Journey in Numbers
+            </h3>
+            <p className="mt-2 text-sm text-zinc-500">
+              Experience, creativity and video production.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+            {[
+              { value: "1000+", label: "Happy Clients" },
+              { value: "5000+", label: "Video Advertisements" },
+              { value: "27+", label: "Years Experience" },
+              { value: "Since 1999", label: "Creative Excellence" },
+            ].map((stat) => (
+              <div
+                key={stat.label}
+                className="rounded-2xl border border-orange-500/25 bg-zinc-950 p-5 text-center transition-colors duration-300 hover:border-orange-500/70 sm:p-7"
+              >
+                <h4 className="break-words text-2xl font-extrabold text-orange-500 sm:text-3xl lg:text-4xl">
+                  {stat.value}
+                </h4>
+                <p className="mt-3 text-xs leading-5 text-zinc-400 sm:text-sm">
+                  {stat.label}
+                </p>
               </div>
-
-              <h3 className="break-words text-xl font-bold leading-snug text-white sm:text-2xl">
-                {client.name}
-              </h3>
-
-              <p className="mt-2 break-words text-sm font-medium text-yellow-400">
-                {client.designation}
-              </p>
-
-              <p className="mt-4 break-words text-sm leading-7 text-gray-400 sm:text-base">
-                {client.review}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Bottom Stats */}
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:mt-20 sm:gap-6 lg:grid-cols-4">
-          <div className="min-w-0 rounded-xl border border-yellow-500/30 bg-zinc-900 p-4 text-center sm:p-6">
-            <h3 className="text-2xl font-bold text-yellow-400 sm:text-4xl">
-              1000+
-            </h3>
-            <p className="mt-2 text-xs text-gray-400 sm:text-sm">
-              Happy Clients
-            </p>
+            ))}
           </div>
-
-          <div className="min-w-0 rounded-xl border border-yellow-500/30 bg-zinc-900 p-4 text-center sm:p-6">
-            <h3 className="text-2xl font-bold text-yellow-400 sm:text-4xl">
-              5000+
-            </h3>
-            <p className="mt-2 text-xs text-gray-400 sm:text-sm">
-              Video Advertisements
-            </p>
-          </div>
-
-          <div className="min-w-0 rounded-xl border border-yellow-500/30 bg-zinc-900 p-4 text-center sm:p-6">
-            <h3 className="text-2xl font-bold text-yellow-400 sm:text-4xl">
-              27+
-            </h3>
-            <p className="mt-2 text-xs text-gray-400 sm:text-sm">
-              Years Experience
-            </p>
-          </div>
-
-          <div className="min-w-0 rounded-xl border border-yellow-500/30 bg-zinc-900 p-4 text-center sm:p-6">
-            <h3 className="text-xl font-bold text-yellow-400 sm:text-3xl">
-              Since 1999
-            </h3>
-            <p className="mt-2 text-xs text-gray-400 sm:text-sm">
-              Creative Excellence
-            </p>
-          </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
