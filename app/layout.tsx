@@ -1,5 +1,6 @@
+
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Oswald } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
@@ -8,14 +9,18 @@ import MetaPixel from "./components/MetaPixel";
 import LeadPopup from "./components/LeadPopup";
 import Navbar from "./components/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Body text, navigation and buttons
+const inter = Inter({
+  variable: "--font-body",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Cinematic headings and section titles
+const oswald = Oswald({
+  variable: "--font-display",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -60,7 +65,6 @@ export const metadata: Metadata = {
   ],
 
   creator: "Sri Krishna Films & Advertisement Industry",
-
   publisher: "Sri Krishna Films & Advertisement Industry",
 
   alternates: {
@@ -72,13 +76,10 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://www.skfai.online",
     siteName: "Sri Krishna Films & Advertisement Industry",
-
     title:
       "Sri Krishna Films | Video Production, AI Ads, Digital Marketing & Lead Generation",
-
     description:
       "Professional TV Commercials, Corporate Films, AI Advertisement, Digital Marketing & Lead Generation Services Across India Since 1999.",
-
     images: [
       {
         url: "/og-image.jpg",
@@ -91,12 +92,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-
     title: "Sri Krishna Films | Video Production Company India",
-
     description:
       "Professional TV Commercials, AI Advertisement, Corporate Films & Digital Marketing.",
-
     images: ["/og-image.jpg"],
   },
 
@@ -120,10 +118,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${oswald.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-
         <OrganizationSchema />
 
         <Navbar />
@@ -135,7 +132,6 @@ export default function RootLayout({
         <MetaPixel />
 
         <GoogleAnalytics gaId="G-RJDHN5TXXR" />
-
       </body>
     </html>
   );
