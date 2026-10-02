@@ -1,12 +1,20 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  Volume2,
+  VolumeX,
+} from "lucide-react";
 import { supabase } from "@/lib/supabase";
 
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const [isMuted, setIsMuted] = useState(true);
+
   const [hero, setHero] = useState({
     title: "",
     subtitle: "",
@@ -68,6 +76,23 @@ export default function Hero() {
     loadHero();
   }, []);
 
+  const toggleVideoSound = async () => {
+    const video = videoRef.current;
+
+    if (!video) return;
+
+    const nextMutedState = !isMuted;
+
+    video.muted = nextMutedState;
+    setIsMuted(nextMutedState);
+
+    try {
+      await video.play();
+    } catch (error) {
+      console.error("Video playback issue:", error);
+    }
+  };
+
   if (loading) {
     return (
       <section className="flex min-h-[calc(100svh-76px)] items-center justify-center bg-[#0b0d10] px-4 text-center">
@@ -81,31 +106,56 @@ export default function Hero() {
 
       {/* Cinematic Background Video */}
       <video
+        ref={videoRef}
         autoPlay
-        muted
+        muted={isMuted}
         loop
         playsInline
         preload="auto"
-        poster="/hero-bg.jpg"
+        poster={hero.background_image || "/hero-bg.jpg"}
         className="absolute inset-0 h-full w-full object-cover object-center"
         aria-label="Sri Krishna Films cinematic production showreel"
       >
         <source src="/hero-intro.mp4" type="video/mp4" />
       </video>
 
-      {/* Video Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-[#08090b]/35" />
+      {/* Overall Video Overlay */}
+      <div className="absolute inset-0 bg-[#08090b]/20" />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#08090b]/90 via-[#08090b]/60 to-[#08090b]/25" />
+      {/* Darker Overlay Behind Text, Clearer Visual on Right */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#08090b]/85 via-[#08090b]/55 to-[#08090b]/10" />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0b0d10]/80 via-transparent to-[#08090b]/25" />
+      {/* Bottom Cinematic Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0b0d10]/65 via-transparent to-[#08090b]/20" />
 
       {/* Orange Accent */}
       <div className="absolute left-0 top-1/4 h-36 w-1 bg-[#ff5a00] sm:h-52" />
 
-      {/* Main Content */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
-        <div className="w-full max-w-5xl">
+      {/* Sound Toggle */}
+      <button
+        type="button"
+        onClick={toggleVideoSound}
+        aria-label={isMuted ? "Turn video sound on" : "Turn video sound off"}
+        aria-pressed={!isMuted}
+        title={isMuted ? "Turn Sound On" : "Turn Sound Off"}
+        className="absolute right-7 top-7 z-30 inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/60 px-4 py-3 text-sm font-semibold text-white shadow-lg backdrop-blur-md transition hover:border-[#ff5a00] hover:bg-black/80 sm:right-10 sm:top-10"
+      >
+        {isMuted ? (
+          <>
+            <VolumeX size={19} />
+            <span>Sound Off</span>
+          </>
+        ) : (
+          <>
+            <Volume2 size={19} className="text-[#ff9a3c]" />
+            <span>Sound On</span>
+          </>
+        )}
+      </button>
+
+      {/* Main Content - Shifted Further Left */}
+      <div className="relative z-10 mx-0 w-full px-5 py-20 sm:px-8 sm:py-20 lg:px-10 xl:px-14">
+        <div className="w-full max-w-[760px]">
 
           {/* Company Identity */}
           <div className="mb-6 flex min-w-0 items-center gap-3 sm:mb-7 sm:gap-4">
@@ -141,7 +191,7 @@ export default function Hero() {
           )}
 
           {/* Main Heading */}
-          <h1 className="w-full max-w-5xl font-[var(--font-display)] text-[clamp(2rem,4.7vw,4.8rem)] font-black uppercase leading-[0.98] tracking-[-0.035em]">
+          <h1 className="w-full font-[var(--font-display)] text-[clamp(2rem,4.2vw,4.5rem)] font-black uppercase leading-[0.98] tracking-[-0.035em]">
             {hero.hero_title_line1 && (
               <span className="block text-white">
                 {hero.hero_title_line1}
@@ -169,7 +219,7 @@ export default function Hero() {
 
           {/* Description */}
           {hero.description && (
-            <p className="mt-5 max-w-2xl text-sm leading-6 text-gray-200 sm:mt-6 sm:text-base sm:leading-7 lg:text-lg">
+            <p className="mt-5 max-w-[650px] text-sm leading-6 text-gray-200 sm:mt-6 sm:text-base sm:leading-7 lg:text-lg">
               {hero.description}
             </p>
           )}
@@ -206,7 +256,7 @@ export default function Hero() {
       {/* Bottom Transition */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#0b0d10]/80 to-transparent sm:h-20" />
 
-      {/* Thin Orange Border Around the Entire Hero */}
+      {/* Thin Orange Border */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-2 z-20 border border-[#ff5a00]/75 sm:inset-3"
