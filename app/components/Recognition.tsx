@@ -1,75 +1,109 @@
+
+"use client";
+
 import Image from "next/image";
+
+const certificates = [
+  {
+    title: "AI Film Federation Union",
+    subtitle: "Certificate of Recognition",
+    image: "/ai-certificate.png",
+    alt: "Sri Krishna Films AI Film Federation Union Certificate",
+    description:
+      "Recognition for contributions to the Indian film and advertisement industry.",
+  },
+  {
+    title: "Udyam Registration",
+    subtitle: "Government of India",
+    image: "/udyam-certificate.png",
+    alt: "Sri Krishna Films Udyam Registration Certificate",
+    description:
+      "Official Udyam registration of Sri Krishna Films & Advertisement Industry.",
+  },
+];
 
 export default function Recognition() {
   return (
-    <section className="bg-black py-24">
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      id="certification"
+      className="scroll-mt-24 bg-[#08090b] py-20 sm:py-24"
+    >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Section Heading */}
+        <div className="mx-auto mb-14 max-w-3xl text-center">
+          <span className="mb-4 inline-block rounded-full border border-[#FF5A00]/40 bg-[#FF5A00]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#FF5A00]">
+            Our Credentials
+          </span>
 
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-yellow-400">
-            Certificate of Recognition
+          <h2 className="text-3xl font-extrabold leading-tight text-white sm:text-4xl lg:text-5xl">
+            Our{" "}
+            <span className="text-[#FF5A00]">Certifications</span>
           </h2>
 
-          <p className="text-gray-400 mt-4 max-w-3xl mx-auto">
-            Sri Krishna Films & Advertisement Industry has been officially
-            recognized by the All India Film Federation Union for its
-            outstanding contribution to the Indian Film & Advertisement Industry.
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/65 sm:text-base">
+            Our certifications reflect our business registration and
+            professional recognition. Explore the official documents
+            of Sri Krishna Films &amp; Advertisement Industry.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-14 items-center">
+        {/* Certificate Cards */}
+        <div className="grid grid-cols-1 items-stretch gap-8 md:grid-cols-2 lg:gap-10">
+          {certificates.map((certificate, index) => (
+            <article
+              key={certificate.title}
+              className="group overflow-hidden rounded-2xl border border-white/10 bg-[#111316] transition-all duration-300 hover:-translate-y-1 hover:border-[#FF5A00]/60 hover:shadow-2xl hover:shadow-orange-950/20"
+            >
+              {/* Certificate Image */}
+              <div className="relative flex min-h-[320px] items-center justify-center bg-white p-4 sm:min-h-[420px] sm:p-6">
+                <Image
+                  src={certificate.image}
+                  alt={certificate.alt}
+                  width={1000}
+                  height={1200}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="h-auto max-h-[520px] w-full object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                />
 
-          <div className="flex justify-center">
-            <Image
-              src="/certificate.jpg.png"
-              alt="Recognition Certificate"
-              width={650}
-              height={650}
-              className="rounded-xl border-4 border-yellow-500 shadow-2xl"
-            />
-          </div>
+                <span className="absolute left-5 top-5 rounded-md border border-[#FF5A00]/30 bg-black/85 px-3 py-1.5 text-xs font-bold tracking-wider text-white">
+                  CERTIFICATE 0{index + 1}
+                </span>
+              </div>
 
-          <div>
+              {/* Certificate Details */}
+              <div className="p-6 sm:p-8">
+                <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-[#FF5A00]">
+                  {certificate.subtitle}
+                </p>
 
-            <h3 className="text-4xl font-bold text-yellow-400 mb-6">
-              Proud Moment For Us
-            </h3>
+                <h3 className="text-xl font-bold text-white sm:text-2xl">
+                  {certificate.title}
+                </h3>
 
-            <p className="text-gray-300 leading-8 mb-5">
-              Sri Krishna Films & Advertisement Industry has been honored
-              with the prestigious Certificate of Recognition from the
-              All India Film Federation Union.
-            </p>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  {certificate.description}
+                </p>
 
-            <p className="text-gray-300 leading-8 mb-5">
-              This recognition reflects our commitment to creative excellence,
-              professional filmmaking and premium production quality.
-            </p>
-
-            <div className="bg-zinc-900 border border-yellow-500 rounded-xl p-6 mt-8">
-
-              <h4 className="text-yellow-400 text-2xl font-bold mb-4">
-                Official Recognition
-              </h4>
-
-              <p className="text-gray-300 mb-2">
-                ✔ All India Film Federation Union
-              </p>
-
-              <p className="text-gray-300 mb-2">
-                ✔ Professional Film Production
-              </p>
-
-              <p className="text-gray-300">
-                ✔ Trusted Creative Agency
-              </p>
-
-            </div>
-
-          </div>
-
+                <a
+                  href={certificate.image}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 rounded-lg border border-[#FF5A00]/50 px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-[#FF5A00] hover:text-white"
+                >
+                  View Full Certificate
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+          ))}
         </div>
 
+        {/* Bottom Note */}
+        <div className="mt-12 text-center">
+          <p className="text-sm text-white/45">
+            Sri Krishna Films &amp; Advertisement Industry · Kolkata
+          </p>
+        </div>
       </div>
     </section>
   );
