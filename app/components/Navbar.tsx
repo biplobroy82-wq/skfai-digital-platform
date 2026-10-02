@@ -3,191 +3,188 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { useState } from "react";
+import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
 
 const navItems = [
-  { name: "Home", href: "/" },
+  { name: "Home", href: "#home" },
   { name: "Services", href: "#services" },
+  { name: "Rate Card", href: "#rate-card" },
   { name: "Portfolio", href: "#portfolio" },
-  { name: "Certification", href: "#certification" },
+  { name: "Recognition", href: "#recognition" },
+];
+
+const moreItems = [
   { name: "About", href: "#about" },
+  { name: "Why Choose Us", href: "#why-choose-us" },
+  { name: "Production Facilities", href: "#production-facilities" },
+  { name: "Brand Ambassador", href: "#brand-ambassador" },
+  { name: "Celebrity Booking", href: "#celebrity-booking" },
+  { name: "Testimonials", href: "#testimonials" },
+  { name: "Founder Message", href: "#founder-message" },
   { name: "Contact", href: "#contact" },
 ];
 
-const WHATSAPP_URL = "https://wa.me/916204731481";
+const whatsappLink = "https://wa.me/916204731481";
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 30);
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
-
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [mobileOpen]);
+  const closeMenus = () => {
+    setMobileMenuOpen(false);
+    setMoreOpen(false);
+  };
 
   return (
-    <>
-      <header
-        className={`fixed inset-x-0 top-0 z-50 w-full transition-all duration-300 ${
-          scrolled
-            ? "border-b border-white/10 bg-[#0b0d10]/95 shadow-lg shadow-black/20 backdrop-blur-xl"
-            : "border-b border-white/[0.06] bg-[#0b0d10]/85 backdrop-blur-md"
-        }`}
-      >
-        <div className="mx-auto flex min-h-[76px] w-full max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:min-h-[88px] lg:px-8">
-          {/* Brand */}
-          <Link
-            href="/"
-            aria-label="Sri Krishna Films home"
-            onClick={() => setMobileOpen(false)}
-            className="flex min-w-0 items-center gap-3"
-          >
-            <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border border-[#FF5A00]/70 sm:h-12 sm:w-12">
-              <Image
-                src="/og-image.jpg"
-                alt="Sri Krishna Films logo"
-                fill
-                priority
-                sizes="48px"
-                className="object-cover"
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#08090b]/95 text-white shadow-lg backdrop-blur-xl">
+      <div className="mx-auto flex min-h-[76px] max-w-[1600px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+        {/* Logo */}
+        <Link
+          href="/"
+          onClick={closeMenus}
+          className="flex shrink-0 items-center gap-3"
+          aria-label="Sri Krishna Films Home"
+        >
+          <Image
+            src="/og-image.jpg"
+            alt="Sri Krishna Films & Advertisement Industry"
+            width={54}
+            height={54}
+            priority
+            className="h-11 w-11 rounded-lg object-contain sm:h-12 sm:w-12"
+          />
+
+          <div className="leading-tight">
+            <span className="block text-sm font-extrabold tracking-wide sm:text-base">
+              SRI KRISHNA FILMS
+            </span>
+            <span className="mt-1 block text-[9px] font-medium uppercase tracking-[0.15em] text-gray-400 sm:text-[10px]">
+              Films & Advertisement Industry
+            </span>
+          </div>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav
+          aria-label="Main navigation"
+          className="hidden items-center gap-4 xl:flex 2xl:gap-5"
+        >
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="whitespace-nowrap text-[13px] font-medium text-gray-300 transition hover:text-orange-500 2xl:text-sm"
+            >
+              {item.name}
+            </Link>
+          ))}
+
+          {/* More Dropdown */}
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setMoreOpen(!moreOpen)}
+              aria-expanded={moreOpen}
+              className="flex items-center gap-1 whitespace-nowrap text-[13px] font-medium text-gray-300 transition hover:text-orange-500 2xl:text-sm"
+            >
+              More
+              <ChevronDown
+                size={15}
+                className={`transition-transform ${
+                  moreOpen ? "rotate-180" : ""
+                }`}
               />
-            </span>
+            </button>
 
-            <span className="min-w-0">
-              <span className="block truncate font-[var(--font-display)] text-base font-bold leading-tight tracking-wide text-white sm:text-xl">
-                Sri Krishna Films
-              </span>
-            </span>
-          </Link>
+            {moreOpen && (
+              <div className="absolute right-0 top-full mt-4 w-64 overflow-hidden rounded-xl border border-white/10 bg-[#111214] py-2 shadow-2xl">
+                {moreItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={closeMenus}
+                    className="block px-5 py-3 text-sm text-gray-300 transition hover:bg-white/5 hover:text-orange-500"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        </nav>
 
-          {/* Desktop Navigation */}
-          <nav
-            aria-label="Main navigation"
-            className="hidden items-center gap-5 xl:flex 2xl:gap-7"
+        {/* Desktop CTA Buttons */}
+        <div className="hidden shrink-0 items-center gap-3 xl:flex">
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whitespace-nowrap rounded-lg border border-green-500/60 px-4 py-2.5 text-sm font-semibold text-green-400 transition hover:bg-green-500/10"
           >
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="group relative whitespace-nowrap py-2 text-[13px] font-medium text-white/75 transition-colors hover:text-[#FF5A00]"
-              >
-                {item.name}
+            WhatsApp
+          </a>
 
-                <span className="absolute inset-x-0 -bottom-0.5 h-px origin-left scale-x-0 bg-[#FF5A00] transition-transform duration-300 group-hover:scale-x-100" />
-              </Link>
-            ))}
-          </nav>
+          <Link
+            href="#contact"
+            className="inline-flex items-center gap-2 whitespace-nowrap rounded-lg bg-orange-600 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-orange-500"
+          >
+            Get a Quote
+            <ArrowUpRight size={16} />
+          </Link>
+        </div>
 
-          {/* Desktop Buttons */}
-          <div className="hidden shrink-0 items-center gap-3 xl:flex">
+        {/* Mobile / Tablet Menu Button */}
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-white/10 text-white transition hover:bg-white/5 xl:hidden"
+          aria-label={mobileMenuOpen ? "Close navigation" : "Open navigation"}
+          aria-expanded={mobileMenuOpen}
+        >
+          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile / Tablet Navigation */}
+      {mobileMenuOpen && (
+        <nav
+          aria-label="Mobile navigation"
+          className="max-h-[75vh] overflow-y-auto border-t border-white/10 bg-[#08090b] px-5 py-4 xl:hidden"
+        >
+          {[...navItems, ...moreItems].map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              onClick={closeMenus}
+              className="block border-b border-white/5 py-3.5 text-sm font-medium text-gray-300 transition hover:text-orange-500"
+            >
+              {item.name}
+            </Link>
+          ))}
+
+          <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
             <a
-              href={WHATSAPP_URL}
+              href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-[#FF5A00]/50 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-[#FF5A00] hover:bg-[#FF5A00]/10"
+              onClick={closeMenus}
+              className="flex items-center justify-center rounded-lg border border-green-500/60 px-4 py-3 text-sm font-semibold text-green-400 transition hover:bg-green-500/10"
             >
               WhatsApp
             </a>
 
             <Link
               href="#contact"
-              className="group inline-flex items-center gap-2 rounded-lg bg-[#FF5A00] px-4 py-2.5 text-sm font-bold text-white transition-all hover:bg-[#E65000] hover:shadow-lg hover:shadow-orange-500/20"
+              onClick={closeMenus}
+              className="flex items-center justify-center gap-2 rounded-lg bg-orange-600 px-4 py-3 text-sm font-bold text-white transition hover:bg-orange-500"
             >
               Get a Quote
-
-              <ArrowUpRight
-                size={16}
-                className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-              />
+              <ArrowUpRight size={16} />
             </Link>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            type="button"
-            aria-label={
-              mobileOpen
-                ? "Close navigation menu"
-                : "Open navigation menu"
-            }
-            aria-expanded={mobileOpen}
-            onClick={() => setMobileOpen((open) => !open)}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/10 text-white transition-colors hover:border-[#FF5A00]/60 hover:text-[#FF5A00] xl:hidden"
-          >
-            {mobileOpen ? <X size={22} /> : <Menu size={22} />}
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {mobileOpen && (
-          <div className="max-h-[calc(100dvh-76px)] overflow-y-auto border-t border-white/10 bg-[#0b0d10] xl:hidden">
-            <nav
-              aria-label="Mobile navigation"
-              className="mx-auto flex w-full max-w-7xl flex-col px-4 pb-6 pt-3 sm:px-6"
-            >
-              {navItems.map((item, index) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-between border-b border-white/[0.07] py-4 text-sm font-medium text-white/80 transition-colors hover:text-[#FF5A00]"
-                >
-                  <span>
-                    <span className="mr-3 text-xs text-[#FF5A00]/70">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    {item.name}
-                  </span>
-
-                  <ArrowUpRight
-                    size={16}
-                    className="text-white/40"
-                  />
-                </Link>
-              ))}
-
-              {/* Mobile CTA Buttons */}
-              <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMobileOpen(false)}
-                  className="rounded-lg border border-[#FF5A00]/50 px-4 py-3.5 text-center text-sm font-semibold text-white transition-colors hover:bg-[#FF5A00]/10"
-                >
-                  WhatsApp Us
-                </a>
-
-                <Link
-                  href="#contact"
-                  onClick={() => setMobileOpen(false)}
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#FF5A00] px-4 py-3.5 text-sm font-bold text-white transition-colors hover:bg-[#E65000]"
-                >
-                  Get a Quote
-                  <ArrowUpRight size={16} />
-                </Link>
-              </div>
-            </nav>
-          </div>
-        )}
-      </header>
-
-      {/* Space reserved for fixed navbar */}
-      <div className="h-[76px] w-full shrink-0 lg:h-[88px]" />
-    </>
+        </nav>
+      )}
+    </header>
   );
 }
