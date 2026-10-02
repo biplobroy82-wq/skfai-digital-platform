@@ -12,6 +12,7 @@ import BrandAmbassador from "./components/BrandAmbassador";
 import CelebrityBooking from "./components/CelebrityBooking";
 import Testimonials from "./components/Testimonials";
 import FounderMessage from "./components/FounderMessage";
+import Recognition from "./components/Recognit";
 import CTA from "./components/CTA";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -56,38 +57,26 @@ export default function Home() {
 
       <main>
         <Hero />
-
         <Trust />
-
         <Services />
-
-        {/* Service Rate Card */}
         <ServiceRateCard />
-
         <About />
-
         <WhyChoose />
-
         <Portfolio />
-
         <ProductionFacilities />
-
         <BrandAmbassador />
-
-        {/* Celebrity Booking */}
         <CelebrityBooking />
-
         <Testimonials />
-
         <FounderMessage />
 
-        <CTA />
+        {/* Certification Section */}
+        <Recognition />
 
+        <CTA />
         <Contact />
       </main>
 
       <Footer />
-
       <FloatingButtons />
     </>
   );
