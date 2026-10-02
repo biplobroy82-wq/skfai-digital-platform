@@ -1,4 +1,4 @@
-
+```tsx
 "use client";
 
 import Image from "next/image";
@@ -9,9 +9,15 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Services", href: "#services" },
-  { name: "Portfolio", href: "#portfolio" },
-  { name: "Recognition", href: "#recognition" },
+  { name: "Rate Card", href: "#service-rate-card" },
   { name: "About", href: "#about" },
+  { name: "Why Choose Us", href: "#why-choose" },
+  { name: "Portfolio", href: "#portfolio" },
+  { name: "Production", href: "#production-facilities" },
+  { name: "Brand Ambassador", href: "#brand-ambassador" },
+  { name: "Testimonials", href: "#testimonials" },
+  { name: "Founder Message", href: "#founder-message" },
+  { name: "Certification", href: "#certification" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -48,13 +54,13 @@ export default function Navbar() {
             : "border-b border-white/[0.06] bg-[#0b0d10]/85 backdrop-blur-md"
         }`}
       >
-        <div className="mx-auto flex min-h-[76px] w-full max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:min-h-[88px] lg:px-8">
+        <div className="mx-auto flex min-h-[76px] w-full max-w-[1800px] items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:min-h-[88px] lg:px-8">
           {/* Brand */}
           <Link
             href="/"
             aria-label="Sri Krishna Films home"
             onClick={() => setMobileOpen(false)}
-            className="flex min-w-0 items-center gap-3"
+            className="flex min-w-0 shrink-0 items-center gap-3"
           >
             <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border border-[#FF5A00]/70 sm:h-12 sm:w-12">
               <Image
@@ -68,8 +74,11 @@ export default function Navbar() {
             </span>
 
             <span className="min-w-0">
-              <span className="block truncate font-[var(--font-display)] text-base font-bold leading-tight tracking-wide text-white sm:text-xl">
+              <span className="block whitespace-nowrap font-[var(--font-display)] text-base font-bold leading-tight tracking-wide text-white sm:text-lg">
                 Sri Krishna Films
+              </span>
+              <span className="hidden pt-1 text-[9px] tracking-[0.22em] text-[#FF5A00] sm:block">
+                ADVERTISEMENT INDUSTRY
               </span>
             </span>
           </Link>
@@ -77,13 +86,13 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav
             aria-label="Main navigation"
-            className="hidden items-center gap-5 xl:flex 2xl:gap-7"
+            className="hidden min-w-0 flex-1 items-center justify-center gap-x-3 overflow-x-auto px-2 xl:flex 2xl:gap-x-4"
           >
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="group relative whitespace-nowrap py-2 text-[13px] font-medium text-white/75 transition-colors hover:text-[#FF5A00]"
+                className="group relative shrink-0 whitespace-nowrap py-2 text-[11px] font-medium text-white/75 transition-colors hover:text-[#FF5A00] 2xl:text-xs"
               >
                 {item.name}
 
@@ -93,30 +102,29 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop Buttons */}
-          <div className="hidden shrink-0 items-center gap-3 xl:flex">
+          <div className="hidden shrink-0 items-center gap-2 2xl:flex">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-[#FF5A00]/50 px-4 py-2.5 text-sm font-medium text-white transition-all hover:border-[#FF5A00] hover:bg-[#FF5A00]/10"
+              className="rounded-lg border border-[#FF5A00]/50 px-3 py-2.5 text-xs font-medium text-white transition-all hover:border-[#FF5A00] hover:bg-[#FF5A00]/10"
             >
               WhatsApp
             </a>
 
             <Link
               href="#contact"
-              className="group inline-flex items-center gap-2 rounded-lg bg-[#FF5A00] px-4 py-2.5 text-sm font-bold text-white transition-all hover:bg-[#E65000] hover:shadow-lg hover:shadow-orange-500/20"
+              className="group inline-flex items-center gap-1.5 rounded-lg bg-[#FF5A00] px-3 py-2.5 text-xs font-bold text-white transition-all hover:bg-[#E65000] hover:shadow-lg hover:shadow-orange-500/20"
             >
               Get a Quote
-
               <ArrowUpRight
-                size={16}
+                size={15}
                 className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
               />
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile / Tablet Menu Button */}
           <button
             type="button"
             aria-label={
@@ -144,19 +152,16 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-between border-b border-white/[0.07] py-4 text-sm font-medium text-white/80 transition-colors hover:text-[#FF5A00]"
+                  className="flex items-center justify-between border-b border-white/[0.07] py-3.5 text-sm font-medium text-white/80 transition-colors hover:text-[#FF5A00]"
                 >
                   <span>
                     <span className="mr-3 text-xs text-[#FF5A00]/70">
-                      0{index + 1}
+                      {String(index + 1).padStart(2, "0")}
                     </span>
                     {item.name}
                   </span>
 
-                  <ArrowUpRight
-                    size={16}
-                    className="text-white/40"
-                  />
+                  <ArrowUpRight size={16} className="text-white/40" />
                 </Link>
               ))}
 
@@ -191,3 +196,4 @@ export default function Navbar() {
     </>
   );
 }
+```
