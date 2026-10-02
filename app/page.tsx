@@ -9,6 +9,7 @@ import WhyChoose from "./components/WhyChoose";
 import Portfolio from "./components/Portfolio";
 import ProductionFacilities from "./components/ProductionFacilities";
 import BrandAmbassador from "./components/BrandAmbassador";
+import CelebrityBooking from "./components/CelebrityBooking";
 import Testimonials from "./components/Testimonials";
 import FounderMessage from "./components/FounderMessage";
 import CTA from "./components/CTA";
@@ -72,6 +73,9 @@ export default function Home() {
         <ProductionFacilities />
 
         <BrandAmbassador />
+
+        {/* Celebrity Booking */}
+        <CelebrityBooking />
 
         <Testimonials />
 
