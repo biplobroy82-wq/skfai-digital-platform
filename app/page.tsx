@@ -1,4 +1,3 @@
-
 import Script from "next/script";
 import Hero from "./components/Hero";
 import Trust from "./components/trust/Trust";
@@ -12,7 +11,7 @@ import BrandAmbassador from "./components/BrandAmbassador";
 import CelebrityBooking from "./components/CelebrityBooking";
 import Testimonials from "./components/Testimonials";
 import FounderMessage from "./components/FounderMessage";
-import Recognition from "./components/Recognition";
+import Team from "./components/Team";
 import CTA from "./components/CTA";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -56,64 +55,42 @@ export default function Home() {
       />
 
       <main>
-        <div id="home" className="scroll-mt-24">
-          <Hero />
-        </div>
+        <Hero />
 
         <Trust />
 
-        <div id="services" className="scroll-mt-24">
-          <Services />
-        </div>
+        <Services />
 
-        <div id="rate-card" className="scroll-mt-24">
-          <ServiceRateCard />
-        </div>
+        {/* Service Rate Card */}
+        <ServiceRateCard />
 
-        <div id="about" className="scroll-mt-24">
-          <About />
-        </div>
+        <About />
 
-        <div id="why-choose-us" className="scroll-mt-24">
-          <WhyChoose />
-        </div>
+        <WhyChoose />
 
-        <div id="portfolio" className="scroll-mt-24">
-          <Portfolio />
-        </div>
+        <Portfolio />
 
-        <div id="production-facilities" className="scroll-mt-24">
-          <ProductionFacilities />
-        </div>
+        <ProductionFacilities />
 
-        <div id="brand-ambassador" className="scroll-mt-24">
-          <BrandAmbassador />
-        </div>
+        <BrandAmbassador />
 
-        <div id="celebrity-booking" className="scroll-mt-24">
-          <CelebrityBooking />
-        </div>
+        {/* Celebrity Booking */}
+        <CelebrityBooking />
 
-        <div id="testimonials" className="scroll-mt-24">
-          <Testimonials />
-        </div>
+        <Testimonials />
 
-        <div id="founder-message" className="scroll-mt-24">
-          <FounderMessage />
-        </div>
+        <FounderMessage />
 
-        <div id="recognition" className="scroll-mt-24">
-          <Recognition />
-        </div>
+        {/* Team */}
+        <Team />
 
         <CTA />
 
-        <div id="contact" className="scroll-mt-24">
-          <Contact />
-        </div>
+        <Contact />
       </main>
 
       <Footer />
+
       <FloatingButtons />
     </>
   );
