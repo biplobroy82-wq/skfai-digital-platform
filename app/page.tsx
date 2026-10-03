@@ -1,5 +1,7 @@
 import Script from "next/script";
+
 import Hero from "./components/Hero";
+import UdyamRegistration from "./components/UdyamRegistration";
 import Trust from "./components/trust/Trust";
 import Services from "./components/Services";
 import ServiceRateCard from "./components/ServiceRateCard";
@@ -46,6 +48,7 @@ export default function Home() {
 
   return (
     <>
+      {/* Organization Schema */}
       <Script
         id="organization-schema"
         type="application/ld+json"
@@ -55,42 +58,59 @@ export default function Home() {
       />
 
       <main>
+        {/* Hero Section */}
         <Hero />
 
+        {/* Udyam / MSME Registration */}
+        <UdyamRegistration />
+
+        {/* Trust / Recognition */}
         <Trust />
 
+        {/* Services */}
         <Services />
 
         {/* Service Rate Card */}
         <ServiceRateCard />
 
+        {/* About */}
         <About />
 
+        {/* Why Choose Us */}
         <WhyChoose />
 
+        {/* Portfolio */}
         <Portfolio />
 
+        {/* Production Facilities */}
         <ProductionFacilities />
 
+        {/* Mentor */}
         <BrandAmbassador />
 
         {/* Celebrity Booking */}
         <CelebrityBooking />
 
+        {/* Testimonials */}
         <Testimonials />
 
+        {/* Founder Message */}
         <FounderMessage />
 
         {/* Team */}
         <Team />
 
+        {/* CTA */}
         <CTA />
 
+        {/* Contact */}
         <Contact />
       </main>
 
+      {/* Footer */}
       <Footer />
 
+      {/* Floating WhatsApp / Call Buttons */}
       <FloatingButtons />
     </>
   );
