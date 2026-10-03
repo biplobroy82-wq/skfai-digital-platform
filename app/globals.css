@@ -1,26 +1,140 @@
+
 @import "tailwindcss";
 
+/* ========================================
+   SRI KRISHNA FILMS — GLOBAL DESIGN SYSTEM
+======================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0b0d10;
+  --foreground: #ffffff;
+
+  --color-primary: #ff6a00;
+  --color-primary-light: #ff9a3c;
+  --color-gold: #d9a441;
+
+  --color-surface: #141619;
+  --color-surface-light: #1c1f24;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a1a1aa;
+
+  --color-border: rgba(255, 154, 60, 0.25);
 }
 
+/* Tailwind CSS theme variables */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+
+  --color-brand-orange: var(--color-primary);
+  --color-brand-gold: var(--color-gold);
+  --color-brand-surface: var(--color-surface);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Global box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Page defaults */
+html {
+  width: 100%;
+  max-width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  background: var(--background);
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0;
+
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: clip;
+}
+
+/* Headings use the cinematic display font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), Impact, sans-serif;
+  text-wrap: balance;
+}
+
+/* Paragraphs and long text */
+p {
+  overflow-wrap: break-word;
+}
+
+/* Responsive images and media */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
+/* Consistent keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-primary-light);
+  outline-offset: 4px;
+}
+
+/* Smooth anchor navigation */
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+/* Mobile layout safeguards */
+@media (max-width: 640px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3 {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
